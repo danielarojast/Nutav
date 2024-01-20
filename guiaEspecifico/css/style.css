@@ -302,7 +302,7 @@ nav .buscador {
 #fotoPerfil{
     width: 180px;
     height:180px;
-    background-image:url(/Proyecto/imgGuias/fotoPerfil.jpg) ;
+    background-image:url(/IMAGENES/PERSONAS/fotoPerfil.jpg) ;
     background-size: cover;
     background-position: center;
 }
@@ -462,7 +462,7 @@ nav .buscador {
     width: 150px;
     height:150px;
     background-color: rgb(46, 222, 148);
-    background-image:url(/Proyecto/imgGuias/mujer.jpg) ;
+    background-image:url(/IMAGENES/PERSONAS/mujer.jpg) ;
     background-size: cover;
     background-position: center;
 }

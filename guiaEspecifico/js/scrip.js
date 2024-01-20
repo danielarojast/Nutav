@@ -2,12 +2,16 @@
 ocultar botones ver mas 
 Terminar log in 
 terminar estilos en general
-conectar datos
 boton idiomas
 traducir
 footer
 conectar las paginas
-organizar bases de datos 
+Filtrar tours y reseñas 
+poner algun efecto en el texto cuando cargue la pagina
+poner las cards como botones
+poner un efecto en las cards
+poner la imagen de la card como background como ensayo 
+
 */
 
 //Descripcion del Guia
@@ -15,10 +19,10 @@ organizar bases de datos
     const descripcionP= document.querySelector('.descripcionGuia');
     const nombrePerfil= document.querySelector('.nombreGuiaPerfil');
     const tablaPerfil=document.querySelector('#tablaPerfil');
-
+    
    //guias.forEach....
         const{foto, id, Nombre, Edad, genero, procedencia, idioma, anosExperiencia, descripcion}= guias[0];
-
+        
         nombreH2.textContent= `${Nombre}`;
         descripcionP.textContent= `${descripcion}`;
         nombrePerfil.textContent= `${Nombre}`;
@@ -42,7 +46,7 @@ organizar bases de datos
         <div class="card" id="cadaCard">
             <a hre>
             <div class="contenedo_card_img">
-                <img src="img/${imagen}" class="card-img-top img_card" id="img_card" alt="...">
+                <img src="/IMAGENES/TOURS/${imagen}" class="card-img-top img_card" id="img_card" alt="...">
             </div>
             <div class="card-body" id="h5_card">
                 <h5 class="card-title"><a><b>${nombre}</b></a></h5>
