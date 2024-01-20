@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sintony:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <nav>
+        <a href="http://127.0.0.1:3004/index.html"><img class="logo" src="./img/Logo.png" alt=""></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <input class="buscador" type="search" placeholder="buscar...">
+        <!--<Iniciar modal LogIn>-->
+
+        <!-- Modal -->
+        <div class="modal fade " id="modalLogIn" tabindex="-1" aria-labelledby="modalLogInLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body" id="contenedorLogIn">
+                        <div id="ModalLogIn">
+                            <img src="img/Imagotipo.png" alt="..." width="130px">
+                            <h1>Bienvenido a Nutav</h1>
+                            <form class="formLogIn">
+                                <p>Correo</p>
+                                <input type="text" placeholder="Correo" id="formCorreo">
+                            </form>
+                            <form class="formLogIn">
+                                <p>Contraseña</p>
+                                <input type="text" placeholder="Contraseña" id="formPassword">
+                            </form>
+                            <a href="# "><b>¿Olvidaste la contraseña?</b></a>
+                            <br>
+                            <button class="iniciar-sesion">Iniciar sesión</button>
+                            <p><b>o</b></p>
+                            <button class="facebook">Continuar con facebook</button>
+                            <button class="google">Continuar con Google</button>
+                            <br>
+                            <button class="register">Registrate</button>
+                            <p>Al continuar, estás aceptando los <a href="# ">terminos y condiciones</a> de uso y la <a
+                                    href="# ">politica de privacidad</a> de Nutav.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <!--<Finalizar modal LogIn>-->
+        <div class="menu">
+            <button class="idioma"><img src="./img/ingles.png" alt=""></button>
+            <button class="unete boton">Se un Nutav</button>
+            <button id="login" data-bs-toggle="modal" data-bs-target="#modalLogIn" class="inscribete boton">Log
+                In</button>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </div>
+    </nav>
+
+    <main id="contenedorMain">
+        <div id="parteUno">
+            <div id="perfil">
+                
+                <div id="tarjetas"  style="width: 80%;">
+                    <div id="fotoPerfil" class="fotoPerfil">
+
+                    </div>
+                    <!--<<img src="imgGuias/foto perfil.jpg" alt="" >>-->
+                    <h5><b class="card-title nombreGuiaPerfil"></b></h5>
+                    <table id="tablaPerfil">
+                        <thead>
+                            <tr>
+                                <td>
+                                Edad:
+                                </td>
+                                <td>
+                                25 años
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Sexo:
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Experiencia:
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Reseñas:
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Calificacion:
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                Idioma:
+                                </td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                
+                <div class="btnResalt boton">
+                <a href=""  data-bs-toggle="modal" data-bs-target="#modalLogIn"><b>Comunicate ahora</b></a>
+                </div>
+                <div id="denuncia" >
+                    <img src="img/bandera.png" alt="" width="30%" height="60%">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogIn"><b>Denunciar perfil</b></a>
+                </div>
+            </div>
+            <div id="presentacion">
+                <div id="descripcion">
+                    <h2><b class="nombreGuia"></b></h2>
+                    <p class="descripcionGuia"></p>
+                    <img src="img/Line 8.png" alt="" width="100%">
+                </div>
+                <div id="Experiencias">
+                    <h2><b>Experiencias que ofrece</b></h2>
+                    <div id="contenedorExp">
+                        <div id="toursOfrecidos" class="toursOfrecidos">
+                            
+                        </div>
+                        <button class="boton btnMore" id="botonMore">Ver mas </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--<Inicio modal Reseñas>-->
+        <!--<modal>-->
+            <!-- Modal -->
+            <div class="modal fade" id="modalReview" tabindex="-1" aria-labelledby="modalReviewLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable card mb-3" style="max-width: 30%">
+                    <div class="modal-content" style="width: 100%;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalReviewLabel">Reseñas</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modalBodyRev">
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<Fin modal Reseñas>-->
+
+        <div id="reseñas">
+            <h2><b>Reseñas</b></h2>
+            <div id="contenedorRev">
+                <div id="review">
+
+                </div>
+                <button  class="boton btnMore" id="btnMoreReview" data-bs-toggle="modal" data-bs-target="#modalReview">Ver mas</button>
+         </div>
+        </div>
+    </main>
+    <footer>
+        <img src="" alt="">
+        <h1>FOOTER</h1>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/BasesDeDatos.js"></script>
+    <script src="js/scrip.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,491 @@
+:root{
+    --color-principal : #294D76;
+    --color-titulos: #000000;
+    --color-subtitulos: #000000;
+    --color-parrafos: #3F3D3D;
+    --color-boton-resalt: #FCF329;
+    --background-nav:#D9D9D9;
+    --color-boton: #D9D9D9;
+    --color-tarjetas: #ECE6E6;
+    --radio-esquinas:20%;
+    --size-subtitulos:16px
+    
+}
+
+*{font-family: 'Sintony', sans-serif;}
+
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 1920px;
+}
+
+/*.........NAV..........*/
+
+nav {
+    height: 5rem;
+    background: rgba(217, 217, 217, 0.31);
+    padding: 0 50px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 200;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+nav .buscador {
+    width: 200px;
+    height: 30px;
+    border-radius: 2rem;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.navLogin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#ModalLogIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.logo {
+    width: 150px;
+    padding-left: 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu img {
+    width: 40px;
+}
+
+.menu .idioma {
+    border: 0;
+    border-radius: 100%;
+}
+
+.menu .boton {
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    background-color: gray;
+    padding: 0 10px;
+    transition: 0.4s;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu .unete {
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.menu .inscribete {
+    background-color: #294D76;
+    color: white;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.menu button:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: rgb(0, 0, 0);
+}
+
+#check {
+    display: none;
+}
+
+/* Responsive */
+/* Para Tablet */
+@media(max-width:768px) {
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+        color: #000;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(86, 87, 87);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu button {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+}
+
+.button {
+    padding-top: 20px;
+}
+
+.button button {
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    background-color: gray;
+}
+
+.button .log {
+    background-color: rgba(41, 77, 118);
+    color: white;
+}
+
+.icon img {
+    width: 50px;
+    padding-top: 10px;
+    position: relative;
+    right: 30px;
+}
+
+#ModalLogIn h1{
+    color: black;
+    text-align: center;
+}
+
+#ModalLogIn a{
+    color: black;
+
+}
+
+#ModalLogIn p{
+    color: black;
+    text-align: center;
+}
+
+.formLogIn{
+    padding: none;
+    bottom: auto;
+    gap: 0;
+}
+
+.formLogIn p{
+    
+    color: black;
+}
+
+.formLogIn input{
+    border-radius: 10px;
+}
+
+.iniciar-sesion{
+    width: 180px;
+    height: 40px;
+    background-color: rgba(255, 57, 57, 0.882);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.facebook{
+    /* width: 180px;
+    height: 40px; */
+    background-color: rgba(28, 108, 200, 0.882);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+.google{
+    /* width: 180px;
+    height: 40px; */
+    background-color: rgba(255, 255, 255, 0.882);
+    color: black;
+    border: solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    border: none;
+}
+
+.register{
+    width: 180px;
+    height: 40px;
+    background-color: rgba(217, 217, 217, 0.31);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*-----------MAIN-----------*/
+#contenedorMain{
+    /* margin: 0 x75p; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+/*---primera parte---*/
+#parteUno{
+    display: flex;
+    font-size: 20px;
+}
+/*Perfil*/
+#perfil{
+    /* background-color: rgb(194, 30, 30); */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0% 0% 0%;
+    padding:5% 0% 0% 0%;
+    gap: 25px
+    
+}
+#tarjetas{
+    border-radius: 20px;
+    padding: 5% 5% 5% 5%;
+    background-color: var(--color-tarjetas);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tarjetas table{
+    width: 100% ;
+}
+
+.fotoPerfil{
+    border-radius: 100%;
+}
+#fotoPerfil{
+    width: 180px;
+    height:180px;
+    background-image:url(/Proyecto/imgGuias/fotoPerfil.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+#tarjetas h5{
+    padding: 10% 0 10% 0;
+   
+}
+
+.btnResalt{
+    background-color: var(--color-boton-resalt);
+    width: 60%;
+    height: 68px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnResalt a{
+    text-decoration: none;
+    color: #000;
+}
+
+#denuncia{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    gap: 3px;
+
+}
+#denuncia img{
+    width: 40px;
+}
+#denuncia a{
+    text-decoration: none;
+    color: #000000;
+    flex-basis: 250px;
+}
+
+/*presentacion*/
+#presentacion{
+    /* background-color: #7298c2; */
+    width: 70%;
+    
+}
+#presentacion{
+    margin: 100px 0px 0px 0px;
+    padding: 0 3%;
+}
+
+#descripcion{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#descripcion h2{
+    padding: 0 0 40px 0 ;
+}
+
+#descripcion p{
+    padding: 0 0 10px 0 ;
+    text-align: center;
+}
+
+#descripcion img{
+    opacity: 10%;
+}
+
+#Experiencias{
+    display: flex;
+    padding: 40px 0 40px 0 ;
+    font-size: var(--size-subtitulos);
+    flex-direction:column;
+}
+#contenedorExp{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 37px 0 0 0;
+    
+}
+#toursOfrecidos{
+   display: flex;
+    gap: 15px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 35px; 
+}
+#cadaCard{
+    border: none;
+    height: 444px;
+    
+}
+.contenedo_card_img{
+    overflow: hidden;
+}
+#img_card{
+    height: 444px;
+}
+#h5_card{
+    height: 15%;
+}
+.card-body {
+    flex: 1 1 auto;
+    margin: 5px;
+    color: var(--bs-card-color);
+  }
+
+.btnMore{
+   display: flex;
+   justify-content: center;
+   width: 100px;
+   border: none;
+}
+.card{
+    width:20rem ;
+    height:28rem;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+
+}
+/*---segunda parte---*/
+#reseñas{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 100px 0;
+    width: 100%;
+    
+}
+#contenedorRev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#review{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 14px;
+    justify-content: center;
+    padding: 14px;
+}
+
+#cadaCardReview{
+    background-color: var(--color-tarjetas);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+
+.imgClienteRev{
+    width: 150px;
+    height:150px;
+    background-color: rgb(46, 222, 148);
+    background-image:url(/Proyecto/imgGuias/mujer.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+#detalleReview{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*modal Review*/
+.contImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadaCardModalRev{
+    border: none;
+    width: 100%;
+}
+
+/*---Footer---*/
+footer{
+    background-color: var(--color-principal);
+}
+
