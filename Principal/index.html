@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>NUTAV</title>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sintony:wght@400;700&display=swap" 
+    rel="stylesheet"
+    >
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    
+
+</head>
+<body>
+    
+   
+    <header>
+        <input type="search" class="search-header" placeholder="Buscar...">
+        <div class="overlay"></div>
+        <div class="awards">
+            <div class="ganador">
+                <h2><strong>MEDELLÍN WALKING TOUR</strong></h2><br>
+                <h4><strong>Luís Felipe Uribe</strong></h3>
+                <h5>ganador/guía</h5>
+
+            </div>
+            <div class="estampas">
+                <div>
+                    <img src="/assets/landing/header-img/bestTour.png" alt="" srcset="">
+
+                </div>
+                <div>
+                    <img src="/assets/landing/header-img/bestCityTour.png" alt="" srcset="">
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </header>
+    <nav class="navbar">
+        <a href=""><img class="logo" src="/assets/landing/header-img/logo.png" alt=""></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <!--<Iniciar modal LogIn>-->
+
+        <!-- Modal -->
+        <div class="modal fade " id="modalLogIn" tabindex="-1" aria-labelledby="modalLogInLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-contentt">
+                    <div class="modal-body" id="contenedorLogIn">
+                        <div id="ModalLogIn">
+                            <img src="/assets/landing/header-img/Imagotipo.png" alt="..." width="130px">
+                            <h1><strong>Bienvenido a <br> Nutav</strong></h1>
+                            <form class="formLogIn">
+                                <p>Correo</p>
+                                <input type="text" placeholder="Correo" id="formCorreo">
+                            </form>
+                            <form class="formLogIn">
+                                <p>Contraseña</p>
+                                <input type="text" placeholder="Contraseña" id="formPassword">
+                            </form>
+                            <a href="# "><b>¿Olvidaste la contraseña?</b></a>
+                            <br>
+                            <button class="iniciar-sesion">Iniciar sesión</button>
+                            <p><b>o</b></p>
+                            <button class="facebook">Continuar con facebook</button>
+                            <button class="google">Continuar con Google</button>
+                            <br>
+                            <button class="register">Registrate</button>
+                            <p>Al continuar, estás aceptando los <a href="# ">terminos y condiciones</a> de uso y la <a
+                                    href="# ">politica de privacidad</a> de Nutav.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <!--<Finalizar modal LogIn>-->
+        <div class="menu">
+            <button class="idioma"><img src="/assets/landing/header-img/ingles.png" alt=""></button>
+            <button class="unete boton">Se un Nutav</button>
+            <button id="login" data-bs-toggle="modal" data-bs-target="#modalLogIn" class="inscribete boton">Log
+                In</button>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </div>
+        
+
+    </nav>
+    
+    
+    <div class="parent">
+        <div>
+
+            <div class="search">
+
+                <form class="form-container">
+
+                    <!-- Select Category-->
+                    <div>
+                        <div class="categories" id="categories">
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/Imagotipo.png" alt="" srcset="" width="45rem">
+                                <option value="">Todos</option>
+
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/cultura.png" alt="" srcset="" width="42rem">
+                                <option value="cultura">Cultura</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/historia.png" alt="" srcset="" width="42rem">
+                                <option value="historia">Historia</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/gastronomia.png" alt="" srcset="" width="47rem">
+                                <option value="gastronomia">Gastronomía</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/naturaleza.png" alt="" srcset="" width="42rem">
+                                <option value="naturaleza">Naturaleza</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/aventura.png" alt="" srcset="" width="42rem">
+                                <option value="aventura">Aventura</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/arquitectura.png" alt="" srcset="" width="31rem">
+                                <option value="arquitectura">Arquitectura</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/arte.png" alt="" srcset="" width="42rem">
+                                <option value="arte">Arte</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/nocturno.png" alt="" srcset="" width="42rem">
+                                <option value="nocturno">Nocturno</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/deporte.png" alt="" srcset="" width="42rem">
+                                <option value="deporte">Deporte</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/fotografia.png" alt="" srcset="" width="42rem">
+                                <option value="fotografia">Fotografía</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/innovacion.png" alt="" srcset="" width="42rem">
+                                <option value="innovador">Innovador</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/urbano.png" alt="" srcset="" width="42rem">
+                                <option value="urbano">Urbano</option>
+                            </div>
+                            <div class="category-btn">
+                                <img src="/assets/landing/categoriasFiltro/rural.png" alt="" srcset="" width="42rem">
+                                <option value="rural">Rural</option>
+                            </div>
+
+                            
+                            
+                            
+                        </div>
+                    </div>
+
+                    
+                    <div class="selection-filter">
+                        <div>
+                            <!-- Selec place -->
+                            <select class="option-btn" id="place">
+                                <option value="">Lugar</option>
+                                <option value="medellin">Medellín</option>
+                                <option value="guatape">Guatapé</option>
+                                <option value="jardin">Jardín</option>
+                                <option value="jerico">Jericó</option>
+                                <option value="marinilla">Marinilla</option>
+                            </select>
+                        </div>
+    
+                        <!-- Select language -->
+                        <div>
+                            <select class="option-btn" id="language">
+                                <option value="idioma">Idioma</option>
+                                <option value="español">Español</option>
+                                <option value="ingles">Inglés</option>
+                                <option value="frances">Francés</option>
+                                <option value="aleman">Alemán</option>
+                            </select>
+                        </div>
+    
+                        <!-- Select Duration-->
+                        <div>
+                            <select class="option-btn" id="duracion">
+                                <option value="">Duración</option>
+                                <option value="1">1 hora</option>
+                                <option value="2">2 horas</option>
+                                <option value="3">3 horas</option>
+                                <option value="4">4 horas</option>
+                                <option value="5">5 horas</option>
+                                <option value="6">6 horas</option>
+                                <option value="7">7 horas</option>
+                                <option value="8">8 horas</option>
+                                <option value="9">más de 8 horas</option>
+                            </select>
+                        </div>
+    
+                        <!-- Select availability -->
+                        <input class="option-btn" type="date" name="" id="">
+
+                    </div>
+                    
+                </form>
+
+            </div>
+
+        </div>
+        <!--Inicio Modal-->
+        <!-- Modal -->
+        <div class="modal-xl modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                  
+                
+                    
+                    
+                            
+            
+                
+    
+            </div>
+            </div>
+        </div>
+        
+        <!--Fin Modal-->
+        <div class="container ">
+            <!--Parent principal resultados del filtro-->
+            <div class="cards-container" id="cards-container">
+                
+            </div>
+        </div>
+        <div class="container hidden">
+            <div class="mixedTours">
+                <div>
+                    <a href="">
+                        <div class="card" style="background-color: blueviolet;">
+                            <div class="degraded">
+                                <p><strong>${nombre}</strong></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <div class="card" style="background-color: blueviolet;">
+                            <div class="degraded">
+                                <p><strong>${nombre}</strong></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <div class="card" style="background-color: blueviolet;">
+                            <div class="degraded">
+                                <p><strong>${nombre}</strong></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <div class="card" style="background-color: blueviolet;">
+                            <div class="degraded">
+                                <p><strong>${nombre}</strong></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <footer>
+            <img src="/assets/landing/header-img/imagotipo.png" alt="" srcset="" width="150px">
+        </footer>
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/db.js" defer ></script>
+    <script src="js/script.js" defer></script>
+    
+</body>
+</html>
