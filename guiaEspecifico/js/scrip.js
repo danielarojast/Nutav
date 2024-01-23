@@ -13,16 +13,39 @@ poner un efecto en las cards
 poner la imagen de la card como background como ensayo 
 
 */
+//Llamar base de datos 
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+        getData();
+    })
+
+    function getData(){
+        let urlData= '/BasesDeDatos/db.json'
+
+        fetch(urlData)
+        .then(rtaData=>{
+            console.log(rtaData)
+            return rtaData.json();
+        })
+        .then(data=>{
+            console.log(data.guias)
+            showGuias(data.guias);
+            showTours(data.Tours);
+        })
+    }
 
 //Descripcion del Guia
-    const nombreH2= document.querySelector('.nombreGuia');
-    const descripcionP= document.querySelector('.descripcionGuia');
-    const nombrePerfil= document.querySelector('.nombreGuiaPerfil');
-    const tablaPerfil=document.querySelector('#tablaPerfil');
-    
-   //guias.forEach....
-        const{foto, id, Nombre, Edad, genero, procedencia, idioma, anosExperiencia, descripcion}= guias[0];
-        
+
+    function showGuias(dataGuias){
+
+        const nombreH2= document.querySelector('.nombreGuia');
+        const descripcionP= document.querySelector('.descripcionGuia');
+        const nombrePerfil= document.querySelector('.nombreGuiaPerfil');
+        const tablaPerfil=document.querySelector('#tablaPerfil');
+
+        //guias.forEach....
+        const{foto, id, Nombre, Edad, genero, procedencia, idioma, anosExperiencia, descripcion}= dataGuias[0];
+
         nombreH2.textContent= `${Nombre}`;
         descripcionP.textContent= `${descripcion}`;
         nombrePerfil.textContent= `${Nombre}`;
@@ -32,33 +55,37 @@ poner la imagen de la card como background como ensayo
         tablaPerfil.children[0].children[3].children[1].textContent=`50`;
         tablaPerfil.children[0].children[4].children[1].textContent=`4.8`;
         tablaPerfil.children[0].children[5].children[1].textContent=`${idioma}`;
-    //
+        //
+    };  
 //
    
 // Cards Tours ofrecidos 
-    const contenedorTours= document.querySelector('#toursOfrecidos');
-    tours.forEach((tour)=>{
-        //destructurar
-        const {imagen,nombre,idTour,idGuia,descripcion}= tour
 
-        const tourHTML= document.createElement('p');
-        tourHTML.innerHTML= `
-        <div class="card" id="cadaCard">
-            <a hre>
-            <div class="contenedo_card_img">
-                <img src="/IMAGENES/TOURS/${imagen}" class="card-img-top img_card" id="img_card" alt="...">
-            </div>
-            <div class="card-body" id="h5_card">
-                <h5 class="card-title"><a><b>${nombre}</b></a></h5>
-            </div>
-            </a>
-        </div> 
-        `
-        contenedorTours.appendChild(tourHTML);
-    });
+    function showTours(dataTours){
 
+        const contenedorTours= document.querySelector('#toursOfrecidos');
 
-    //Boton ver mas 
+        dataTours.forEach((tour)=>{
+            //destructurar
+            const {imagen,nombre,idTour,idGuia,descripcion}= tour
+
+            const tourHTML= document.createElement('p');
+            tourHTML.innerHTML= `
+            <div class="card" id="cadaCard">
+                <a hre>
+                <div class="contenedo_card_img">
+                    <img src="/IMAGENES/TOURS/${imagen}" class="card-img-top img_card" id="img_card" alt="...">
+                </div>
+                <div class="card-body" id="h5_card">
+                    <h5 class="card-title"><a><b>${nombre}</b></a></h5>
+                </div>
+                </a>
+            </div> 
+            `
+            contenedorTours.appendChild(tourHTML);
+        });
+
+        //Boton ver mas 
         const toursOfrecidos= document.querySelector('#toursOfrecidos');
         const itemsTours= toursOfrecidos.children;
         const totalItemsTours= itemsTours.length;
@@ -89,6 +116,12 @@ poner la imagen de la card como background como ensayo
                 itemsPerPage+= 3;
                 upDatePaginacion(); 
             });
+    };
+
+    
+
+
+    
 //
 
 // Cards Reseñas 
