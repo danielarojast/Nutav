@@ -172,6 +172,138 @@
       "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     }
   ],
+  "guias": [
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "id": "G1",
+      "Nombre": "Sandra Cardona",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 3,
+      "descripcion": "Hola, soy Sandra Cardona, guía turística apasionada con más de tres años de experiencia revelando los encantos de Medellín y Antioquia. A mis 25 años, cada tour se convierte en una emocionante aventura llena de historia y belleza paisajística. Mi juventud se fusiona con un profundo conocimiento local, ofreciendo una experiencia única. No solo te llevo a lugares icónicos, sino que te sumerjo en relatos cautivadores, tejiendo la auténtica esencia de cada destino. Cada paso es una oportunidad para crear recuerdos inolvidables. ¡Ven y descubre conmigo la magia que estos lugares tienen para ofrecer!"
+    },
+    {
+      "foto": "imgGuias/andres.jpg",
+      "id": "G2",
+      "Nombre": "Andres",
+      "Edad": 30,
+      "genero": "masculino",
+      "procedencia": "colombian",
+      "idioma": ["español", "ingles"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 5,
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
+    },
+    {
+      "foto": "imgGuias/luisa.jpg",
+      "id": "G3",
+      "Nombre": "Luisa",
+      "Edad": 20,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 1,
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
+    },
+    {
+      "foto": "imgGuias/angel.jpg",
+      "id": "G4",
+      "Nombre": "Angel",
+      "Edad": 28,
+      "genero": "masculino",
+      "procedencia": "argentino",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 4,
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
+    },
+    {
+      "foto": "imgGuias/victor.jpg",
+      "id": "G5",
+      "Nombre": "Victor",
+      "Edad": 35,
+      "genero": "masculino",
+      "procedencia": "colombiano",
+      "idioma": ["ingles"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 3,
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
+    },
+    {
+      "foto": "imgGuias/julian.jpg",
+      "id": "G6",
+      "Nombre": "Julian",
+      "Edad": 18,
+      "genero": "masculino",
+      "procedencia": "colombiano",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 4,
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
+    },
+    {
+      "foto": "imgGuias/tomas.jpg",
+      "id": "G7",
+      "Nombre": "tomas",
+      "Edad": 18,
+      "genero": "masculino",
+      "procedencia": "americano",
+      "idioma": ["español", "ingles"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 3,
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
+    },
+    {
+      "foto": "imgGuias/cristian.jpg",
+      "id": "G8",
+      "Nombre": "Cristian",
+      "Edad": 32,
+      "genero": "masculino",
+      "procedencia": "colombiano",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 3,
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
+    },
+    {
+      "foto": "imgGuias/felipe.jpg",
+      "id": "G9",
+      "Nombre": "Felipe",
+      "Edad": 22,
+      "genero": "masculino",
+      "procedencia": "colombiano",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 13,
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
+    },
+    {
+      "foto": "imgGuias/manu.jpg",
+      "id": "G10",
+      "Nombre": "Manuela",
+      "Edad": 22,
+      "genero": "femenino",
+      "procedencia": "americano",
+      "idioma": ["ingles"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com",
+      "anosExperiencia": 3,
+      "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
+    }
+  ],
   "customers": [
     {
       "foto": "imgGuias/danielita.jpg",
