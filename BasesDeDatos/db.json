@@ -21,155 +21,155 @@
       "imagen": "medellin-walking-tour.jpg",
       "galeria": [],
       "nombre": "Medellín Walking Tour",
-      "categorias": ["cultura", "historia"],
+      "categorias": ["Cultura", "Historia"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés"],
       "duracion": "6 hrs",
       "idGuia": "00001",
-      "descripcion": "Sumérgete en la rica historia y cultura de la ciudad mientras paseas por coloridas calles, descubres arte urbano fascinante y te maravillas con la arquitectura icónica. Desde la Plaza Botero hasta la Catedral Metropolitana, este recorrido a pie te llevará a lugares emblemáticos, permitiéndote conocer de cerca la transformación de Medellín en un destino moderno y acogedor. ¡Únete a nosotros para una experiencia única llena de sorpresas y autenticidad!"
+      "descripcion": "Sumérgete en la rica Historia y Cultura de la ciudad mientras paseas por coloridas calles, descubres Arte Urbano fascinante y te maravillas con la Arquitectura icónica. Desde la Plaza Botero hasta la Catedral Metropolitana, este recorrido a pie te llevará a lugares emblemáticos, permitiéndote conocer de cerca la transformación de Medellín en un destino moderno y acogedor. ¡Únete a nosotros para una experiencia única llena de sorpresas y autenticidad!"
     },
     {
       "TourId": "tu2",
       "imagen": "arquitectura-unica.jpg",
       "nombre": "Tour Arquitectura Única en Medellín",
-      "categorias": ["arquitectura", "arte", "innovador"],
+      "categorias": ["Arquitectura", "Arte", "Innovador"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés", "Francés"],
       "duracion": "4 hrs",
       "idGuia": "00002",
-      "descripcion": "Embárcate en un fascinante tour de arquitectura única en Medellín, donde cada edificio cuenta su propia historia extraordinaria. Exploraremos la ciudad desde una perspectiva arquitectónica, destacando innovadores diseños que fusionan lo moderno con lo tradicional. Desde los icónicos rascacielos en El Poblado hasta las estructuras vanguardistas en Laureles, descubrirás cómo la arquitectura ha contribuido a la metamorfosis de Medellín."
+      "descripcion": "Embárcate en un fascinante tour de Arquitectura única en Medellín, donde cada edificio cuenta su propia Historia extraordinaria. Exploraremos la ciudad desde una perspectiva arquitectónica, destacando innovadores diseños que fusionan lo moderno con lo tradicional. Desde los icónicos rascacielos en El Poblado hasta las estructuras vanguardistas en Laureles, descubrirás cómo la Arquitectura ha contribuido a la metamorfosis de Medellín."
     },
     {
       "TourId": "tu3",
       "imagen": "frutas-tropicales.jpg",
       "nombre": "Sabores Tropicales en Las Calles de Medellín",
-      "categorias": ["gastronomia", "cultura"],
+      "categorias": ["Gastronomia", "Cultura"],
       "lugar": "Medellin",
       "idioma": ["Inglés"],
       "duracion": "2 hrs",
       "idGuia": "00003",
-      "descripcion": "Descubre la riqueza culinaria de la ciudad mientras exploras puestos de comida callejera y restaurantes auténticos. Desde exquisitas arepas rellenas hasta jugos de frutas frescas, cada bocado es una explosión de sabores tropicales que reflejan la diversidad cultural de Medellín."
+      "descripcion": "Descubre la riqueza culinaria de la ciudad mientras exploras puestos de comida callejera y restaurantes auténticos. Desde exquisitas arepas rellenas hasta jugos de frutas frescas, cada bocado es una explosión de sabores tropicales que reflejan la diversidad Cultural de Medellín."
     },
     {
       "TourId": "tu4",
       "imagen": "el-camino-de-los-abuelos.jpg",
       "nombre": "El Camino de Los Abuelos",
-      "categorias": ["historia", "naturaleza", "fotografia"],
+      "categorias": ["Historia", "Naturaleza", "Fotografía","Aventura"],
       "lugar": "Jerico",
       "idioma": ["Español", "Inglés", "Alemán"],
       "duracion": "6 hrs",
       "idGuia": "00004",
-      "descripcion": "Monta a caballo mientras exploras los paisajes pintorescos que rodean Jericó, siguiendo los mismos caminos que alguna vez recorrieron los abuelos de la comunidad. A medida que avanzas, descubrirás la conexión profunda entre la naturaleza y la historia local, con paradas estratégicas en puntos de interés cultural y miradores impresionantes."
+      "descripcion": "Monta a caballo mientras exploras los paisajes pintorescos que rodean Jericó, siguiendo los mismos caminos que alguna vez recorrieron los abuelos de la comunidad. A medida que avanzas, descubrirás la conexión profunda entre la Naturaleza y la Historia local, con paradas estratégicas en puntos de interés Cultural y miradores impresionantes."
     },
     {
       "TourId": "tu5",
       "imagen": "tour-innovacion-social.jpg",
       "nombre": "Tour Innovación Social",
-      "categorias": ["cultura", "historia", "arte"],
+      "categorias": ["Cultura", "Historia", "Arte"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés", "Francés", "Alemán"],
       "duracion": "6 hrs",
       "idGuia": "00005",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     },
     {
       "TourId": "tu6",
       "imagen": "tour-oriente-antioqueño.jpg",
       "nombre": "Tour Oriente Antioqueño",
-      "categorias": ["cultura", "historia", "arquitectura"],
+      "categorias": ["Cultura", "Historia", "Arquitectura","Aventura"],
       "lugar": "Marinilla",
       "idioma": ["Español", "Alemán"],
       "duracion": "8 hrs",
       "idGuia": "00006",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     },
     {
       "TourId": "tu7",
       "imagen": "jardin-pueblito-magico.jpg",
       "nombre": "Jardín Pueblito Mágico",
-      "categorias": ["cultura", "historia", "arte", "fotografia"],
+      "categorias": ["Cultura", "Historia", "Arte", "Fotografía"],
       "lugar": "Medellin",
       "idioma": ["Español", "Francés"],
       "duracion": "6 hrs",
       "idGuia": "00007",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     },
     {
       "TourId": "tu8",
       "imagen": "guatape-el-cacique-indigena.jpg",
       "nombre": "Guatapé el Cacique Indígena",
-      "categorias": ["cultura", "historia", "naturaleza"],
+      "categorias": ["Cultura", "Historia", "Naturaleza"],
       "lugar": "Guatape",
       "idioma": ["Español"],
       "duracion": "8 hrs",
       "idGuia": "00008",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     },
     {
       "TourId": "tu9",
       "imagen": "comuna-13-operacion-orion.jpg",
       "nombre": "Comuna 13 Operación Orión",
-      "categorias": ["cultura", "historia", "arte", "fotografia"],
+      "categorias": ["Cultura", "Historia", "Arte", "Fotografía"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés", "Alemán"],
       "duracion": "6 hrs",
       "idGuia": "00009",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     },
     {
       "TourId": "tu10",
       "imagen": "ciclo-tour.jpg",
       "nombre": "Ciclo Tour Medellín",
-      "categorias": ["deporte", "historia"],
+      "categorias": ["Deporte", "Historia"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés"],
       "duracion": "6 hrs",
       "idGuia": "000010",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     },
     {
       "TourId": "tu11",
       "imagen": "medellin-a-las-alturas.jpg",
       "nombre": "Medellín a Las Alturas",
-      "categorias": ["deporte", "naturaleza"],
+      "categorias": ["Deporte", "Naturaleza"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés", "Alemán", "Francés"],
       "duracion": "2 hrs",
       "idGuia": "000011",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     },
     {
       "TourId": "tu12",
       "imagen": "tour-terrazas.jpg",
       "nombre": "Tour Terrazas Medellín",
-      "categorias": ["cultura", "fotografia", "nocturno"],
+      "categorias": ["Cultura", "Fotografía", "Nocturno"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés"],
       "duracion": "4 hrs",
       "idGuia": "000012",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     },
     {
       "TourId": "tu13",
       "imagen": "miradores-tour.jpg",
       "nombre": "Miradores Tour",
-      "categorias": ["cultura", "fotografia", "nocturno", "naturaleza"],
+      "categorias": ["Cultura", "Fotografía", "Nocturno", "Naturaleza"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés"],
       "duracion": "4 hrs",
       "idGuia": "000013",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     },
     {
       "TourId": "tu14",
       "imagen": "comida-callejera.jpg",
       "nombre": "Sabor Medellín, Comida Callejera",
-      "categorias": ["cultura", "fotografia", "nocturno", "urbano"],
+      "categorias": ["Cultura", "Fotografía", "Nocturno", "Urbano"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés"],
       "duracion": "4 hrs",
       "idGuia": "000012",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     }
   ],
   "guias": [
