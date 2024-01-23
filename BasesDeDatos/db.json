@@ -171,6 +171,221 @@
       "idGuia": "000012",
       "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante arte urbano, donde cada mural cuenta una historia única. Conocerás de cerca el arte y la cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad."
     }
-   
+  ],
+  "customers": [
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C1",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C2",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C3",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C4",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C5",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C6",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C7",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C8",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C9",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C10",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C11",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    },
+    {
+      "foto": "imgGuias/danielita.jpg",
+      "idC": "C12",
+      "Nombre": "Andres",
+      "Edad": 26,
+      "genero": "femenino",
+      "procedencia": "colombian",
+      "idioma": ["español"],
+      "telefono": 64812,
+      "correo": "debfew@uwehcuweche.com"
+    }
+  ],
+  "reviews": [
+    {
+      "idReview": "R56",
+      "idC": "C1",
+      "idGuia": "G1",
+      "calificacion": 4.8,
+      "fecha": "26/11/2020",
+      "reseña": "¡Increíble experiencia! Nuestra guía, Sandra, hizo que cada momento del tour fuera fascinante. Su conocimiento y pasión hicieron que la historia cobrara vida. Altamente recomendado"
+    },
+    {
+      "idReview": "R56",
+      "idC": "C2",
+      "idGuia": "G1",
+      "calificacion": 4.6,
+      "fecha": "26/11/2020",
+      "reseña": "Tour excepcional. Nos llevó a lugares impresionantes y compartió historias únicas. Su entusiasmo hizo que la excursión fuera inolvidable"
+    },
+    {
+      "idReview": "R56",
+      "idC": "C3",
+      "idGuia": "G1",
+      "calificacion": 4,
+      "fecha": "26/11/2020",
+      "reseña": "El tour fue espectacular. Su amabilidad y profesionalismo se destacaron. Nos guió por rincones ocultos, convirtiendo el día en una aventura maravillosa."
+    },
+    {
+      "idReview": "R56",
+      "idC": "C4",
+      "idGuia": "G1",
+      "calificacion": 4.9,
+      "fecha": "26/11/2020",
+      "reseña": "No puedo agradecer lo suficiente a Sandra por el increíble tour. Su pasión y entusiasmo hicieron que la historia cobrara vida. ¡Altamente recomendado!"
+    },
+    {
+      "idReview": "R56",
+      "idC": "C5",
+      "idGuia": "G1",
+      "calificacion": 5,
+      "fecha": "26/11/2020",
+      "reseña": "El tour con Sandra fue informativo y ameno, pero hubo momentos en los que parecía apurada. Podría mejorar el ritmo para que todos puedan absorber la información."
+    },
+    {
+      "idReview": "R56",
+      "idC": "C6",
+      "idGuia": "G1",
+      "calificacion": 5,
+      "fecha": "26/11/2020",
+      "reseña": "Sandra tiene un gran conocimiento, pero a veces su explicación fue un poco técnica. Sería genial si pudiera adaptarse más al nivel de conocimiento del grupo."
+    },
+    {
+      "idReview": "R56",
+      "idC": "C7",
+      "idGuia": "G1",
+      "calificacion": 4.8,
+      "fecha": "26/11/2020",
+      "reseña": "El tour con Sandra estuvo bien. No fue excepcional, pero tampoco decepcionante. Fue bastante básico y no destacó en comparación con otros tours que he hecho."
+    },
+    {
+      "idReview": "R56",
+      "idC": "C8",
+      "idGuia": "G3",
+      "calificacion": 5,
+      "fecha": "26/11/2020",
+      "reseña": "Tour fantástico con Sandra. Su entusiasmo y conocimiento hicieron que cada parada fuera emocionante. Recorrimos sitios increíbles gracias a ella"
+    },
+    {
+      "idReview": "R56",
+      "idC": "C9",
+      "idGuia": "G2",
+      "calificacion": 5,
+      "fecha": "26/11/2020",
+      "reseña": "El tour no solo fue educativo, sino que también destacó por la elección de lugares. Visitamos sitios sorprendentes que hicieron que el recorrido fuera aún más enriquecedor."
+    },
+    {
+      "idReview": "R56",
+      "idC": "C10",
+      "idGuia": "G2",
+      "calificacion": 4.9,
+      "fecha": "26/11/2020",
+      "reseña": "Los lugares que Sandra seleccionó para el tour fueron simplemente asombrosos. Su habilidad para contextualizar la historia local en cada ubicación hizo que la experiencia fuera única y enriquecedora"
+    }
   ]
 }
