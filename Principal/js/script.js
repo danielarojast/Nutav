@@ -1,15 +1,134 @@
 
-
-
 /* Event Listener */
 
 document.addEventListener('DOMContentLoaded', ()=>{
 
+    /* Ingreso de Categorias para el filtro */
+    getDataCategories();
+    /*Ingreso lugares, idioma y duración de recorridos Filter */
+    getDataSelects();
+
+
     showTours(tours)
-    console.log(criteriosSeleccionados)
     selectedTour()
 
-})
+});
+
+
+
+
+/*Ingreso de Selects y Categorias al Filtrado*/
+
+function getDataCategories() {
+
+    
+
+    fetch('/BasesDeDatos/db.json')
+    .then((respuesta)=>{
+        return respuesta.json();
+    })
+    .then((dataCategories) =>{
+        console.log(dataCategories);
+        showCategories(dataCategories.Categories)
+
+    })
+    
+};
+
+function showCategories(categoriesData) {
+    const categories = document.querySelector('#categories');
+    let html = "";
+
+    categoriesData.forEach(category => {
+        const {categoryName,categoryIcon} = category
+        html += `
+        <div class="category-btn">
+            <div class = "categoryIcons">
+                <img src="/IMAGENES/ICONOSYLOGOS/categoriasFiltro/${categoryIcon}" alt="" srcset="">
+            </div>
+            <option value="${categoryName}">${categoryName}</option>
+        </div>
+        `
+        
+    });
+    
+    categories.innerHTML = html;
+};
+
+
+
+function getDataSelects() {
+
+    fetch('/BasesDeDatos/db.json')
+    .then((respuesta)=>{
+        return respuesta.json();
+    })
+    .then((data)=>{
+        showPlaces(data.Tours);
+        showLanguages(data.Tours);
+        showDuration(data.Tours);
+
+        /* Ingreso de cards tours */
+        showTours(data.Tours)
+    })
+    
+}
+
+
+function showPlaces(placesData) {
+    const place = document.querySelector('#place');
+
+    /*Lista de lugares sin repetir */
+    const lugaresOnce = [...new Set(placesData.map(tour => tour.lugar))];
+    //console.log(lugaresOnce);
+
+    lugaresOnce.forEach(lugar => {
+        const option = document.createElement('option');
+        option.value = lugar;
+        option.text = lugar;
+
+        place.appendChild(option);
+
+    }); 
+}
+
+function showLanguages(languageData) {
+    const language = document.querySelector('#language');
+
+    const languageOnce = [...new Set(languageData.flatMap(tour => tour.idioma))];
+    //console.log(languageOnce);
+
+    languageOnce.forEach(idioma => {
+        const option = document.createElement('option');
+        option.value = idioma;
+        option.text = idioma;
+
+        language.appendChild(option);
+        
+    });
+    
+}
+
+function showDuration(durationData) {
+    const duracion = document.querySelector('#duracion');
+
+    // Ordena los objetos según la propiedad 'duracion' de menor a mayor
+    durationData.sort((a, b) => parseFloat(a.duracion) - parseFloat(b.duracion));
+
+    const durationOnce = [...new Set(durationData.map(tour=> tour.duracion))];
+    console.log(durationOnce);
+
+    durationOnce.forEach(duration => {
+        const option = document.createElement('option');
+        option.value = duration;
+        option.text = duration;
+
+        duracion.appendChild(option);
+           
+    });
+}
+
+/*-------------------------------------------------------------------------------------------------*/
 
 /* Función para inyectar cards*/
 
@@ -28,7 +147,7 @@ function showTours(tours) {
         tourHtml.innerHTML = `
             <div>
                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" imagen = ${imagen} nombre = "${nombre}" descripcion = "${descripcion}">
-                    <div class="card" style="background-image: url(assets/landing/toursImg/${imagen}) ;">
+                    <div class="card" style="background-image: url(/IMAGENES/TOURS/${imagen}) ;">
                         <div class="degraded">
                             <p><strong>${nombre}</strong></p>
                         </div>
@@ -38,6 +157,7 @@ function showTours(tours) {
         `;
 
         contenedorCards.appendChild(tourHtml);
+        console.log(contenedorCards);
 
 
         
@@ -61,9 +181,9 @@ const duracion = document.querySelector('#duracion');
 const estado = document.querySelector('#availability');
 
 categoria.addEventListener('click',(e)=>{
-
+    
     criteriosSeleccionados.categoria = e.target.value;
-
+    console.log(criteriosSeleccionados.categoria);
     filtrarTour();  
 });
 
@@ -85,13 +205,21 @@ duracion.addEventListener('input',(e)=>{
 
 
 function filtrarTour(){
-    const resultado = tours
+    fetch('/BasesDeDatos/db.json')
+    .then((respuesta)=>{
+        return respuesta.json();
+    })
+    .then((tours)=>{
+      
+    const resultado = tours.Tours
     .filter(filtrarCategory)
     .filter(filtrarLugar)
     .filter(filtrarIdioma)
     .filter(filtrarDuracion)
-    console.log(resultado)
+   
     showTours(resultado)
+    })
+
 }
 
 function filtrarCategory(tour) {
@@ -162,7 +290,7 @@ function showDetail(e) {
     infoModal.innerHTML = `
 
     <div class="modal-bbody" >
-        <div class="imagen-modal" style="background-image: url(/assets/landing/toursImg/${imagen});">
+        <div class="imagen-modal" style="background-image: url(/IMAGENES/TOURS/${imagen});">
             <div class="degraded-modal">
 
             </div>
@@ -187,3 +315,6 @@ function showDetail(e) {
     modalBody.appendChild(infoModal)
     }
 }
+
+
+
