@@ -15,24 +15,23 @@ poner la imagen de la card como background como ensayo
 */
 //Llamar base de datos 
 
-    document.addEventListener('DOMContentLoaded', ()=>{
-        getData();
-    })
+    document.addEventListener('DOMContentLoaded', getData)
 
-    function getData(){
+    async function getData(){
         let urlData= '/BasesDeDatos/db.json'
 
-        fetch(urlData)
-        .then(rtaData=>{
-            console.log(rtaData)
-            return rtaData.json();
-        })
-        .then(data=>{
-            console.log(data.guias)
+        try {
+            const response= await fetch(urlData);
+            const data= await response.json()
+            console.log(data)
             showGuias(data.guias);
             showTours(data.Tours);
-        })
-    }
+            showReview(data.reviews);
+            //showCustomers(data.customers);
+        } catch (error) {
+            console.log(error)
+        }
+    };
 
 //Descripcion del Guia
 
@@ -92,17 +91,19 @@ poner la imagen de la card como background como ensayo
         const btnPagTours= document.querySelector('#botonMore');
         let itemsPerPage=3;
         let currentPage= 1;
+        console.log(currentPage)
 
-        document.addEventListener("DOMContentLoaded", function(){
-            upDatePaginacion(); 
-        });
+        document.addEventListener("DOMContentLoaded", upDatePaginacion());
 
             function showPage(page){
+                
                 for(let i= 0; i< itemsTours.length; i++){
                     if(i<(page-1)*itemsPerPage || i >= page *itemsPerPage){
-                        itemsTours[i].style.display="none";
+                        console.log(itemsTours[i])
+                        itemsTours[i].style.display="none"
                     }else{
                         itemsTours[i].style.display= "block";
+                        console.log(itemsTours[i])
                     };
                 };
             };
@@ -118,57 +119,62 @@ poner la imagen de la card como background como ensayo
             });
     };
 
-    
-
-
-    
 //
+
 
 // Cards Reseñas 
     const contenedorReview= document.querySelector('#review')
-    //destructurar
-    reviews.forEach((review)=>{
-        const {idReview, idC, idGuia, calificacion, fecha, reseña}= review
 
-        const reviewHtml= document.createElement('p');
-        reviewHtml.innerHTML= `
-        <div class="card mb-3 row g-0" style="max-width: 100%;" id="cadaCardReview">
-            <div class="row g-0">
-                <div class="col-md-4 contImg img-fluid  " >
-                    <div class=" fotoPerfil imgClienteRev"> </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Sofia Toro</b></h5>
-                        <p class="card-text">${reseña}</p>
-                        <div id="detalleReview">
-                            <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>
-                            <p class="card-text"><small class="text-body-secondary">${calificacion}</small></p>
+
+    function showReview(reviews){
+        console.log(reviews)
+        //destructurar
+        reviews.forEach((review)=>{
+            const {idReview, idC, idGuia, calificacion, fecha, reseña}= review
+
+            const reviewHtml= document.createElement('p');
+            reviewHtml.innerHTML= `
+            <div class="card mb-3 row g-0" style="max-width: 100%;" id="cadaCardReview">
+                <div class="row g-0">
+                    <div class="col-md-4 contImg img-fluid  " >
+                        <div class=" fotoPerfil imgClienteRev"> </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Sofia Toro</b></h5>
+                            <p class="card-text">${reseña}</p>
+                            <div id="detalleReview">
+                                <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>
+                                <p class="card-text"><small class="text-body-secondary">${calificacion}</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        `
-        contenedorReview.appendChild(reviewHtml);
-    });
+            `
+            contenedorReview.appendChild(reviewHtml);
+            console.log(contenedorReview);
+        });
 
-    //Boton ver mas
-        
-        const itemsReview= contenedorReview.children;
+    };
+
+/*     //Boton ver mas
+        const contenedorRev= document.querySelectorAll('#cadaCardReview');
+        const itemsReview= contenedorRev.children;
         const btnPagReview= document.querySelector('#btnMoreReview');
         let itemsPageRev= 3;
         let currentPageRev= 1;
-
+        console.log(contenedorRev);
+        console.log(itemsReview.length);
         document.addEventListener("DOMContentLoaded", function(){
             upDatePaginacionRev(); 
-            activeModalRev();
+            //activeModalRev();
         });
-
+            
             function showPageRev(page){
                 for(let j= 0; j< itemsReview.length; j++){
                     if(j<(page-1)*itemsPageRev || j >= page *itemsPageRev){
-                        itemsReview[j].style.display="none";
+                        itemsReview[j].style.display="none"
                     };
                 };
             }
@@ -182,8 +188,8 @@ poner la imagen de la card como background como ensayo
                 itemsPageRev= itemsReview.length;
                 upDatePaginacionRev(); 
             });
-  
-    //cards en el modal Review
+*/
+  /*   //cards en el modal Review
         const modalBody= document.querySelector('#modalBodyRev');
 
         function activeModalRev(){
@@ -191,8 +197,8 @@ poner la imagen de la card como background como ensayo
             contReview= addEventListener('click', showReview);
         };
 
-        function showReview(){
-            reviews.forEach((reviewMod)=>{
+        function showReview(review){
+            review.forEach((reviewMod)=>{
                 const {idReview, idC, idGuia, calificacion, fecha, reseña}= reviewMod;
         
                 const reviewModHtml= document.createElement('p');
@@ -221,10 +227,7 @@ poner la imagen de la card como background como ensayo
             });
         };
 //
-
-
-
-        
+          */
         
 
     
