@@ -273,7 +273,7 @@ nav .buscador {
 }
 /*Perfil*/
 #perfil{
-    /* background-color: rgb(194, 30, 30); */
+    /*background-color: rgb(194, 30, 30);*/
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -346,7 +346,6 @@ nav .buscador {
 #presentacion{
     /* background-color: #7298c2; */
     width: 70%;
-    
 }
 #presentacion{
     margin: 100px 0px 0px 0px;
@@ -384,12 +383,14 @@ nav .buscador {
     flex-direction:column;
     align-items: center;
     padding: 37px 0 0 0;
+    height: 700px;
+    overflow: auto; 
     
 }
 #toursOfrecidos{
    display: flex;
     gap: 15px;
-    row-gap: 30px;
+    row-gap: 100px;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -420,6 +421,10 @@ nav .buscador {
    justify-content: center;
    width: 100px;
    border: none;
+   padding: 1% 0;
+}
+#botonMore{
+margin: 60px;
 }
 .card{
     width:20rem ;

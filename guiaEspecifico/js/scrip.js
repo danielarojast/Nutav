@@ -29,7 +29,7 @@ poner la imagen de la card como background como ensayo
             showReview(data.reviews);
             //showCustomers(data.customers);
         } catch (error) {
-            console.log(error)
+            
         }
     };
 
@@ -87,7 +87,6 @@ poner la imagen de la card como background como ensayo
         //Boton ver mas 
         const toursOfrecidos= document.querySelector('#toursOfrecidos');
         const itemsTours= toursOfrecidos.children;
-        const totalItemsTours= itemsTours.length;
         const btnPagTours= document.querySelector('#botonMore');
         let itemsPerPage=3;
         let currentPage= 1;
@@ -95,42 +94,48 @@ poner la imagen de la card como background como ensayo
 
         document.addEventListener("DOMContentLoaded", upDatePaginacion());
 
-            function showPage(page){
+        function showPage(page){
                 
-                for(let i= 0; i< itemsTours.length; i++){
-                    if(i<(page-1)*itemsPerPage || i >= page *itemsPerPage){
-                        console.log(itemsTours[i])
-                        itemsTours[i].style.display="none"
-                    }else{
-                        itemsTours[i].style.display= "block";
-                        console.log(itemsTours[i])
-                    };
+            for(let i= 0; i< itemsTours.length; i++){
+                if(i<(page-1)*itemsPerPage || i >= page *itemsPerPage){
+                        
+                     itemsTours[i].style.display="none"
+                }else{
+                    itemsTours[i].style.display= "block";
+                        
                 };
+
             };
+        };
 
-            function upDatePaginacion(){
+        function upDatePaginacion(){
                 //const totalPage= Math.ceil(itemsTours.length / itemsPerPage);
-                showPage(currentPage);
-            }
+            showPage(currentPage);
+        }
             
-            btnPagTours.addEventListener('click', ()=>{
+        btnPagTours.addEventListener('click', ()=>{
+            console.log(itemsPerPage)
+            
+            if(itemsPerPage >= itemsTours.length){
+                btnPagTours.style.display="none"
+            }else{ 
                 itemsPerPage+= 3;
-                upDatePaginacion(); 
-            });
+                upDatePaginacion();
+            }
+             
+        });
     };
-
 //
-
 
 // Cards Reseñas 
     const contenedorReview= document.querySelector('#review')
 
-
     function showReview(reviews){
         console.log(reviews)
+
         //destructurar
         reviews.forEach((review)=>{
-            const {idReview, idC, idGuia, calificacion, fecha, reseña}= review
+            const {calificacion, fecha, reseña}= review
 
             const reviewHtml= document.createElement('p');
             reviewHtml.innerHTML= `
@@ -153,59 +158,57 @@ poner la imagen de la card como background como ensayo
             </div>
             `
             contenedorReview.appendChild(reviewHtml);
-            console.log(contenedorReview);
-        });
-
-    };
-
-/*     //Boton ver mas
-        const contenedorRev= document.querySelectorAll('#cadaCardReview');
-        const itemsReview= contenedorRev.children;
-        const btnPagReview= document.querySelector('#btnMoreReview');
-        let itemsPageRev= 3;
-        let currentPageRev= 1;
-        console.log(contenedorRev);
-        console.log(itemsReview.length);
-        document.addEventListener("DOMContentLoaded", function(){
-            upDatePaginacionRev(); 
-            //activeModalRev();
-        });
             
-            function showPageRev(page){
-                for(let j= 0; j< itemsReview.length; j++){
-                    if(j<(page-1)*itemsPageRev || j >= page *itemsPageRev){
-                        itemsReview[j].style.display="none"
-                    };
-                };
-            }
+        });
 
-            function upDatePaginacionRev(){
-                //const totalPage= Math.ceil(itemsReview.length / itemsPageRev);
-                showPageRev(currentPageRev);
-            ;}
+
+        //Boton ver mas
+        
+            const itemsReview= contenedorReview.children;
+            const sizeItemsreview= itemsReview.length
+            const btnPagReview= document.querySelector('#btnMoreReview');
+            let itemsPage= 3;
+            let currentPageRev= 1;
+            
+            document.addEventListener("DOMContentLoaded", upDatePaginacionRev());
                 
+            function showPageRev(page){
+                
+                for(let j= 0; j< sizeItemsreview; j++){
+                    if(j<(page-1)*itemsPage || j >= page *itemsPage){
+                        itemsReview[j].style.display="none"
+                    }
+
+                    if(itemsPage>= sizeItemsreview ){
+                        btnPagReview.style.display="none"
+                    }
+                };
+            };
+
+                function upDatePaginacionRev(){
+                    //const totalPage= Math.ceil(itemsReview.length / itemsPageRev);
+                    showPageRev(currentPageRev);
+                ;}
+                    
             btnPagReview.addEventListener('click', ()=>{
-                itemsPageRev= itemsReview.length;
-                upDatePaginacionRev(); 
-            });
-*/
-  /*   //cards en el modal Review
-        const modalBody= document.querySelector('#modalBodyRev');
+                    itemsPage= sizeItemsreview;
+                    upDatePaginacionRev(); 
+                });
 
-        function activeModalRev(){
-            const contReview= document.querySelector('#review');
-            contReview= addEventListener('click', showReview);
-        };
+        //
 
-        function showReview(review){
-            review.forEach((reviewMod)=>{
+        //cards en el modal Review
+       
+            const modalBody= document.querySelector('#modalBodyRev');
+
+            reviews.forEach((reviewMod)=>{
                 const {idReview, idC, idGuia, calificacion, fecha, reseña}= reviewMod;
         
                 const reviewModHtml= document.createElement('p');
                 //function showReview(){
 
                     reviewModHtml.innerHTML= `
-                    <div class="card mb-3 modal-dialog modal-xl " style="max-width: 540px;" id="cadaCardModalRev">
+                    <div class="card mb-3 modal-dialog modal-xl " style="max-width: 100%;" id="cadaCardModalRev">
                         <div class="row g-0 ">
                             <div class="col-md-4 contImg">
                                 <div class=" fotoPerfil imgClienteRev"> </div>
@@ -225,10 +228,11 @@ poner la imagen de la card como background como ensayo
                     `;
                     modalBody.appendChild(reviewModHtml);
             });
-        };
+        //
+    };
 //
-          */
-        
+
+
 
     
    
