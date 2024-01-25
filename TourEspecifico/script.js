@@ -170,83 +170,144 @@ function prevMonth(currentMonth) {
 }
 
 
-// Cards Reseñas 
-const contenedorReview = document.querySelector('#review')
-//destructurar
-reviews.forEach((review) => {
-    const { idReview, idC, idGuia, calificacion, fecha, reseña } = review
 
-    const reviewHtml = document.createElement('p');
-    reviewHtml.innerHTML = `
-    <div class="card mb-3 row g-0" style="max-width: 100%;" id="cadaCardReview">
-        <div class="row g-0">
-            <div class="col-md-4 contImg img-fluid  " >
-                <div class=" fotoPerfil imgClienteRev"> </div>
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Sofia Toro</b></h5>
-                    <p class="card-text">${reseña}</p>
-                    <div id="detalleReview">
-                        <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>
-                        <p class="card-text"><small class="text-body-secondary">${calificacion}</small></p>
+document.addEventListener('DOMContentLoaded', () => {
+    mostrarProductos(tours);
+    getData()
+})
+
+
+
+//DESCRIPCION TOUR
+async function getData(){
+    let url = "/BasesDeDatos/db.json"
+    try {
+        const respuesta = await fetch(url)
+        const datos = await respuesta.json()
+        showDescription(datos.Tours);
+        showDuration(datos.Tours);
+        showTitle(datos.Tours);
+        showReview(datos.reviews);
+        
+    } catch (error) {
+        console.log(error);
+    }
+    
+};
+
+function showDescription(information){
+information.forEach(info =>{
+    const {descripcion} = info
+    const content = document.querySelector('.descripcion')
+    content.innerHTML = `
+    <h3>Descripción</h3>
+    <hr>
+    <p>${descripcion}</p>`
+})
+
+}
+
+function showDuration(horas){
+    horas.forEach(hora =>{
+        const {duracion} = hora
+        const duration = document.querySelector('.subtitle')
+        duration.innerHTML =`
+        <h3>${duracion}</h3>`
+    })
+}
+
+function showTitle(titulos){
+    titulos.forEach(titulo =>{
+        const {nombre} = titulo
+        const titleTour = document.querySelector('.title')
+        titleTour.innerHTML = `
+        <h1>${nombre}</h1>`
+    })
+}
+
+
+// Cards Reseñas 
+const contenedorReview= document.querySelector('#review')
+
+function showReview(reviews){
+    console.log(reviews)
+
+    //destructurar
+    reviews.forEach((review)=>{
+        const {calificacion, fecha, reseña}= review
+
+        const reviewHtml= document.createElement('p');
+        reviewHtml.innerHTML= `
+        <div class="card mb-3 row g-0" style="max-width: 100%;" id="cadaCardReview">
+            <div class="row g-0">
+                <div class="col-md-4 contImg img-fluid  " >
+                    <div class=" fotoPerfil imgClienteRev"> </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Sofia Toro</b></h5>
+                        <p class="card-text">${reseña}</p>
+                        <div id="detalleReview">
+                            <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>
+                            <p class="card-text"><small class="text-body-secondary">${calificacion}</small></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    `
-    contenedorReview.appendChild(reviewHtml);
-});
+        `
+        contenedorReview.appendChild(reviewHtml);
+        
+    });
 
-//Boton ver mas
 
-const itemsReview = contenedorReview.children;
-const btnPagReview = document.querySelector('#btnMoreReview');
-let itemsPageRev = 2;
-let currentPageRev = 1;
+    //Boton ver mas
+    
+        const itemsReview= contenedorReview.children;
+        const sizeItemsreview= itemsReview.length
+        const btnPagReview= document.querySelector('#btnMoreReview');
+        let itemsPage= 2;
+        let currentPageRev= 1;
+        
+        document.addEventListener("DOMContentLoaded", upDatePaginacionRev());
+            
+        function showPageRev(page){
+            
+            for(let j= 0; j< sizeItemsreview; j++){
+                if(j<(page-1)*itemsPage || j >= page *itemsPage){
+                    itemsReview[j].style.display="none"
+                }
 
-document.addEventListener("DOMContentLoaded", function () {
-    upDatePaginacionRev();
-    activeModalRev();
-});
-
-function showPageRev(page) {
-    for (let j = 0; j < itemsReview.length; j++) {
-        if (j < (page - 1) * itemsPageRev || j >= page * itemsPageRev) {
-            itemsReview[j].style.display = "none";
+                if(itemsPage>= sizeItemsreview ){
+                    btnPagReview.style.display="none"
+                }
+            };
         };
-    };
-}
 
-function upDatePaginacionRev() {
-    //const totalPage= Math.ceil(itemsReview.length / itemsPageRev);
-    showPageRev(currentPageRev);
-    ;
-}
+            function upDatePaginacionRev(){
+                //const totalPage= Math.ceil(itemsReview.length / itemsPageRev);
+                showPageRev(currentPageRev);
+            ;}
+                
+        btnPagReview.addEventListener('click', ()=>{
+                itemsPage= sizeItemsreview;
+                upDatePaginacionRev(); 
+            });
 
-btnPagReview.addEventListener('click', () => {
-    itemsPageRev = itemsReview.length;
-    upDatePaginacionRev();
-});
+    //
 
-//cards en el modal Review
-const modalBody = document.querySelector('#modalBodyRev');
+    //cards en el modal Review
+   
+        const modalBody= document.querySelector('#modalBodyRev');
 
-function activeModalRev() {
-    const contReview = document.querySelector('#review');
-    contReview = addEventListener('click', showReview);
-};
+        reviews.forEach((reviewMod)=>{
+            const {idReview, idC, idGuia, calificacion, fecha, reseña}= reviewMod;
+    
+            const reviewModHtml= document.createElement('p');
+            //function showReview(){
 
-function showReview() {
-    reviews.forEach((reviewMod) => {
-        const { idReview, idC, idGuia, calificacion, fecha, reseña } = reviewMod;
-
-        const reviewModHtml = document.createElement('p');
-        //function showReview(){
-
-        reviewModHtml.innerHTML = `
-                <div class="card mb-3 modal-dialog modal-xl " style="max-width: 540px;" id="cadaCardModalRev">
+                reviewModHtml.innerHTML= `
+                <div class="card mb-3 modal-dialog modal-xl " style="max-width: 100%;" id="cadaCardModalRev">
                     <div class="row g-0 ">
                         <div class="col-md-4 contImg">
                             <div class=" fotoPerfil imgClienteRev"> </div>
@@ -264,52 +325,19 @@ function showReview() {
                     </div>
                 </div>
                 `;
-        modalBody.appendChild(reviewModHtml);
-    });
+                modalBody.appendChild(reviewModHtml);
+        });
 };
-document.addEventListener('DOMContentLoaded', () => {
-    mostrarProductos(tours);
-    getData()
-})
-
-
-//DESCRIPCION TOUR
-function getData(){
-    fetch("/BasesDeDatos/db.json")
-    .then(respuesta =>{
-        return respuesta.json()
-    })
-    .then(datos =>{
-        showDescription(datos.Tours);
-        showDuration(datos.Tours)
-    })
-}
-
-function showDescription(information){
-information.forEach(info =>{
-    const {descripcion} = info
-    const content = document.querySelector('.descripcion')
-    content.innerHTML = `
-    <h3>Descripción</h3>
-    <hr>
-    <p>${descripcion}</p>`
-})
-
-    console.log(descripcion);
-}
-
-function showDuration(horas){
-    horas.forEach(hora =>{
-        const {duracion} = hora
-        const duration = document.querySelector('.subtitle')
-    })
-
-}
 
 
 
 // Propiedad para controlar la posición actual del carrusel
 let posicionActual = 0;
+
+function getProducts(){
+    fetch()
+}
+
 
 // Función para mostrar los productos en el carrusel
 function mostrarProductos() {

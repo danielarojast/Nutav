@@ -250,7 +250,6 @@ nav .buscador {
 .im1 {
     grid-row: 1/3;
     border-radius: 20px;
-    background-image: url("/IMAGENES/TOURS/robbie-R_WoPf2fRUg-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -300,7 +299,6 @@ nav .buscador {
     text-align: center;
     font-size: 40px;
     padding-top: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .subtitle {
@@ -313,6 +311,7 @@ nav .buscador {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* .left {
@@ -643,6 +642,12 @@ nav .buscador {
     border: none;
     width: 100%;
 }
+
+.showmore{
+    display: flex;
+    justify-content: center;
+}
+
 
 /*---Footer---*/
 footer{
