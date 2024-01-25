@@ -171,13 +171,13 @@ function prevMonth(currentMonth) {
 
 
 // Cards Reseñas 
-const contenedorReview= document.querySelector('#review')
+const contenedorReview = document.querySelector('#review')
 //destructurar
-reviews.forEach((review)=>{
-    const {idReview, idC, idGuia, calificacion, fecha, reseña}= review
+reviews.forEach((review) => {
+    const { idReview, idC, idGuia, calificacion, fecha, reseña } = review
 
-    const reviewHtml= document.createElement('p');
-    reviewHtml.innerHTML= `
+    const reviewHtml = document.createElement('p');
+    reviewHtml.innerHTML = `
     <div class="card mb-3 row g-0" style="max-width: 100%;" id="cadaCardReview">
         <div class="row g-0">
             <div class="col-md-4 contImg img-fluid  " >
@@ -200,51 +200,52 @@ reviews.forEach((review)=>{
 });
 
 //Boton ver mas
-    
-    const itemsReview= contenedorReview.children;
-    const btnPagReview= document.querySelector('#btnMoreReview');
-    let itemsPageRev= 2;
-    let currentPageRev= 1;
 
-    document.addEventListener("DOMContentLoaded", function(){
-        upDatePaginacionRev(); 
-        activeModalRev();
-    });
+const itemsReview = contenedorReview.children;
+const btnPagReview = document.querySelector('#btnMoreReview');
+let itemsPageRev = 2;
+let currentPageRev = 1;
 
-        function showPageRev(page){
-            for(let j= 0; j< itemsReview.length; j++){
-                if(j<(page-1)*itemsPageRev || j >= page *itemsPageRev){
-                    itemsReview[j].style.display="none";
-                };
-            };
-        }
+document.addEventListener("DOMContentLoaded", function () {
+    upDatePaginacionRev();
+    activeModalRev();
+});
 
-        function upDatePaginacionRev(){
-            //const totalPage= Math.ceil(itemsReview.length / itemsPageRev);
-            showPageRev(currentPageRev);
-        ;}
-            
-        btnPagReview.addEventListener('click', ()=>{
-            itemsPageRev= itemsReview.length;
-            upDatePaginacionRev(); 
-        });
+function showPageRev(page) {
+    for (let j = 0; j < itemsReview.length; j++) {
+        if (j < (page - 1) * itemsPageRev || j >= page * itemsPageRev) {
+            itemsReview[j].style.display = "none";
+        };
+    };
+}
+
+function upDatePaginacionRev() {
+    //const totalPage= Math.ceil(itemsReview.length / itemsPageRev);
+    showPageRev(currentPageRev);
+    ;
+}
+
+btnPagReview.addEventListener('click', () => {
+    itemsPageRev = itemsReview.length;
+    upDatePaginacionRev();
+});
 
 //cards en el modal Review
-    const modalBody= document.querySelector('#modalBodyRev');
+const modalBody = document.querySelector('#modalBodyRev');
 
-    function activeModalRev(){
-        const contReview= document.querySelector('#review');
-        contReview= addEventListener('click', showReview);
-    };
+function activeModalRev() {
+    const contReview = document.querySelector('#review');
+    contReview = addEventListener('click', showReview);
+};
 
-    function showReview(){
-        reviews.forEach((reviewMod)=>{
-            const {idReview, idC, idGuia, calificacion, fecha, reseña}= reviewMod;
-    
-            const reviewModHtml= document.createElement('p');
-            //function showReview(){
+function showReview() {
+    reviews.forEach((reviewMod) => {
+        const { idReview, idC, idGuia, calificacion, fecha, reseña } = reviewMod;
 
-                reviewModHtml.innerHTML= `
+        const reviewModHtml = document.createElement('p');
+        //function showReview(){
+
+        reviewModHtml.innerHTML = `
                 <div class="card mb-3 modal-dialog modal-xl " style="max-width: 540px;" id="cadaCardModalRev">
                     <div class="row g-0 ">
                         <div class="col-md-4 contImg">
@@ -263,53 +264,83 @@ reviews.forEach((review)=>{
                     </div>
                 </div>
                 `;
-                modalBody.appendChild(reviewModHtml);
-        });
-    };
-document.addEventListener('DOMContentLoaded', ()=>{
-    showTours(tours, 0);
+        modalBody.appendChild(reviewModHtml);
+    });
+};
+document.addEventListener('DOMContentLoaded', () => {
+    mostrarProductos(tours);
+    getData()
 })
 
 
-function showTours(tours, posicion) {
-    const contenedorCards = document.querySelector('#cards-container');
-    const totalTargetas = tours.length;
-
-    // for(let i=posicion;  i>posicion+3; i++){
-    //     let {foto,nombre} = tours[i];
-    //     let tourHtml = document.createElement('p');
-    //     tourHtml.innerHTML = `
-    //         <div>
-    //             <a href="">
-    //                 <div class="card" style="background-image: url(${foto}) ;">
-    //                     <div class="degraded">
-    //                         <p>${nombre}</p>
-    //                     </div>
-    //                 </div>
-    //             </a>
-    //         </div>
-    //     `;
-
-    //     contenedorCards.appendChild(tourHtml);
-
-
-    // }
-    tours.forEach((tour) => {
-        const {foto,nombre} = tour;
-        const tourHtml = document.createElement('p');
-        tourHtml.innerHTML = `
-            <div>
-                <a href="">
-                    <div class="card" style="background-image: url(${foto}) ;">
-                        <div class="degraded">
-                            <p>${nombre}</p>
-                        </div>
-                    </div>
-                </a>
-                <h3>Desde $350.000</h3>
-            </div>
-        `;
-
-        contenedorCards.appendChild(tourHtml);
-    });
+//DESCRIPCION TOUR
+function getData(){
+    fetch("/BasesDeDatos/db.json")
+    .then(respuesta =>{
+        return respuesta.json()
+    })
+    .then(datos =>{
+        showDescription(datos.Tours);
+    })
 }
+
+function showDescription(information){
+information.forEach(info =>{
+    const {descripcion} = info
+    const content = document.querySelector('.descripcion')
+    content.innerHTML = `
+    <h3>Descripción</h3>
+    <hr>
+    <p>${descripcion}</p>`
+})
+
+    console.log(descripcion);
+}
+
+
+
+// Propiedad para controlar la posición actual del carrusel
+let posicionActual = 0;
+
+// Función para mostrar los productos en el carrusel
+function mostrarProductos() {
+    const container = document.querySelector('#cards-container');
+    container.innerHTML = '';
+
+    for (var i = posicionActual; i < posicionActual + 3; i++) {
+        if (tours[i]) {
+            let producto = tours[i];
+            const divProducto = document.createElement('div');
+            divProducto.innerHTML = `
+      <div>
+      <a href="">
+          <div class="card" style="background-image: url(${producto.foto}) ;">
+              <div class="degraded">
+                  <p>${producto.nombre}</p>
+              </div>
+          </div>
+      </a>
+      <h3>Desde $350.000</h3>
+  </div>
+`;
+            container.appendChild(divProducto);
+        }
+    }
+}
+
+
+// Función para mover el carrusel hacia adelante o atrás
+function moverCarrusel(direccion) {
+    posicionActual += direccion;
+
+    if (posicionActual < 0) {
+        posicionActual = tours.length - 3;
+    } else if (posicionActual > tours.length - 3) {
+        posicionActual = 0;
+    }
+
+    mostrarProductos();
+}
+
+// Mostrar productos al cargar la página
+mostrarProductos();

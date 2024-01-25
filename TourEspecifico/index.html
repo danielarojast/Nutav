@@ -14,7 +14,7 @@
 
 <body>
     <nav>
-        <img class="logo" src="./imagenes/Logo.png" alt="">
+        <img class="logo" src="/IMAGENES/ICONOSYLOGOS/logo.png" alt="">
         <input type="checkbox" id="check">
         <label for="check" class="mostrar-menu">
             &#8801
@@ -28,7 +28,7 @@
                 <div class="modal-content">
                     <div class="modal-body" id="contenedorLogIn">
                         <div id="ModalLogIn">
-                            <img src="imagenes/Imagotipo.png" alt="..." width="130px">
+                            <img src="/IMAGENES/ICONOSYLOGOS/imagotipo.png" alt="..." width="130px">
                             <h1>Bienvenido a Nutav</h1>
                             <form class="formLogIn">
                                 <p>Correo</p>
@@ -58,7 +58,7 @@
     
         <!--<Finalizar modal LogIn>-->
         <div class="menu">
-            <button class="idioma"><img src="./imagenes/ingles.png" alt=""></button>
+            <button class="idioma"><img src="/IMAGENES/ICONOSYLOGOS/ingles.png" alt=""></button>
             <button class="unete boton">Se un Nutav</button>
             <button id="login" data-bs-toggle="modal" data-bs-target="#modalLogIn" class="inscribete boton">Log
                 In</button>
@@ -69,19 +69,19 @@
     </nav>
     <div class="galeria">
         <div class="im1 caja">
-            <img src="./imagenes/robbie-R_WoPf2fRUg-unsplash.jpg" alt="">
+            <img src="/IMAGENES/TOURS/robbie-R_WoPf2fRUg-unsplash.jpg" alt="">
         </div>
         <div class="im2 caja">
-            <img src="./imagenes/get-flat-social-6MR2mBkVt7Y-unsplash.jpg" alt="">
+            <img src="/IMAGENES/TOURS/get-flat-social-6MR2mBkVt7Y-unsplash.jpg" alt="">
         </div>
         <div class="im3 caja">
-            <img src="./imagenes/frank-rolando-romero-H-VM-qpAXyk-unsplash.jpg" alt="">
+            <img src="/IMAGENES/TOURS/frank-rolando-romero-H-VM-qpAXyk-unsplash.jpg" alt="">
         </div>
         <div class="im4 caja">
-            <img src="./imagenes/felipe-salgado-omk7zrFOT-4-unsplash.jpg" alt="">
+            <img src="/IMAGENES/TOURS/felipe-salgado-omk7zrFOT-4-unsplash.jpg" alt="">
         </div>
         <div class="im5 caja">
-            <img src="./imagenes/mike-swigunski-6TTRv195rfo-unsplash.jpg" alt="">
+            <img src="/IMAGENES/TOURS/mike-swigunski-6TTRv195rfo-unsplash.jpg" alt="">
         </div>
     </div>
     <div class="title">
@@ -124,46 +124,37 @@
         </div>
         <div class="right">
             <div class="descripcion">
-                <h3>Descripción</h3>
-                <br>
-                <p>Tour completo a Guatapé, el destino turístico más famoso cercano a la ciudad de Medellín.
-                    Contamos con guías bilingües que te darán la misma cantidad de información tanto en inglés como en
-                    español. La experiencia inicia a las 7:30 am, llegando a Medellín nuevamente a las 6:30 - 7 pm.
-                    <br>
-                    Llegaremos el municipio de marinilla dónde desayunaremos para continuar hacia el municipio del peñol
-                    dónde conoceremos su iglesia principal la cual tiene una arquitectura...
-                </p>
             </div>
             <div class="incSub">
                 <h3>Qué Incluye</h3>
             </div>
             <div class="incluye">
                 <div class="in1 inclu">
-                    <img src="./imagenes/coca.png" alt="">
+                    <img src="/IMAGENES/ICONOSYLOGOS/coca.png" alt="">
                 </div>
                 <div class="in2 inclu">
                     <P>Bebidas</P>
                 </div>
                 <div class="in3 inclu">
-                    <img src="./imagenes/transporte-publico.png" alt="">
+                    <img src="/IMAGENES/ICONOSYLOGOS/transporte-publico.png" alt="">
                 </div>
                 <div class="in4 inclu">
                     <p>Transporte</p>
                 </div>
                 <div class="in5 inclu">
-                    <img src="./imagenes/restaurante.png" alt="">
+                    <img src="/IMAGENES/ICONOSYLOGOS/restaurante.png" alt="">
                 </div>
                 <div class="in6 inclu">
                     <p>Alimentación</p>
                 </div>
                 <div class="in7 inclu">
-                    <img src="./imagenes/giftbox_1139931.png" alt="">
+                    <img src="/IMAGENES/ICONOSYLOGOS/giftbox_1139931.png" alt="">
                 </div>
                 <div class="in8 inclu">
                     <p>Recordatorio</p>
                 </div>
                 <div class="in9 inclu">
-                    <img src="./imagenes/billete.png" alt="">
+                    <img src="/IMAGENES/ICONOSYLOGOS/billete.png" alt="">
                 </div>
                 <div class="in10 inclu">
                     <p>Entradas</p>
@@ -249,12 +240,13 @@
          </div>
         </div>
 
-    <div class="cards">
-        <h2>Tours Similares</h2>
-        <div class="cards-container" id="cards-container">
-                 
+        <div class="cards">
+            <h2>Tours Similares</h2>
+            <div class="cards-container" id="cards-container">
+            </div>
+            <button onclick="moverCarrusel(-1)">Atrás</button>
+            <button onclick="moverCarrusel(1)">Adelante</button>
         </div>
-    </div>
 
     <footer class="footer">
         <div class="last">
