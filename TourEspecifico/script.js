@@ -281,6 +281,7 @@ function getData(){
     })
     .then(datos =>{
         showDescription(datos.Tours);
+        showDuration(datos.Tours)
     })
 }
 
@@ -295,6 +296,14 @@ information.forEach(info =>{
 })
 
     console.log(descripcion);
+}
+
+function showDuration(horas){
+    horas.forEach(hora =>{
+        const {duracion} = hora
+        const duration = document.querySelector('.subtitle')
+    })
+
 }
 
 
