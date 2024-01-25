@@ -491,6 +491,38 @@ margin: 60px;
 
 /*---Footer---*/
 footer{
-    background-color: var(--color-principal);
+    background-color: rgba(41, 77, 118,0.5) ;
+    display: flex;
+    padding: 50px;
+    align-items: center;
 }
+.leftFooter{
 
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.rightFooter{
+   /* background-color: #FCF329;*/
+   width: 70%;
+}
+.contenidoFooter{
+    display: flex;
+    gap:20%;
+}
+.contenFoot{
+    display: flex;
+    flex-direction: column;
+}
+.contenFoot a{
+text-decoration: none;
+color: #000;
+}
+.redesFooter{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
