@@ -184,9 +184,7 @@ async function getData(){
     try {
         const respuesta = await fetch(url)
         const datos = await respuesta.json()
-        showDescription(datos.Tours);
-        showDuration(datos.Tours);
-        showTitle(datos.Tours);
+        
         showReview(datos.reviews);
         showGuia(datos.guias)
         
@@ -196,35 +194,7 @@ async function getData(){
     
 };
 
-function showDescription(information){
-information.forEach(info =>{
-    const {descripcion} = info
-    const content = document.querySelector('.descripcion')
-    content.innerHTML = `
-    <h3>Descripción</h3>
-    <hr>
-    <p>${descripcion}</p>`
-})
 
-}
-
-function showDuration(horas){
-    horas.forEach(hora =>{
-        const {duracion} = hora
-        const duration = document.querySelector('.subtitle')
-        duration.innerHTML =`
-        <h3>${duracion}</h3>`
-    })
-}
-
-function showTitle(titulos){
-    titulos.forEach(titulo =>{
-        const {nombre} = titulo
-        const titleTour = document.querySelector('.title')
-        titleTour.innerHTML = `
-        <h1>${nombre}</h1>`
-    })
-}
 
 function showGuia(guiades){
     guiades.forEach(guia =>{
@@ -295,7 +265,7 @@ function showReview(reviews){
                     itemsReview[j].style.display="none"
                 }
 
-                if(itemsPage>= sizeItemsreview ){
+                if(itemsPage> sizeItemsreview ){
                     btnPagReview.style.display="none"
                 }
             };
@@ -398,3 +368,78 @@ function moverCarrusel(direccion) {
 
 // Mostrar productos al cargar la página
 mostrarProductos();
+
+/* TRAER INFO DEL MODAL  */
+
+document.addEventListener('DOMContentLoaded',()=>{
+    getDataJson()
+    getDataLocalStorage()
+
+});
+
+function getDataJson() {
+    fetch('/BasesDeDatos/db.json')
+    .then((respuesta)=>{
+        return respuesta.json();
+    })
+    .then((data)=>{
+
+        pageTour(data.Tours)
+    })
+    
+}
+
+function getDataLocalStorage() {
+    const tourId = JSON.parse(localStorage.getItem('tourId'))
+    return tourId
+}
+
+let idT = getDataLocalStorage()
+console.log(idT);
+
+function pageTour(tours) {
+
+    const portada = document.querySelector('.portada');
+    const descrip = document.querySelector('.descripcion')
+    
+    
+    tours.forEach(tour => {
+        const {descripcion,imagen,nombre,duracion,tourId} = tour
+        
+        if (tourId === idT) {
+            
+            portada.innerHTML = `
+            <div class="galeria">
+                <div class="im1 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+                </div>
+                <div class="im2 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+                </div>
+                <div class="im3 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+                </div>
+                <div class="im4 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+                </div>
+                <div class="im5 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+            </div>
+            </div>
+            <div class="title">
+                <h1><strong>${nombre}</strong></h1>
+            </div>
+            <div class="subtitle">
+                <h3>${duracion}</h3>
+            </div>
+            `
+        }
+
+        if (tourId === idT) {
+            
+            descrip.innerHTML = `
+            <h3>Descripción</h3>
+            <hr>
+            <p>${descripcion}</p>
+            `
+        }
+    });
+
+
+    
+}
