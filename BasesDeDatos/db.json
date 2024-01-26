@@ -174,7 +174,7 @@
   ],
   "guias": [
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "fotoPerfil.jpg",
       "id": "G1",
       "Nombre": "Sandra Cardona",
       "Edad": 26,
@@ -187,7 +187,7 @@
       "descripcion": "Hola, soy Sandra Cardona, guía turística apasionada con más de tres años de experiencia revelando los encantos de Medellín y Antioquia. A mis 25 años, cada tour se convierte en una emocionante aventura llena de historia y belleza paisajística. Mi juventud se fusiona con un profundo conocimiento local, ofreciendo una experiencia única. No solo te llevo a lugares icónicos, sino que te sumerjo en relatos cautivadores, tejiendo la auténtica esencia de cada destino. Cada paso es una oportunidad para crear recuerdos inolvidables. ¡Ven y descubre conmigo la magia que estos lugares tienen para ofrecer!"
     },
     {
-      "foto": "imgGuias/andres.jpg",
+      "foto": "fotoPerfil.jpg",
       "id": "G2",
       "Nombre": "Andres",
       "Edad": 30,
@@ -200,7 +200,7 @@
       "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
     },
     {
-      "foto": "imgGuias/luisa.jpg",
+      "foto": "luisa.jpg",
       "id": "G3",
       "Nombre": "Luisa",
       "Edad": 20,
@@ -213,7 +213,7 @@
       "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
     },
     {
-      "foto": "imgGuias/angel.jpg",
+      "foto": "angel.jpg",
       "id": "G4",
       "Nombre": "Angel",
       "Edad": 28,
@@ -226,7 +226,7 @@
       "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
     },
     {
-      "foto": "imgGuias/victor.jpg",
+      "foto": "victor.jpg",
       "id": "G5",
       "Nombre": "Victor",
       "Edad": 35,
@@ -239,7 +239,7 @@
       "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
     },
     {
-      "foto": "imgGuias/julian.jpg",
+      "foto": "julian.jpg",
       "id": "G6",
       "Nombre": "Julian",
       "Edad": 18,
@@ -252,7 +252,7 @@
       "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
     },
     {
-      "foto": "imgGuias/tomas.jpg",
+      "foto": "tomas.jpg",
       "id": "G7",
       "Nombre": "tomas",
       "Edad": 18,
@@ -265,7 +265,7 @@
       "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
     },
     {
-      "foto": "imgGuias/cristian.jpg",
+      "foto": "cristian.jpg",
       "id": "G8",
       "Nombre": "Cristian",
       "Edad": 32,
@@ -278,7 +278,7 @@
       "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
     },
     {
-      "foto": "imgGuias/felipe.jpg",
+      "foto": "felipe.jpg",
       "id": "G9",
       "Nombre": "Felipe",
       "Edad": 22,
@@ -291,7 +291,7 @@
       "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam exercitationem dolore, blanditiis atque adipisci eligendi numquam earum, obcaecati dolorum debitis officia commodi eius maiores, perferendis enim ea mollitia animi voluptate?"
     },
     {
-      "foto": "imgGuias/manu.jpg",
+      "foto": "manu.jpg",
       "id": "G10",
       "Nombre": "Manuela",
       "Edad": 22,
@@ -306,7 +306,7 @@
   ],
   "customers": [
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C1",
       "Nombre": "Andres",
       "Edad": 26,
@@ -317,7 +317,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C2",
       "Nombre": "Andres",
       "Edad": 26,
@@ -328,7 +328,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C3",
       "Nombre": "Andres",
       "Edad": 26,
@@ -339,7 +339,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C4",
       "Nombre": "Andres",
       "Edad": 26,
@@ -350,7 +350,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C5",
       "Nombre": "Andres",
       "Edad": 26,
@@ -361,7 +361,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C6",
       "Nombre": "Andres",
       "Edad": 26,
@@ -372,7 +372,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C7",
       "Nombre": "Andres",
       "Edad": 26,
@@ -383,7 +383,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C8",
       "Nombre": "Andres",
       "Edad": 26,
@@ -394,7 +394,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C9",
       "Nombre": "Andres",
       "Edad": 26,
@@ -405,7 +405,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C10",
       "Nombre": "Andres",
       "Edad": 26,
@@ -416,7 +416,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C11",
       "Nombre": "Andres",
       "Edad": 26,
@@ -427,7 +427,7 @@
       "correo": "debfew@uwehcuweche.com"
     },
     {
-      "foto": "imgGuias/danielita.jpg",
+      "foto": "danielita.jpg",
       "idC": "C12",
       "Nombre": "Andres",
       "Edad": 26,
