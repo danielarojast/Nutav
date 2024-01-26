@@ -171,18 +171,17 @@ poner un efecto en las cards
                         itemsReview[j].style.display="none"
                     }
 
-                    if(itemsPage>= sizeItemsreview ){
+                    if(itemsPage> sizeItemsreview ){
                         btnPagReview.style.display="none"
                     }
                 };
             };
 
                 function upDatePaginacionRev(){
-                    //const totalPage= Math.ceil(itemsReview.length / itemsPageRev);
                     showPageRev(currentPageRev);
                 ;}
                     
-            btnPagReview.addEventListener('click', ()=>{
+                btnPagReview.addEventListener('click', ()=>{
                     itemsPage= sizeItemsreview;
                     upDatePaginacionRev(); 
                 });
