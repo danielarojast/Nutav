@@ -1,17 +1,10 @@
 /*
-ocultar botones ver mas 
-Terminar log in 
-terminar estilos en general
 boton idiomas
 traducir
-footer
 conectar las paginas
 Filtrar tours y reseñas 
 poner algun efecto en el texto cuando cargue la pagina
-poner las cards como botones
 poner un efecto en las cards
-poner la imagen de la card como background como ensayo 
-
 */
 //Llamar base de datos 
 
@@ -71,7 +64,7 @@ poner la imagen de la card como background como ensayo
             const tourHTML= document.createElement('p');
             tourHTML.innerHTML= `
             <div class="card" id="cadaCard">
-                <a hre>
+                <a href="#">
                 <div class="contenedo_card_img">
                     <img src="/IMAGENES/TOURS/${imagen}" class="card-img-top img_card" id="img_card" alt="...">
                 </div>
@@ -109,7 +102,6 @@ poner la imagen de la card como background como ensayo
         };
 
         function upDatePaginacion(){
-                //const totalPage= Math.ceil(itemsTours.length / itemsPerPage);
             showPage(currentPage);
         }
             

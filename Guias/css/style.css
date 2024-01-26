@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Sintony', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 1920px;
+}
+
+/*.........NAV..........*/
+
+nav {
+    height: 5rem;
+    background: rgba(217, 217, 217, 0.31);
+    padding: 0 50px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 200;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+nav .buscador {
+    width: 200px;
+    height: 30px;
+    border-radius: 2rem;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.navLogin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#ModalLogIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.logo {
+    width: 150px;
+    padding-left: 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu img {
+    width: 40px;
+}
+
+.menu .idioma {
+    border: 0;
+    border-radius: 100%;
+}
+
+.menu .boton {
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    background-color: gray;
+    padding: 0 10px;
+    transition: 0.4s;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu .unete {
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.menu .inscribete {
+    background-color: #294D76;
+    color: white;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.menu button:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: rgb(0, 0, 0);
+}
+
+#check {
+    display: none;
+}
+
+/* Responsive */
+/* Para Tablet */
+@media(max-width:768px) {
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+        color: #000;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(86, 87, 87);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu button {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+}
+
+.button {
+    padding-top: 20px;
+}
+
+.button button {
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    background-color: gray;
+}
+
+.button .log {
+    background-color: rgba(41, 77, 118);
+    color: white;
+}
+
+.icon img {
+    width: 50px;
+    padding-top: 10px;
+    position: relative;
+    right: 30px;
+}
+
+#ModalLogIn h1{
+    color: black;
+    text-align: center;
+}
+
+#ModalLogIn a{
+    color: black;
+
+}
+
+#ModalLogIn p{
+    color: black;
+    text-align: center;
+}
+
+.formLogIn{
+    padding: none;
+    bottom: auto;
+    gap: 0;
+}
+
+.formLogIn p{
+    
+    color: black;
+}
+
+.formLogIn input{
+    border-radius: 10px;
+}
+
+.iniciar-sesion{
+    width: 180px;
+    height: 40px;
+    background-color: rgba(255, 57, 57, 0.882);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.facebook{
+    /* width: 180px;
+    height: 40px; */
+    background-color: rgba(28, 108, 200, 0.882);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+.google{
+    /* width: 180px;
+    height: 40px; */
+    background-color: rgba(255, 255, 255, 0.882);
+    color: black;
+    border: solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    border: none;
+}
+
+.register{
+    width: 180px;
+    height: 40px;
+    background-color: rgba(217, 217, 217, 0.31);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*---MAIN---*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+#bannerPrincipal{
+    background-color: aquamarine;
+}
+#filtros{
+    background-color: darksalmon;
+}
+#guiasPrincipales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#guiaElegido{
+    background-color: aqua;
+}
+#allGuias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#bannerFinal{
+    background-color: darksalmon;
+}
+
+
+
+
+
+
+
+
+
+/*---FOOTER---*/
+
+footer{
+    background-color: rgba(41, 77, 118,0.5) ;
+    padding: 50px;
+    max-width: 100%;
+}
+.contenedorFooter{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.leftFooter{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.rightFooter{
+   width: 70%;
+   display: flex;
+}
+.contenidoFooter{
+    display: flex;
+    gap:20%;
+    width: 70%;
+   align-items: center;
+   justify-content: space-between;
+}
+.contenFoot{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+   
+}
+.contenFoot a{
+text-decoration: none;
+color: #000;
+}
+.redesFooter{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
