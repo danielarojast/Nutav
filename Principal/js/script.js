@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
     showTours(tours)
-    selectedTour()
+    //selectedTour()
 
 });
 
@@ -139,15 +139,15 @@ function showTours(tours) {
     
     tours.forEach((tour) => {
 
-        const {imagen,nombre,descripcion} = tour;
+        const {imagen,nombre,descripcion, tourId} = tour;
 
         const tourHtml = document.createElement('p');
         tourHtml.classList.add("psita")
      
         tourHtml.innerHTML = `
             <div>
-                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" imagen = ${imagen} nombre = "${nombre}" descripcion = "${descripcion}">
-                    <div class="card" style="background-image: url(/IMAGENES/TOURS/${imagen}) ;">
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    <div class="card" style="background-image: url(/IMAGENES/TOURS/${imagen}) ;" imagen = ${imagen} nombre = "${nombre}" descripcion = "${descripcion}" tourId = ${tourId}>
                         <div class="degraded">
                             <p><strong>${nombre}</strong></p>
                         </div>
@@ -274,19 +274,18 @@ function clean() {
 const modalBody = document.querySelector('.modal-content'); 
 const infoModal = document.createElement('div')
 
-function selectedTour() {
-    const tourDetails = document.querySelector('#cards-container')
-    tourDetails.addEventListener('click', showDetail)
-}
+
+const tourDetails = document.querySelector('#cards-container')
+tourDetails.addEventListener('click', showDetail)
+
 
 function showDetail(e) {
-    const anchorElement = e.target.closest('a');
-    
-    if (anchorElement) {
-        // Retrieve the 'imagen' attribute from the 'a' tag
-        const imagen = anchorElement.getAttribute('imagen');
-        const nombre = anchorElement.getAttribute('nombre')
-        const descripcion = anchorElement.getAttribute('descripcion')
+    const imagen = e.target.getAttribute('imagen');
+    const nombre = e.target.getAttribute('nombre');
+    const descripcion = e.target.getAttribute('descripcion');
+    const tourId = e.target.getAttribute('tourId')
+
+    console.log(tourId);
     infoModal.innerHTML = `
 
     <div class="modal-bbody" >
@@ -306,15 +305,29 @@ function showDetail(e) {
         
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cerrar</button>
-                <a href = "http://127.0.0.1:3002/index.html" type="button" class="btn btn-primary">Ver mas</a>
+                <a href = "../TourEspecifico/index.html" type="button" class="btn btn-primary" tourId = ${tourId}>Ver mas</a>
             </div> 
 
         </div>
     </div>
     `;
     modalBody.appendChild(infoModal)
-    }
 }
+
+/* PASAR INFO A PAGINA ESPECIFICA DEL TOUR */
+
+const modalContent = document.querySelector('.modal-content');
+modalContent.addEventListener('click', getDataModal);
+
+function getDataModal(e) {
+    const tourId = e.target.getAttribute('tourId')
+    console.log(tourId);
+    localStorage.setItem('tourId',JSON.stringify(tourId));
+    
+}
+
+
+
 
 
 
