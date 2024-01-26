@@ -737,7 +737,7 @@ footer{
 
 
 @media screen and (max-width: 745px) {
-  .im1 img {
+  .im1{
     display: none;
     
   }

@@ -188,6 +188,7 @@ async function getData(){
         showDuration(datos.Tours);
         showTitle(datos.Tours);
         showReview(datos.reviews);
+        showGuia(datos.guias)
         
     } catch (error) {
         console.log(error);
@@ -225,12 +226,28 @@ function showTitle(titulos){
     })
 }
 
+function showGuia(guiades){
+    guiades.forEach(guia =>{
+        const {foto, Nombre, descripcion} = guia
+        const guiaContainer = document.querySelector('.guia-container')
+        guiaContainer.innerHTML = `
+        <div class="guia">
+            <div class="imagenGuia">
+                <img src="${foto}" alt="">
+                <h4>${Nombre}</h4>
+            </div>
+            <div class="descripcionGuia">
+                <p>${descripcion}</p>
+            </div>
+        </div>`
+    })
+}
+
 
 // Cards Reseñas 
 const contenedorReview= document.querySelector('#review')
 
 function showReview(reviews){
-    console.log(reviews)
 
     //destructurar
     reviews.forEach((review)=>{
@@ -266,7 +283,7 @@ function showReview(reviews){
         const itemsReview= contenedorReview.children;
         const sizeItemsreview= itemsReview.length
         const btnPagReview= document.querySelector('#btnMoreReview');
-        let itemsPage= 2;
+        let itemsPage= 3;
         let currentPageRev= 1;
         
         document.addEventListener("DOMContentLoaded", upDatePaginacionRev());
@@ -344,7 +361,7 @@ function mostrarProductos() {
     const container = document.querySelector('#cards-container');
     container.innerHTML = '';
 
-    for (var i = posicionActual; i < posicionActual + 3; i++) {
+    for (var i = posicionActual; i < posicionActual + 4; i++) {
         if (tours[i]) {
             let producto = tours[i];
             const divProducto = document.createElement('div');
@@ -371,8 +388,8 @@ function moverCarrusel(direccion) {
     posicionActual += direccion;
 
     if (posicionActual < 0) {
-        posicionActual = tours.length - 3;
-    } else if (posicionActual > tours.length - 3) {
+        posicionActual = tours.length - 4;
+    } else if (posicionActual > tours.length - 4) {
         posicionActual = 0;
     }
 
