@@ -719,7 +719,7 @@
       "genero": "masculino",
       "procedencia": "portugués",
       "idioma": ["portugues", "español"],
-      "telefono": 04567,
+      "telefono": 5645,
       "correo": "miguel@example.com"
     },
     {
@@ -828,7 +828,7 @@
       "Edad": 42,
       "genero": "portugués",
       "idioma": ["portugues", "español"],
-      "telefono": 04567,
+      "telefono": 4567,
       "correo": "jose@example.com"
     },
     {

@@ -20,6 +20,7 @@ poner un efecto en las cards
             showGuias(data.guias);
             showTours(data.Tours);
             showReview(data.reviews);
+            pageGuias(data.guias)
             //showCustomers(data.customers);
         } catch (error) {
             
@@ -224,6 +225,41 @@ poner un efecto en las cards
 //
 
 
+/* Traer informacion del Local storage */
+document.addEventListener('DOMContentLoaded', ()=>{
+
+    getDataLocalStorage()
+    
+    
+})
+
+function getDataLocalStorage() {
+    const idGuia = JSON.parse(localStorage.getItem('idGuia'))
+    return idGuia
+}
+
+let idG = getDataLocalStorage()
+console.log(idG);
+
+
+function pageGuias(guias) {
+
+    /*ubicarnos en box para el inner */
+
+    guias.forEach(guia => {
+
+        const {id} = guia;
+
+        if (id == idG) {
+
+            /* hacer proceso de innerHtml */
+            
+        }
+        
+    });
+    
+}
 
     
-   
+
+

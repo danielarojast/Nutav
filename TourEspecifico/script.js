@@ -385,6 +385,7 @@ function getDataJson() {
     .then((data)=>{
 
         pageTour(data.Tours)
+       
     })
     
 }
@@ -400,11 +401,12 @@ console.log(idT);
 function pageTour(tours) {
 
     const portada = document.querySelector('.portada');
-    const descrip = document.querySelector('.descripcion')
+    const descrip = document.querySelector('.descripcion');
+    const botonesContact = document.querySelector('.botonesContact');
     
     
     tours.forEach(tour => {
-        const {descripcion,imagen,nombre,duracion,tourId} = tour
+        const {descripcion,imagen,nombre,duracion,tourId,idGuia} = tour
         
         if (tourId === idT) {
             
@@ -438,8 +440,33 @@ function pageTour(tours) {
             <p>${descripcion}</p>
             `
         }
+
+        if (tourId === idT) {
+
+            botonesContact.innerHTML = `
+            
+            <div class="botonnes">
+                <a href="../guiaEspecifico/index.html" idGuia = ${idGuia}>Ver Perfil</a>
+                <button>Contactame</button>
+            </div>
+            `
+          
+        }
     });
 
 
+    
+}
+
+/*Enviar idGuia a local storage */
+
+const botonesContact = document.querySelector('.botonesContact');
+botonesContact.addEventListener('click',getDataBtn)
+
+function getDataBtn(e) {
+    const idGuia = e.target.getAttribute('idGuia');
+    console.log(idGuia);
+
+    localStorage.setItem('idGuia',JSON.stringify(idGuia));
     
 }
