@@ -186,7 +186,6 @@ async function getData(){
         const datos = await respuesta.json()
         
         showReview(datos.reviews);
-        showGuia(datos.guias)
         
     } catch (error) {
         console.log(error);
@@ -194,24 +193,6 @@ async function getData(){
     
 };
 
-
-
-function showGuia(guiades){
-    guiades.forEach(guia =>{
-        const {foto, Nombre, descripcion} = guia
-        const guiaContainer = document.querySelector('.guia-container')
-        guiaContainer.innerHTML = `
-        <div class="guia">
-            <div class="imagenGuia">
-                <img src="${foto}" alt="">
-                <h4>${Nombre}</h4>
-            </div>
-            <div class="descripcionGuia">
-                <p>${descripcion}</p>
-            </div>
-        </div>`
-    })
-}
 
 
 // Cards Reseñas 
@@ -373,7 +354,8 @@ mostrarProductos();
 
 document.addEventListener('DOMContentLoaded',()=>{
     getDataJson()
-    getDataLocalStorage()
+    getDataLocalStorageTour()
+    getDataLocalStorageGuia()
 
 });
 
@@ -385,18 +367,28 @@ function getDataJson() {
     .then((data)=>{
 
         pageTour(data.Tours)
+        guiaInfo(data.guias)
        
     })
     
 }
 
-function getDataLocalStorage() {
+function getDataLocalStorageTour () {
     const tourId = JSON.parse(localStorage.getItem('tourId'))
     return tourId
 }
 
-let idT = getDataLocalStorage()
+function getDataLocalStorageGuia() {
+    const idGuia = JSON.parse(localStorage.getItem('idGuia'))
+    return idGuia
+
+}
+
+let idT = getDataLocalStorageTour()
 console.log(idT);
+
+let idG = getDataLocalStorageGuia()
+console.log(idG);
 
 function pageTour(tours) {
 
@@ -406,21 +398,22 @@ function pageTour(tours) {
     
     
     tours.forEach(tour => {
-        const {descripcion,imagen,nombre,duracion,tourId,idGuia} = tour
+        const {descripcion,imagen,nombre,duracion,tourId,galeria} = tour
+        console.log(galeria);
         
         if (tourId === idT) {
             
             portada.innerHTML = `
             <div class="galeria">
-                <div class="im1 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+                <div class="im1 caja" style="background-image: url(/IMAGENES/TOURS/${galeria[0]})">
                 </div>
-                <div class="im2 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+                <div class="im2 caja" style="background-image: url(/IMAGENES/TOURS/${galeria[1]})">
                 </div>
-                <div class="im3 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+                <div class="im3 caja" style="background-image: url(/IMAGENES/TOURS/${galeria[2]})">
                 </div>
-                <div class="im4 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+                <div class="im4 caja" style="background-image: url(/IMAGENES/TOURS/${galeria[3]})">
                 </div>
-                <div class="im5 caja" style="background-image: url(/IMAGENES/TOURS/${imagen})">
+                <div class="im5 caja" style="background-image: url(/IMAGENES/TOURS/${galeria[4]})">
             </div>
             </div>
             <div class="title">
@@ -441,32 +434,53 @@ function pageTour(tours) {
             `
         }
 
-        if (tourId === idT) {
+     
 
-            botonesContact.innerHTML = `
+    });  
+}
+
+
+function guiaInfo(guias) {
+
+    const infoGuia = document.querySelector('.info-guia');
+    guias.forEach(guia =>{
+        const {foto, Nombre, descripcion, id} = guia
+        if(id === idG){
+            infoGuia.innerHTML = `
+
             
-            <div class="botonnes">
-                <a href="../guiaEspecifico/index.html" idGuia = ${idGuia}>Ver Perfil</a>
-                <button>Contactame</button>
+            <br>
+            <div class="guia-container">
+                <div class="guia">
+                    <div class="imagenGuia">
+                        
+                        <div class="titleGuia">
+                            <h3>Guia Nutav</h3>
+                        </div>
+
+                        <div class="guia-imagen" style="background-image: url(/IMAGENES/PERSONAS/${foto});"> 
+                        </div>
+                        
+                        <h4><strong>${Nombre}</strong></h4>
+                    </div>
+                    <div class="descripcionGuia">
+                        <p>${descripcion}</p>
+                        <div class="botonesContact">
+                            <div class="botonnes">
+                                <a href="../guiaEspecifico/index.html" class="profile" idGuia = ${id}>Ver Perfil</a>
+                                <a href="" class="contact">Contactame</a>
+                            </div>  
+                        </div> 
+
+                    </div>
+                </div> 
             </div>
             `
-          
+
         }
-    });
-
-
+    })
     
 }
 
-/*Enviar idGuia a local storage */
 
-const botonesContact = document.querySelector('.botonesContact');
-botonesContact.addEventListener('click',getDataBtn)
 
-function getDataBtn(e) {
-    const idGuia = e.target.getAttribute('idGuia');
-    console.log(idGuia);
-
-    localStorage.setItem('idGuia',JSON.stringify(idGuia));
-    
-}

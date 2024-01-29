@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sintony', 'sans-serif';
+    
+
+}
+
+a{
+    text-decoration: none;
 
 }
 
@@ -503,36 +509,42 @@ nav .buscador {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.titleGuia {
-    padding-left: 3rem;
+.info-guia{
     width: 80%;
     margin: auto;
-    padding-top: 50px;
+}
+
+.titleGuia {
+    margin: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .guia-container{
     display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 80%;
+    align-items: center;
+    padding-left: 100px;
 }
 
 .guia {
     display: flex;
-    width: 80%;
-    margin: auto;
+    padding-right: 2rem;
+
 }
 
 .imagenGuia {
-    width: 20%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 1rem;
+    
 }
 
-.imagenGuia img {
-    width: 110px;
-    border-radius: 50px;
-    align-items: center;
+.guia-imagen{
+    width: 12rem;
+    height: 12rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
 
 .imagenGuia h4 {
@@ -541,25 +553,32 @@ nav .buscador {
 }
 
 .descripcionGuia {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
     font-size: 17px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .botonesContact {
     display: flex;
+    height: 30px;
     width: 80%;
-    margin: auto;
-    padding-right: 4rem;
     justify-content: end;
 }
 
-.botonnes button {
-    border-radius: 4px;
-    width: 120px;
-    height: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: gray;
+.botonnes a{
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    color: black;
+    background-color: #d9d9d9;
+    padding: 8px 10px;
+    transition: 0.4s;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btnMore {

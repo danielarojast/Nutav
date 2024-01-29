@@ -97,6 +97,7 @@
     {
       "tourId": "8",
       "imagen": "guatape-el-cacique-indigena.jpg",
+      "galeria":["tour8-img01.jpg", "tour8-img02.jpg", "tour8-img03.jpg","tour8-img04.jpg","tour8-img05.jpg"],
       "nombre": "Guatapé el Cacique Indígena",
       "categorias": ["Cultura", "Historia", "Naturaleza"],
       "lugar": "Guatape",

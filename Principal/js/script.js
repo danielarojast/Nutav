@@ -139,7 +139,7 @@ function showTours(tours) {
     
     tours.forEach((tour) => {
 
-        const {imagen,nombre,descripcion, tourId} = tour;
+        const {imagen,nombre,descripcion, tourId, idGuia} = tour;
 
         const tourHtml = document.createElement('p');
         tourHtml.classList.add("psita")
@@ -147,7 +147,7 @@ function showTours(tours) {
         tourHtml.innerHTML = `
             <div>
                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" >
-                    <div class="card" style="background-image: url(/IMAGENES/TOURS/${imagen}) ;" imagen = ${imagen} nombre = "${nombre}" descripcion = "${descripcion}" tourId = ${tourId}>
+                    <div class="card" style="background-image: url(/IMAGENES/TOURS/${imagen}) ;" imagen = ${imagen} nombre = "${nombre}" descripcion = "${descripcion}" tourId = ${tourId} idGuia = ${idGuia}>
                         <div class="degraded">
                             <p><strong>${nombre}</strong></p>
                         </div>
@@ -284,6 +284,7 @@ function showDetail(e) {
     const nombre = e.target.getAttribute('nombre');
     const descripcion = e.target.getAttribute('descripcion');
     const tourId = e.target.getAttribute('tourId')
+    const idGuia = e.target.getAttribute('idGuia')
 
     console.log(tourId);
     infoModal.innerHTML = `
@@ -305,7 +306,7 @@ function showDetail(e) {
         
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cerrar</button>
-                <a href = "../TourEspecifico/index.html" type="button" class="btn btn-primary" tourId = ${tourId}>Ver mas</a>
+                <a href = "../TourEspecifico/index.html" type="button" class="btn btn-primary" tourId = ${tourId} idGuia = ${idGuia}>Ver mas</a>
             </div> 
 
         </div>
@@ -321,8 +322,10 @@ modalContent.addEventListener('click', getDataModal);
 
 function getDataModal(e) {
     const tourId = e.target.getAttribute('tourId')
+    const idGuia = e.target.getAttribute('idGuia')
     console.log(tourId);
     localStorage.setItem('tourId',JSON.stringify(tourId));
+    localStorage.setItem('idGuia',JSON.stringify(idGuia))
     
 }
 
