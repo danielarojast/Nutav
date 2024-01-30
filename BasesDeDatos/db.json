@@ -1,6 +1,6 @@
 {
   "Categories": [
-    {"categoryName": "Todos", "categoryIcon": "Imagotipo.png"},
+    {"categoryName": "Inicio", "categoryIcon": "Imagotipo.png"},
     {"categoryName": "Cultura", "categoryIcon": "cultura.png"},
     {"categoryName": "Historia", "categoryIcon": "historia.png"},
     {"categoryName": "Gastronomía", "categoryIcon": "gastronomia.png"},

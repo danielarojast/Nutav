@@ -38,9 +38,11 @@ function getDataCategories() {
 function showCategories(categoriesData) {
     const categories = document.querySelector('#categories');
     let html = "";
+   
 
     categoriesData.forEach(category => {
         const {categoryName,categoryIcon} = category
+       
         html += `
         <div class="category-btn">
             <div class = "categoryIcons">
@@ -72,6 +74,7 @@ function getDataSelects() {
         showTours(data.Tours)
 
         mixRandom(data.Tours)
+        culturaRandom(data.Tours)
     })
     
 }
@@ -330,7 +333,35 @@ function getDataModal(e) {
     
 }
 
-/* LANDING */
+/*---------------------------------------------------------------------------- LANDING------------------------------------------------------------------------------------ */
+
+const search = document.querySelector('#search');
+search.addEventListener('click',mostrarFiltrado)
+
+function mostrarFiltrado(e) {
+    const cardsContainer = document.querySelector('#cards-container');
+    cardsContainer.classList.remove('hidden')
+    const landingTours = document.querySelector('#landingTours');
+    landingTours.classList.add('hidden') 
+
+    const inicio = e.target.getAttribute('value');
+    
+
+    if (inicio === "Inicio") {
+        const cardsContainer = document.querySelector('#cards-container');
+        cardsContainer.classList.add('hidden')
+        const landingTours = document.querySelector('#landingTours');
+        landingTours.classList.remove('hidden') 
+    }
+
+
+    
+
+}
+
+
+
+
 
 function mixRandom(tours) {
     console.log(tours);
@@ -361,9 +392,91 @@ function mixRandom(tours) {
 }
 
 
-const mixedTour = document.querySelector('#mixedTours');
-mixedTour.addEventListener('click', showDetail)
+const landingTours = document.querySelector('#landingTours');
+landingTours.addEventListener('click', showDetail)
 
 
 
+function culturaRandom(tours) {
+    const categoriasMix = ["Cultura", "Historia"];
 
+    const toursFiltrados = tours.filter(tour => tour.categorias.some(categoria => categoriasMix.includes(categoria)));
+    const toursAleatorios = toursFiltrados.sort(() => Math.random() - 0.5).slice(0, 5);
+
+    console.log(toursAleatorios);
+
+    let t1 = toursAleatorios[0]
+    let t2 = toursAleatorios[1]
+    let t3 = toursAleatorios[2]
+    let t4 = toursAleatorios[3]
+    let t5 = toursAleatorios[4]
+
+    const mixCultura = document.querySelector('#mixCultura')
+
+        mixCultura.innerHTML = `
+        <div class="grid-container">
+                    <!-- Celda 1 -->
+                    <div class="item item1">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t1.imagen});" imagen = ${t1.imagen} nombre = "${t1.nombre}" descripcion = "${t1.descripcion}" tourId = ${t1.tourId} idGuia = ${t1.idGuia}>
+                                <div class="degraded">
+                                    <p><strong>${t1.nombre}</strong></p>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                    <!-- Celda 2 -->
+                    <div class="item item2">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t2.imagen});" imagen = ${t2.imagen} nombre = "${t2.nombre}" descripcion = "${t2.descripcion}" tourId = ${t2.tourId} idGuia = ${t2.idGuia}>
+                                <div class="degraded">
+                                    <p><strong>${t2.nombre}</strong></p>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                    <!-- Celda 3 -->
+                    <div class="item item3">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t3.imagen});" imagen = ${t3.imagen} nombre = "${t3.nombre}" descripcion = "${t3.descripcion}" tourId = ${t3.tourId} idGuia = ${t3.idGuia}>
+                                <div class="degraded">
+                                    <p><strong>${t3.nombre}</strong></p>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                    <!-- Celda 4 -->
+                    <div class="item item4">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t4.imagen});" imagen = ${t4.imagen} nombre = "${t4.nombre}" descripcion = "${t4.descripcion}" tourId = ${t4.tourId} idGuia = ${t4.idGuia}>
+                                <div class="degraded">
+                                    <p><strong>${t4.nombre}</strong></p>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                    <!-- Celda 5 -->
+                    <div class="item item5">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t5.imagen});" imagen = ${t5.imagen} nombre = "${t5.nombre}" descripcion = "${t5.descripcion}" tourId = ${t5.tourId} idGuia = ${t5.idGuia}>
+                                <div class="degraded">
+                                    <p><strong>${t5.nombre}</strong></p>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                   
+                </div>
+        `
+
+}
