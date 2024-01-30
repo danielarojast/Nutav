@@ -19,7 +19,7 @@
     {
       "tourId": "1",
       "imagen": "medellin-walking-tour.jpg",
-      "galeria": [],
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Medellín Walking Tour",
       "categorias": ["Cultura", "Historia"],
       "lugar": "Medellin",
@@ -32,6 +32,7 @@
       "tourId": "2",
       "imagen": "arquitectura-unica.jpg",
       "nombre": "Tour Arquitectura Única en Medellín",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "categorias": ["Arquitectura", "Arte", "Innovador"],
       "lugar": "Medellin",
       "idioma": ["Español", "Inglés", "Francés"],
@@ -42,6 +43,7 @@
     {
       "tourId": "3",
       "imagen": "frutas-tropicales.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Sabores Tropicales en Las Calles de Medellín",
       "categorias": ["Gastronomia", "Cultura"],
       "lugar": "Medellin",
@@ -53,6 +55,7 @@
     {
       "tourId": "4",
       "imagen": "el-camino-de-los-abuelos.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "El Camino de Los Abuelos",
       "categorias": ["Historia", "Naturaleza", "Fotografía","Aventura"],
       "lugar": "Jerico",
@@ -64,6 +67,7 @@
     {
       "tourId": "5",
       "imagen": "tour-innovacion-social.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Tour Innovación Social",
       "categorias": ["Cultura", "Historia", "Arte"],
       "lugar": "Medellin",
@@ -75,6 +79,7 @@
     {
       "tourId": "6",
       "imagen": "tour-oriente-antioqueño.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Tour Oriente Antioqueño",
       "categorias": ["Cultura", "Historia", "Arquitectura","Aventura"],
       "lugar": "Marinilla",
@@ -86,6 +91,7 @@
     {
       "tourId": "7",
       "imagen": "jardin-pueblito-magico.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Jardín Pueblito Mágico",
       "categorias": ["Cultura", "Historia", "Arte", "Fotografía"],
       "lugar": "Medellin",
@@ -109,6 +115,7 @@
     {
       "tourId": "9",
       "imagen": "comuna-13-operacion-orion.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Comuna 13 Operación Orión",
       "categorias": ["Cultura", "Historia", "Arte", "Fotografía"],
       "lugar": "Medellin",
@@ -120,6 +127,7 @@
     {
       "tourId": "10",
       "imagen": "ciclo-tour.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Ciclo Tour Medellín",
       "categorias": ["Deporte", "Historia"],
       "lugar": "Medellin",
@@ -131,6 +139,7 @@
     {
       "tourId": "11",
       "imagen": "medellin-a-las-alturas.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Medellín a Las Alturas",
       "categorias": ["Deporte", "Naturaleza"],
       "lugar": "Medellin",
@@ -142,6 +151,7 @@
     {
       "tourId": "12",
       "imagen": "tour-terrazas.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Tour Terrazas Medellín",
       "categorias": ["Cultura", "Fotografía", "Nocturno"],
       "lugar": "Medellin",
@@ -153,6 +163,7 @@
     {
       "tourId": "13",
       "imagen": "miradores-tour.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Miradores Tour",
       "categorias": ["Cultura", "Fotografía", "Nocturno", "Naturaleza"],
       "lugar": "Medellin",
@@ -164,6 +175,7 @@
     {
       "tourId": "14",
       "imagen": "comida-callejera.jpg",
+      "galeria": ["medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg","medellin-walking-tour.jpg"],
       "nombre": "Sabor Medellín, Comida Callejera",
       "categorias": ["Cultura", "Fotografía", "Nocturno", "Urbano"],
       "lugar": "Medellin",
