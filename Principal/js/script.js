@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     getDataSelects();
 
 
-    showTours(tours)
+    showTours()
     //selectedTour()
 
 });
@@ -70,10 +70,11 @@ function getDataSelects() {
 
         /* Ingreso de cards tours */
         showTours(data.Tours)
+
+        mixRandom(data.Tours)
     })
     
 }
-
 
 function showPlaces(placesData) {
     const place = document.querySelector('#place');
@@ -329,7 +330,39 @@ function getDataModal(e) {
     
 }
 
+/* LANDING */
 
+function mixRandom(tours) {
+    console.log(tours);
+
+    let mix = tours.sort(() => Math.random() - 0.5).slice(0,4)
+    console.log(mix);
+
+    const mixedTours = document.querySelector('#mixedTours');
+
+   mix.forEach(tour => {
+
+    const {imagen,nombre,descripcion, tourId, idGuia} = tour;
+
+    mixedTours.innerHTML += `
+    <div>
+        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+            <div class="card" style="background-image: url(/IMAGENES/TOURS/${imagen}) ;" imagen = ${imagen} nombre = "${nombre}" descripcion = "${descripcion}" tourId = ${tourId} idGuia = ${idGuia}>
+                <div class="degraded">
+                    <p><strong>${nombre}</strong></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    `
+    
+   });
+}
+
+
+const mixedTour = document.querySelector('#mixedTours');
+mixedTour.addEventListener('click', showDetail)
 
 
 
