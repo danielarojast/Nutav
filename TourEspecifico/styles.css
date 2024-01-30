@@ -701,6 +701,10 @@ footer{
     justify-content: center;
 }
 
+.cards button:hover{
+    transform: scale(1.5);
+}
+
 
 .card{
     position: relative;
@@ -734,26 +738,25 @@ footer{
     position: absolute;
     left: 13rem;
     bottom: 15rem;
+    background: none;
+    border: none;
 }
+
+.boton-atras-carrusel img{
+    width: 100px;
+}
+.boton-adelante-arrusel img{
+    width: 100px;
+}
+
+
 
 .boton-adelante-arrusel{
     position: absolute;
     right: 13rem;
     bottom: 15rem;
-}
-
-.footer {
-    display: flex;
-    justify-content: end;
-    background-color: #294D76;
-}
-
-.last {
-    padding: 30px;
-}
-
-.last img {
-    width: 200px;
+    background: none;
+    border: none;
 }
 
 
@@ -764,9 +767,59 @@ footer{
   }
 }
 
-
 .observaciones{
     padding-top: 2rem;
+}
+
+
+
+/*---Footer---*/
+
+footer{
+    background-color: rgba(41, 77, 118,0.5) ;
+    padding: 50px;
+    max-width: 100%;
+}
+.contenedorFooter{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.leftFooter{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.rightFooter{
+   width: 70%;
+   display: flex;
+}
+.contenidoFooter{
+    display: flex;
+    gap:20%;
+    width: 70%;
+   align-items: center;
+   justify-content: space-between;
+}
+.contenFoot{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+   
+}
+.contenFoot a{
+text-decoration: none;
+color: #000;
+}
+.redesFooter{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 

@@ -434,7 +434,6 @@ function pageTour(tours) {
             `
         }
 
-     
 
     });  
 }
@@ -447,8 +446,6 @@ function guiaInfo(guias) {
         const {foto, Nombre, descripcion, id} = guia
         if(id === idG){
             infoGuia.innerHTML = `
-
-            
             <br>
             <div class="guia-container">
                 <div class="guia">
@@ -476,10 +473,8 @@ function guiaInfo(guias) {
                 </div> 
             </div>
             `
-
         }
-    })
-    
+    })  
 }
 
 
