@@ -172,8 +172,8 @@ function prevMonth(currentMonth) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    mostrarProductos(tours);
-    getData()
+    getData();
+    getProducts();
 })
 
 
@@ -184,7 +184,7 @@ async function getData(){
     try {
         const respuesta = await fetch(url)
         const datos = await respuesta.json()
-        
+        mostrarProductos(datos.Tours);
         showReview(datos.reviews);
         
     } catch (error) {
@@ -262,7 +262,6 @@ function showReview(reviews){
                 upDatePaginacionRev(); 
             });
 
-    //
 
     //cards en el modal Review
    
@@ -298,58 +297,6 @@ function showReview(reviews){
 };
 
 
-
-// Propiedad para controlar la posición actual del carrusel
-let posicionActual = 0;
-
-function getProducts(){
-    fetch()
-}
-
-
-// Función para mostrar los productos en el carrusel
-function mostrarProductos() {
-    const container = document.querySelector('#cards-container');
-    container.innerHTML = '';
-
-    for (var i = posicionActual; i < posicionActual + 4; i++) {
-        if (tours[i]) {
-            let producto = tours[i];
-            const divProducto = document.createElement('div');
-            divProducto.innerHTML = `
-      <div>
-      <a href="">
-          <div class="card" style="background-image: url(${producto.foto}) ;">
-              <div class="degraded">
-                  <p>${producto.nombre}</p>
-              </div>
-          </div>
-      </a>
-      <h3>Desde $350.000</h3>
-  </div>
-`;
-            container.appendChild(divProducto);
-        }
-    }
-}
-
-
-// Función para mover el carrusel hacia adelante o atrás
-function moverCarrusel(direccion) {
-    posicionActual += direccion;
-
-    if (posicionActual < 0) {
-        posicionActual = tours.length - 4;
-    } else if (posicionActual > tours.length - 4) {
-        posicionActual = 0;
-    }
-
-    mostrarProductos();
-}
-
-// Mostrar productos al cargar la página
-mostrarProductos();
-
 /* TRAER INFO DEL MODAL  */
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -368,10 +315,14 @@ function getDataJson() {
 
         pageTour(data.Tours)
         guiaInfo(data.guias)
-       
+        mostrarProductos(data.Tours)
+        console.log(data.Tours);
     })
     
 }
+
+
+
 
 function getDataLocalStorageTour () {
     const tourId = JSON.parse(localStorage.getItem('tourId'))
@@ -399,7 +350,6 @@ function pageTour(tours) {
     
     tours.forEach(tour => {
         const {descripcion,imagen,nombre,duracion,tourId,galeria} = tour
-        console.log(galeria);
         
         if (tourId === idT) {
             
@@ -477,5 +427,68 @@ function guiaInfo(guias) {
     })  
 }
 
+
+/*-----------------------------------CARRUSEL--------------------------------------- */
+
+// Propiedad para controlar la posición actual del carrusel
+var posicionActual = 0;
+var toursDB = [];
+
+function getProducts(){
+    fetch('/BasesDeDatos/db.json')
+    .then(respuesta =>{        
+        return respuesta.json()
+    })
+    .then(datos =>{
+        toursDB = datos.Tours;
+        mostrarProductos(toursDB)
+
+    })
+}
+
+
+// Función para mostrar los productos en el carrusel
+function mostrarProductos(tour) {
+    debugger
+    console.log(tour);
+    const container = document.querySelector('#cards-container');
+    container.innerHTML = '';
+
+    for (var i = posicionActual; i < posicionActual + 4; i++) {
+        if (tour[i]) {
+            console.log(tour[i]);
+            let producto = tour[i];
+            const divProducto = document.createElement('div');
+            divProducto.innerHTML = `
+      <div>
+      <a href="">
+          <div class="card" style="background-image: url(/IMAGENES/TOURS/${producto.imagen}) ;">
+              <div class="degraded">
+                  <p>${producto.nombre}</p>
+              </div>
+          </div>
+      </a>
+      <h3>Desde $350.000</h3>
+  </div>
+`;
+            container.appendChild(divProducto);
+        }
+    }
+}
+
+
+// Función para mover el carrusel hacia adelante o atrás
+function moverCarrusel(direccion) {
+    
+    posicionActual += direccion;
+
+    if (posicionActual < 0) {
+        posicionActual = toursDB.length - 4;
+    } else if (posicionActual > toursDB.length - 4) {
+        posicionActual = 0;
+    }
+
+    mostrarProductos(toursDB);
+}
 
 
