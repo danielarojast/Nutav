@@ -342,11 +342,12 @@ function pageTour(tours) {
 
     const portada = document.querySelector('.portada');
     const descrip = document.querySelector('.descripcion');
+    const observacion = document.querySelector('.texto-table')
     const botonesContact = document.querySelector('.botonesContact');
 
 
     tours.forEach(tour => {
-        const { descripcion, imagen, nombre, duracion, tourId, galeria } = tour
+        const { descripcion, imagen, nombre, duracion, tourId, galeria, observaciones } = tour
 
         if (tourId === idT) {
 
@@ -381,6 +382,15 @@ function pageTour(tours) {
             `
         }
 
+        if(tourId === idT){
+            observacion.innerHTML = `
+            <ul>
+                <li>${observaciones[0]}</li>
+                <li>${observaciones[1]}</li>
+                <li>${observaciones[2]}</li>
+            </ul>
+            `
+        }
 
     });
 }
@@ -462,7 +472,7 @@ function mostrarProductos(tour) {
                         </div>
                     </div>
                 </a>
-                <h3>Desde $350.000</h3>
+                <h3>Desde ${producto.precio}</h3>
             </div>
             `;
             container.appendChild(divProducto);
