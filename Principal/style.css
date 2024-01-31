@@ -533,6 +533,46 @@ header{
     grid-row: 1/3;
 }
 
+/* Únicos e Innovadores*/
+
+.grid-container-Innovadores{
+    gap: 2rem;
+    display: grid;
+    grid-template-rows: 16rem 16rem;
+    grid-template-columns: 25rem 19rem 38rem;
+}
+
+.item1a{
+    grid-row: 1/3;
+}
+
+.item4a{
+    grid-row: 3/1;
+    grid-column: 3/4;
+}
+
+/* Gastronómicos y de Cata */
+
+.grid-container-gastronomia{
+    gap: 2rem;
+    display: grid;
+    grid-template-rows: 16rem 16rem;
+    grid-template-columns: 22rem 16rem 21rem 21rem;
+}
+
+.item1b{
+    grid-row: 1/3;
+}
+
+.item4b{
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+
+.item5b{
+    grid-row: 1/3;
+    grid-column: 4/5;
+}
 
 .card-grid{
     position: relative;

@@ -75,6 +75,8 @@ function getDataSelects() {
 
         mixRandom(data.Tours)
         culturaRandom(data.Tours)
+        innovadoresRandom(data.Tours)
+        gastronomicosRandom(data.Tours)
     })
     
 }
@@ -335,6 +337,8 @@ function getDataModal(e) {
 
 /*---------------------------------------------------------------------------- LANDING------------------------------------------------------------------------------------ */
 
+
+/*------------Cambio de Landing a Filtrado---------------- */
 const search = document.querySelector('#search');
 search.addEventListener('click',mostrarFiltrado)
 
@@ -354,14 +358,11 @@ function mostrarFiltrado(e) {
         landingTours.classList.remove('hidden') 
     }
 
-
-    
-
 }
 
+/*-------------------------------------------------------- */
 
-
-
+/*---------------Mix Categorías------------- */
 
 function mixRandom(tours) {
     console.log(tours);
@@ -384,18 +385,14 @@ function mixRandom(tours) {
                 </div>
             </div>
         </a>
-    </div>
-    
-    `
-    
+    </div> 
+    ` 
    });
 }
 
+/*----------------------------------------------------------- */
 
-const landingTours = document.querySelector('#landingTours');
-landingTours.addEventListener('click', showDetail)
-
-
+/*--------------Grid de Cultura e Historia------------- */
 
 function culturaRandom(tours) {
     const categoriasMix = ["Cultura", "Historia"];
@@ -478,5 +475,161 @@ function culturaRandom(tours) {
                    
                 </div>
         `
-
 }
+
+/*---------------------------------------------------------- */
+
+/*-----------------Grid de Innovacion---------------------- */
+
+function innovadoresRandom(tours) {
+    const categoriasMix = ["Innovador", "Deporte"];
+
+    const toursFiltrados = tours.filter(tour => tour.categorias.some(categoria => categoriasMix.includes(categoria)));
+    const toursAleatorios = toursFiltrados.sort(() => Math.random() - 0.5).slice(0, 4);
+
+    console.log(toursAleatorios);
+
+    let t1 = toursAleatorios[0];
+    let t2 = toursAleatorios[1];
+    let t3 = toursAleatorios[2];
+    let t4 = toursAleatorios[3];
+
+    const mixInnovadores = document.querySelector('#mixInnovadores');
+
+    mixInnovadores.innerHTML = `
+    <div class="grid-container-Innovadores">
+        <div class="item item1a">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t1.imagen});" imagen = ${t1.imagen} nombre = "${t1.nombre}" descripcion = "${t1.descripcion}" tourId = ${t1.tourId} idGuia = ${t1.idGuia}>
+                    <div class="degraded">
+                        <p><strong>${t1.nombre}</strong></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="item item2a">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t2.imagen});" imagen = ${t2.imagen} nombre = "${t2.nombre}" descripcion = "${t2.descripcion}" tourId = ${t2.tourId} idGuia = ${t2.idGuia}>
+                    <div class="degraded">
+                        <p><strong>${t2.nombre}</strong></p>
+                    </div>
+
+                </div>
+
+            </a>
+        </div>
+        <div class="item item3a">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t3.imagen});" imagen = ${t3.imagen} nombre = "${t3.nombre}" descripcion = "${t3.descripcion}" tourId = ${t3.tourId} idGuia = ${t3.idGuia}>
+                    <div class="degraded">
+                        <p><strong>${t3.nombre}</strong></p>
+                    </div>
+
+                </div>
+
+            </a>
+        </div>
+        <div class="item item4a">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t4.imagen});" imagen = ${t4.imagen} nombre = "${t4.nombre}" descripcion = "${t4.descripcion}" tourId = ${t4.tourId} idGuia = ${t4.idGuia}>
+                    <div class="degraded">
+                        <p><strong>${t4.nombre}</strong></p>
+                    </div>
+
+                </div>
+
+            </a>
+        </div>  
+    </div>
+    `   
+}
+
+/*---------------------------------------------------------- */
+
+/*--------------------Gastronómicos y de Cata-------------------*/
+
+function gastronomicosRandom(tours) {
+
+    const categoriasMix = ["Gastronomía","Cultura"];
+
+    const toursFiltrados = tours.filter(tour => tour.categorias.some(categoria => categoriasMix.includes(categoria)));
+    const toursAleatorios = toursFiltrados.sort(() => Math.random() - 0.5).slice(0, 5);
+
+    console.log(toursAleatorios);
+
+    let t1 = toursAleatorios[0]
+    let t2 = toursAleatorios[1]
+    let t3 = toursAleatorios[2]
+    let t4 = toursAleatorios[3]
+    let t5 = toursAleatorios[4]
+
+    const mixGastronomicos = document.querySelector('#mixGastronomicos');
+    mixGastronomicos.innerHTML = `
+    <div class="grid-container-gastronomia">
+        <div class="item item1b">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t1.imagen});" imagen = ${t1.imagen} nombre = "${t1.nombre}" descripcion = "${t1.descripcion}" tourId = ${t1.tourId} idGuia = ${t1.idGuia}>
+                    <div class="degraded">
+                        <p><strong>${t1.nombre}</strong></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="item item2b">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t2.imagen});" imagen = ${t2.imagen} nombre = "${t2.nombre}" descripcion = "${t2.descripcion}" tourId = ${t2.tourId} idGuia = ${t2.idGuia}>
+                    <div class="degraded">
+                        <p><strong>${t2.nombre}</strong></p>
+                    </div>
+            
+                </div>
+            
+            </a>
+        </div>
+        <div class="item item3b">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t3.imagen});" imagen = ${t3.imagen} nombre = "${t3.nombre}" descripcion = "${t3.descripcion}" tourId = ${t3.tourId} idGuia = ${t3.idGuia}>
+                    <div class="degraded">
+                        <p><strong>${t3.nombre}</strong></p>
+                    </div>
+            
+                </div>
+            
+            </a>
+        </div>
+        <div class="item item4b">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t4.imagen});" imagen = ${t4.imagen} nombre = "${t4.nombre}" descripcion = "${t4.descripcion}" tourId = ${t4.tourId} idGuia = ${t4.idGuia}>
+                    <div class="degraded">
+                        <p><strong>${t4.nombre}</strong></p>
+                    </div>
+            
+                </div>
+            
+            </a>
+        </div>
+        <div class="item item5b">
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-grid" style="background-image: url(/IMAGENES/TOURS/${t5.imagen});" imagen = ${t5.imagen} nombre = "${t5.nombre}" descripcion = "${t5.descripcion}" tourId = ${t5.tourId} idGuia = ${t5.idGuia}>
+                    <div class="degraded">
+                        <p><strong>${t5.nombre}</strong></p>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+    </div>
+    `
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------ */
+
+
+const landingTours = document.querySelector('#landingTours');
+landingTours.addEventListener('click', showDetail)
