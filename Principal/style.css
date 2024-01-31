@@ -422,6 +422,7 @@ header{
 
 /**/
 .modal-content{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -431,11 +432,12 @@ header{
 }
 
 .modal-bbody{
-    
+    background-size: cover;
+    background-position: center;
     border-radius: 2rem;
     display: flex;
     align-items: center;
-    background-color: #000000;
+    background-color: #00000039;
 }
 .modal-body-right{
     padding: 3rem;
@@ -446,6 +448,7 @@ header{
     gap: 4rem;
     font-size: 23px;
     color: white;
+    
 
 }
 
@@ -460,17 +463,16 @@ header{
     position: relative;
     background-size: cover;
     background-position: center;
-    width: 250%;
+    width: 100%;
     height: 40rem;
     border-radius: 2rem;
 }
 
 .degraded-modal{
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    position: absolute;
+    border-radius: 1rem;
+    
     height: 100%;
-    width: 100%;
+    width: 70%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
 
 
@@ -606,6 +608,7 @@ header{
 
 .text-aboutUs{
     width: 40%;
+    padding-top: 6rem;
 }
 
 
@@ -617,7 +620,7 @@ header{
     display: flex;
     justify-content: center;
     gap: 4rem;
-    margin-top: 6rem;
+    padding-top: 3rem;
 }
 
 /*-------------- FOOTER ----------------------*/
@@ -625,7 +628,7 @@ header{
 footer{
     background-color: #294D76;
     padding: 2rem;
-    margin-top: 3rem;
+    margin-top: 10rem;
    
 }
 

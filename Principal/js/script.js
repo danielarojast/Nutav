@@ -295,25 +295,26 @@ function showDetail(e) {
     console.log(tourId);
     infoModal.innerHTML = `
 
-    <div class="modal-bbody" >
-        <div class="imagen-modal" style="background-image: url(/IMAGENES/TOURS/${imagen});">
-            <div class="degraded-modal">
-
-            </div>
+    <div class="modal-bbody" style="background-image: url(/IMAGENES/TOURS/${imagen});" >
+        <div class="imagen-modal">
+            
                             
         </div>
-        <div class="modal-body-right">
+        <div class="modal-body-right degraded-modal ">
+            
+
             <div >
                 <h1>${nombre}</h1>
             </div>
             <div class="detalle">
                 <p style="color: white;">${descripcion}</p>
             </div>
-        
+            
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cerrar</button>
                 <a href = "../TourEspecifico/index.html" type="button" class="btn btn-primary" tourId = ${tourId} idGuia = ${idGuia}>Ver mas</a>
             </div> 
+            
 
         </div>
     </div>
