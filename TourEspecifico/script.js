@@ -455,7 +455,7 @@ function mostrarProductos(tour) {
             const divProducto = document.createElement('div');
             divProducto.innerHTML = `
                 <div>
-                <a href="#">
+                <a href="">
                     <div class="card" style="background-image: url(/IMAGENES/TOURS/${producto.imagen}) ;" idTour =${producto.tourId}>
                         <div class="degraded">
                             <p>${producto.nombre}</p>
