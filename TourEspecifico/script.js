@@ -179,33 +179,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //DESCRIPCION TOUR
-async function getData(){
+async function getData() {
     let url = "/BasesDeDatos/db.json"
     try {
         const respuesta = await fetch(url)
         const datos = await respuesta.json()
         mostrarProductos(datos.Tours);
         showReview(datos.reviews);
-        
+
     } catch (error) {
         console.log(error);
     }
-    
+
 };
 
 
-
 // Cards Reseñas 
-const contenedorReview= document.querySelector('#review')
+const contenedorReview = document.querySelector('#review')
 
-function showReview(reviews){
+function showReview(reviews) {
 
     //destructurar
-    reviews.forEach((review)=>{
-        const {calificacion, fecha, reseña}= review
+    reviews.forEach((review) => {
+        const { calificacion, fecha, reseña } = review
 
-        const reviewHtml= document.createElement('p');
-        reviewHtml.innerHTML= `
+        const reviewHtml = document.createElement('p');
+        reviewHtml.innerHTML = `
         <div class="card mb-3 row g-0" style="max-width: 100%;" id="cadaCardReview">
             <div class="row g-0">
                 <div class="col-md-4 contImg img-fluid  " >
@@ -225,55 +224,56 @@ function showReview(reviews){
         </div>
         `
         contenedorReview.appendChild(reviewHtml);
-        
+
     });
 
 
     //Boton ver mas
-    
-        const itemsReview= contenedorReview.children;
-        const sizeItemsreview= itemsReview.length
-        const btnPagReview= document.querySelector('#btnMoreReview');
-        let itemsPage= 3;
-        let currentPageRev= 1;
-        
-        document.addEventListener("DOMContentLoaded", upDatePaginacionRev());
-            
-        function showPageRev(page){
-            
-            for(let j= 0; j< sizeItemsreview; j++){
-                if(j<(page-1)*itemsPage || j >= page *itemsPage){
-                    itemsReview[j].style.display="none"
-                }
 
-                if(itemsPage> sizeItemsreview ){
-                    btnPagReview.style.display="none"
-                }
-            };
+    const itemsReview = contenedorReview.children;
+    const sizeItemsreview = itemsReview.length
+    const btnPagReview = document.querySelector('#btnMoreReview');
+    let itemsPage = 3;
+    let currentPageRev = 1;
+
+    document.addEventListener("DOMContentLoaded", upDatePaginacionRev());
+
+    function showPageRev(page) {
+
+        for (let j = 0; j < sizeItemsreview; j++) {
+            if (j < (page - 1) * itemsPage || j >= page * itemsPage) {
+                itemsReview[j].style.display = "none"
+            }
+
+            if (itemsPage > sizeItemsreview) {
+                btnPagReview.style.display = "none"
+            }
         };
+    };
 
-            function upDatePaginacionRev(){
-                //const totalPage= Math.ceil(itemsReview.length / itemsPageRev);
-                showPageRev(currentPageRev);
-            ;}
-                
-        btnPagReview.addEventListener('click', ()=>{
-                itemsPage= sizeItemsreview;
-                upDatePaginacionRev(); 
-            });
+    function upDatePaginacionRev() {
+        //const totalPage= Math.ceil(itemsReview.length / itemsPageRev);
+        showPageRev(currentPageRev);
+        ;
+    }
+
+    btnPagReview.addEventListener('click', () => {
+        itemsPage = sizeItemsreview;
+        upDatePaginacionRev();
+    });
 
 
     //cards en el modal Review
-   
-        const modalBody= document.querySelector('#modalBodyRev');
 
-        reviews.forEach((reviewMod)=>{
-            const {idReview, idC, idGuia, calificacion, fecha, reseña}= reviewMod;
-    
-            const reviewModHtml= document.createElement('p');
-            //function showReview(){
+    const modalBody = document.querySelector('#modalBodyRev');
 
-                reviewModHtml.innerHTML= `
+    reviews.forEach((reviewMod) => {
+        const { idReview, idC, idGuia, calificacion, fecha, reseña } = reviewMod;
+
+        const reviewModHtml = document.createElement('p');
+        //function showReview(){
+
+        reviewModHtml.innerHTML = `
                 <div class="card mb-3 modal-dialog modal-xl " style="max-width: 100%;" id="cadaCardModalRev">
                     <div class="row g-0 ">
                         <div class="col-md-4 contImg">
@@ -292,14 +292,14 @@ function showReview(reviews){
                     </div>
                 </div>
                 `;
-                modalBody.appendChild(reviewModHtml);
-        });
+        modalBody.appendChild(reviewModHtml);
+    });
 };
 
 
 /* TRAER INFO DEL MODAL  */
 
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded', () => {
     getDataJson()
     getDataLocalStorageTour()
     getDataLocalStorageGuia()
@@ -308,23 +308,20 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 function getDataJson() {
     fetch('/BasesDeDatos/db.json')
-    .then((respuesta)=>{
-        return respuesta.json();
-    })
-    .then((data)=>{
+        .then((respuesta) => {
+            return respuesta.json();
+        })
+        .then((data) => {
 
-        pageTour(data.Tours)
-        guiaInfo(data.guias)
-        mostrarProductos(data.Tours)
-        console.log(data.Tours);
-    })
-    
+            pageTour(data.Tours)
+            guiaInfo(data.guias)
+            mostrarProductos(data.Tours)
+        })
+
 }
 
 
-
-
-function getDataLocalStorageTour () {
+function getDataLocalStorageTour() {
     const tourId = JSON.parse(localStorage.getItem('tourId'))
     return tourId
 }
@@ -346,13 +343,13 @@ function pageTour(tours) {
     const portada = document.querySelector('.portada');
     const descrip = document.querySelector('.descripcion');
     const botonesContact = document.querySelector('.botonesContact');
-    
-    
+
+
     tours.forEach(tour => {
-        const {descripcion,imagen,nombre,duracion,tourId,galeria} = tour
-        
+        const { descripcion, imagen, nombre, duracion, tourId, galeria } = tour
+
         if (tourId === idT) {
-            
+
             portada.innerHTML = `
             <div class="galeria">
                 <div class="im1 caja" style="background-image: url(/IMAGENES/TOURS/${galeria[0]})">
@@ -376,7 +373,7 @@ function pageTour(tours) {
         }
 
         if (tourId === idT) {
-            
+
             descrip.innerHTML = `
             <h3>Descripción</h3>
             <hr>
@@ -385,16 +382,16 @@ function pageTour(tours) {
         }
 
 
-    });  
+    });
 }
 
 
 function guiaInfo(guias) {
 
     const infoGuia = document.querySelector('.info-guia');
-    guias.forEach(guia =>{
-        const {foto, Nombre, descripcion, id} = guia
-        if(id === idG){
+    guias.forEach(guia => {
+        const { foto, Nombre, descripcion, id } = guia
+        if (id === idG) {
             infoGuia.innerHTML = `
             <br>
             <div class="guia-container">
@@ -424,7 +421,7 @@ function guiaInfo(guias) {
             </div>
             `
         }
-    })  
+    })
 }
 
 
@@ -434,52 +431,50 @@ function guiaInfo(guias) {
 var posicionActual = 0;
 var toursDB = [];
 
-function getProducts(){
+function getProducts() {
     fetch('/BasesDeDatos/db.json')
-    .then(respuesta =>{        
-        return respuesta.json()
-    })
-    .then(datos =>{
-        toursDB = datos.Tours;
-        mostrarProductos(toursDB)
+        .then(respuesta => {
+            return respuesta.json()
+        })
+        .then(datos => {
+            toursDB = datos.Tours;
+            mostrarProductos(toursDB)
 
-    })
+        })
 }
 
 
 // Función para mostrar los productos en el carrusel
 function mostrarProductos(tour) {
-    debugger
-    console.log(tour);
     const container = document.querySelector('#cards-container');
     container.innerHTML = '';
 
     for (var i = posicionActual; i < posicionActual + 4; i++) {
         if (tour[i]) {
-            console.log(tour[i]);
             let producto = tour[i];
             const divProducto = document.createElement('div');
             divProducto.innerHTML = `
-      <div>
-      <a href="">
-          <div class="card" style="background-image: url(/IMAGENES/TOURS/${producto.imagen}) ;">
-              <div class="degraded">
-                  <p>${producto.nombre}</p>
-              </div>
-          </div>
-      </a>
-      <h3>Desde $350.000</h3>
-  </div>
-`;
+                <div>
+                <a href="#">
+                    <div class="card" style="background-image: url(/IMAGENES/TOURS/${producto.imagen}) ;" idTour =${producto.tourId}>
+                        <div class="degraded">
+                            <p>${producto.nombre}</p>
+                        </div>
+                    </div>
+                </a>
+                <h3>Desde $350.000</h3>
+            </div>
+            `;
             container.appendChild(divProducto);
         }
     }
+
 }
 
 
 // Función para mover el carrusel hacia adelante o atrás
 function moverCarrusel(direccion) {
-    
+
     posicionActual += direccion;
 
     if (posicionActual < 0) {
@@ -490,5 +485,23 @@ function moverCarrusel(direccion) {
 
     mostrarProductos(toursDB);
 }
+
+const cardContainer = document.querySelector('#cards-container');
+cardContainer.addEventListener('click', getTourData);
+
+function getTourData(e){
+    const idTour = e.target.getAttribute('idTour')
+    localStorage.setItem('idTour', JSON.stringify())
+    console.log(idTour);
+    return idTour
+}
+
+let idTo = getTourData()
+
+pageTour(recos)
+
+    
+
+
 
 
