@@ -486,21 +486,36 @@ function moverCarrusel(direccion) {
     mostrarProductos(toursDB);
 }
 
+/*-------------------------------------Mostrar tours del carrusel------------------------------------------- */
+
+
 const cardContainer = document.querySelector('#cards-container');
 cardContainer.addEventListener('click', getTourData);
 
-function getTourData(e){
-    const idTour = e.target.getAttribute('idTour')
-    localStorage.setItem('idTour', JSON.stringify())
+
+function getTourData(e) {
+    const idTour = e.target.getAttribute('idTour');
     console.log(idTour);
-    return idTour
+    let newId = idTour;
+
+    let tourId = JSON.parse(localStorage.getItem('tourId'))
+    
+    tourId = newId
+    console.log(tourId);
+
+    localStorage.setItem('tourId', JSON.stringify(tourId));  
+
+    window.location.reload();
 }
 
-let idTo = getTourData()
 
-pageTour(recos)
 
-    
+
+
+
+
+
+
 
 
 
