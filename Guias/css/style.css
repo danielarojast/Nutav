@@ -8,6 +8,11 @@ body{
     max-width: 1920px;
 }
 
+main{
+    width: 80%;
+    margin: auto;
+}
+
 /*.........NAV..........*/
 
 nav {
@@ -336,4 +341,10 @@ color: #000;
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+
+.imagenGuia{
+    height:20rem;
+    background-size: cover;
+    background-position: center;
 }

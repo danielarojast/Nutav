@@ -32,12 +32,14 @@ function showGuias(dat){
 
             cardsGuias.innerHTML += `
             <div class="card" style="width: 18rem;">
-                <a href="#"><img src="/IMAGENES/PERSONAS/${foto}" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                    <h5 class="card-title">${Nombre}</h5>
-                    <p class="card-text">Tabla de datos</p>
+                    <a href="#">
+                        <div class="imagenGuia" style="background-image:url(/IMAGENES/PERSONAS/${foto}) ;"></div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">${Nombre}</h5>
+                        <p class="card-text">Tabla de datos</p>
+                    </div>
                 </div>
-            </div>
             `;
             contentGuiasPrin.appendChild(cardsGuias);
 
@@ -46,12 +48,14 @@ function showGuias(dat){
     
             cardsAllGuias.innerHTML += `
             <div class="card" style="width: 18rem;">
-                <a href="#"><img src="/IMAGENES/PERSONAS/${foto}" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                    <h5 class="card-title">${Nombre}</h5>
-                    <p class="card-text">Tabla de datos</p>
+                    <a href="#">
+                        <div class="imagenGuia" style="background-image:url(/IMAGENES/PERSONAS/${foto}) ;"></div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">${Nombre}</h5>
+                        <p class="card-text">Tabla de datos</p>
+                    </div>
                 </div>
-            </div>
             `;
             contentAllGuias.appendChild(cardsAllGuias);
         });
