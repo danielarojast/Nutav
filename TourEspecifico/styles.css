@@ -316,9 +316,6 @@ nav .buscador {
     gap: 20px;
 }
 
-/* .left {
-    width: 40%;
-} */
 
 .calendario {
     background-color: #294d7675;
@@ -327,7 +324,6 @@ nav .buscador {
     display: block;
     justify-content: space-between;
     align-items: center;
-    /* position: absolute; */
 
 }
 
@@ -492,21 +488,9 @@ nav .buscador {
 
 }
 
-/* .observaciones {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
-}
-
-.vacio {
-    width: 45%;
-} */
 
 .texto {
     padding-top: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .info-guia{
@@ -516,7 +500,6 @@ nav .buscador {
 
 .titleGuia {
     margin: auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .guia-container{
@@ -549,7 +532,6 @@ nav .buscador {
 
 .imagenGuia h4 {
     font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .descripcionGuia {
@@ -559,7 +541,6 @@ nav .buscador {
     justify-content: center;
     padding-left: 100px;
     font-size: 17px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .botonesContact {
@@ -750,7 +731,6 @@ footer{
 }
 
 
-
 .boton-adelante-arrusel{
     position: absolute;
     right: 13rem;
@@ -770,8 +750,6 @@ footer{
 .observaciones{
     padding-top: 2rem;
 }
-
-
 
 /*---Footer---*/
 
