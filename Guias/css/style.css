@@ -273,18 +273,28 @@ main{
     gap: 15px;
 }
 #guiaElegido{
-    background-color: aqua;
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 8rem;
+    gap: 2rem;
 }
+
+
 #allGuias{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding-top: 1rem;
+    
 }
 #bannerFinal{
     background-color: darksalmon;
 }
+
+/* Guía elegido*/
 
 
 
@@ -342,6 +352,10 @@ color: #000;
     align-items: center;
     gap: 15px;
 }
+
+
+
+
 
 .imagenGuia{
     height:20rem;
