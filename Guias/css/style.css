@@ -271,13 +271,14 @@ main{
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding-top: 3rem;
 }
 #guiaElegido{
     padding-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     padding: 4rem 8rem;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 
@@ -296,18 +297,37 @@ main{
 
 /* Guía elegido*/
 
+.audio-visual-destacado{
+    display: flex;
+    gap: 2rem;
+    background-color: #8a6ba3;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.video-guia-destacado{
+    border-radius: 1rem;
+}
 
 
+.imagen-guia-destacado{
+    border-radius: 1rem;
+}
 
-
-
-
-
-
+.texto-guia-elegido{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    
+}
+ 
 /*---FOOTER---*/
 
 footer{
-    background-color: rgba(41, 77, 118,0.5) ;
+    background-color: rgba(105, 112, 121, 0.5) ;
     padding: 50px;
     max-width: 100%;
 }

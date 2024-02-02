@@ -37,7 +37,7 @@ function showGuias(dat){
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">${Nombre}</h5>
-                        <p class="card-text">Tabla de datos</p>
+                        
                     </div>
                 </div>
             `;
@@ -53,7 +53,7 @@ function showGuias(dat){
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">${Nombre}</h5>
-                        <p class="card-text">Tabla de datos</p>
+                        
                     </div>
                 </div>
             `;
