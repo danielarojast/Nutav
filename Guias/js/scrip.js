@@ -32,8 +32,8 @@ function showGuias(dat){
 
             cardsGuias.innerHTML += `
             <div class="card" style="width: 18rem;">
-                    <a href="#">
-                        <div class="imagenGuia" style="background-image:url(/IMAGENES/PERSONAS/${foto}) ;"></div>
+                    <a href="../guiaEspecifico/index.html">
+                        <div class="imagenGuia" style="background-image:url(/IMAGENES/PERSONAS/${foto}) ;" idGuia = ${id}></div>
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">${Nombre}</h5>
@@ -48,8 +48,8 @@ function showGuias(dat){
     
             cardsAllGuias.innerHTML += `
             <div class="card" style="width: 18rem;">
-                    <a href="#">
-                        <div class="imagenGuia" style="background-image:url(/IMAGENES/PERSONAS/${foto}) ;"></div>
+                    <a href="../guiaEspecifico/index.html">
+                        <div class="imagenGuia" style="background-image:url(/IMAGENES/PERSONAS/${foto}) ;" idGuia = ${id}></div>
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">${Nombre}</h5>
@@ -113,15 +113,21 @@ function showGuias(dat){
         })  
         
     };
-
-   
-    
-   
-    
-    
-    
-     
-    
+}
 
 
+/*Enviar la info a pagina de guia especifico  */
+
+const guiasPrincipales = document.querySelector('#guiasPrincipales');
+guiasPrincipales.addEventListener('click', getDataGuia);
+
+const allGuias = document.querySelector('#allGuias');
+allGuias.addEventListener('click',getDataGuia);
+
+function getDataGuia(e) {
+
+    idGuia = e.target.getAttribute('idGuia');
+    
+    localStorage.setItem('idGuia', JSON.stringify(idGuia));
+ 
 }
