@@ -26,7 +26,7 @@
       "idioma": ["Español", "Inglés"],
       "duracion": "6 hrs",
       "idGuia": "G1",
-      "descripcion": "Sumérgete en la rica Historia y Cultura de la ciudad mientras paseas por coloridas calles, descubres Arte Urbano fascinante y te maravillas con la Arquitectura icónica. Desde la Plaza Botero hasta la Catedral Metropolitana, este recorrido a pie te llevará a lugares emblemáticos, permitiéndote conocer de cerca la transformación de Medellín en un destino moderno y acogedor. ¡Únete a nosotros para una experiencia única llena de sorpresas y autenticidad!",
+      "descripcion": "Sumérgete en la rica Historia y Cultura de la ciudad mientras paseas por coloridas calles, descubres Arte Urbano fascinante y te maravillas con la Arquitectura icónica. Desde la Plaza Botero hasta la Catedral Metropolitana, este recorrido a pie te llevará a lugares emblemáticos, permitiéndote conocer de cerca la transformación de Medellín en un destino moderno y acogedor. ¡Únete a nosotros para una experiencia única llena de sorpresas y autenticidad. Comienza tu travesía en la imponente Plaza Botero, donde las esculturas monumentales del renombrado artista Fernando Botero capturan la atención y te invitan a contemplar la voluptuosidad y el simbolismo de cada obra. Este espacio emblemático se convierte en el punto de partida de tu viaje cultural, donde las formas y figuras expresivas te transportarán a través del arte en un diálogo único entre pasado y presente.",
       "precio": "$210.000",
       "observaciones": ["Llevar ropa comoda","No ingerir licor","Aplicar protector solar antes del recorrido"]
     },
@@ -40,7 +40,7 @@
       "idioma": ["Español", "Inglés", "Francés"],
       "duracion": "4 hrs",
       "idGuia": "G2",
-      "descripcion": "Embárcate en un fascinante tour de Arquitectura única en Medellín, donde cada edificio cuenta su propia Historia extraordinaria. Exploraremos la ciudad desde una perspectiva arquitectónica, destacando innovadores diseños que fusionan lo moderno con lo tradicional. Desde los icónicos rascacielos en El Poblado hasta las estructuras vanguardistas en Laureles, descubrirás cómo la Arquitectura ha contribuido a la metamorfosis de Medellín.",
+      "descripcion": "Embárcate en un fascinante tour de Arquitectura única en Medellín, donde cada edificio cuenta su propia Historia extraordinaria. Exploraremos la ciudad desde una perspectiva arquitectónica, destacando innovadores diseños que fusionan lo moderno con lo tradicional. Desde los icónicos rascacielos en El Poblado hasta las estructuras vanguardistas en Laureles, descubrirás cómo la Arquitectura ha contribuido a la metamorfosis de Medellín. Sumérgete en un apasionante recorrido arquitectónico por Medellín, donde cada edificio se convierte en un relato visual de historias extraordinarias. Este tour te llevará más allá de las fachadas, explorando la ciudad desde una perspectiva única, revelando cómo la arquitectura ha desempeñado un papel fundamental en la transformación de Medellín en un paisaje urbano que fusiona lo moderno con lo tradicional.",
       "precio": "$320.000",
       "observaciones":["llevar un impermeable o paraguas","Llevar un recipiente reutilizable","Cuenta con un seguro de viaje"]
     },
@@ -54,7 +54,7 @@
       "idioma": ["Inglés"],
       "duracion": "2 hrs",
       "idGuia": "G3",
-      "descripcion": "Descubre la riqueza culinaria de la ciudad mientras exploras puestos de comida callejera y restaurantes auténticos. Desde exquisitas arepas rellenas hasta jugos de frutas frescas, cada bocado es una explosión de sabores tropicales que reflejan la diversidad Cultural de Medellín.",
+      "descripcion": "Descubre la riqueza culinaria de la ciudad mientras exploras puestos de comida callejera y restaurantes auténticos. Desde exquisitas arepas rellenas hasta jugos de frutas frescas, cada bocado es una explosión de sabores tropicales que reflejan la diversidad Cultural de Medellín. Embárcate en un apasionante viaje gastronómico por la bulliciosa ciudad de Medellín, donde cada rincón revela una riqueza culinaria que deleitará tus sentidos. Descubre un universo de sabores al explorar los vibrantes puestos de comida callejera y auténticos restaurantes que salpican las calles, brindándote una experiencia culinaria única e inolvidable. La oferta culinaria de Medellín es tan diversa como fascinante. Sumérgete en la tradición local con las exquisitas arepas rellenas, un manjar que fusiona texturas y sabores de manera magistral. Estas delicias, rellenas con ingredientes frescos y auténticos, son el epítome de la creatividad culinaria local y te permitirán saborear la esencia misma de la cocina de la región. ",
       "precio": "$200.000",
       "observaciones":["Llevar consigo documentos de identificación", "Llevar una botella de agua", "Llevar una mochila pequeña"]
     },
@@ -68,7 +68,7 @@
       "idioma": ["Español", "Inglés", "Alemán"],
       "duracion": "6 hrs",
       "idGuia": "G4",
-      "descripcion": "Monta a caballo mientras exploras los paisajes pintorescos que rodean Jericó, siguiendo los mismos caminos que alguna vez recorrieron los abuelos de la comunidad. A medida que avanzas, descubrirás la conexión profunda entre la Naturaleza y la Historia local, con paradas estratégicas en puntos de interés Cultural y miradores impresionantes.",
+      "descripcion": "Monta a caballo mientras exploras los paisajes pintorescos que rodean Jericó, siguiendo los mismos caminos que alguna vez recorrieron los abuelos de la comunidad. A medida que avanzas, descubrirás la conexión profunda entre la Naturaleza y la Historia local, con paradas estratégicas en puntos de interés Cultural y miradores impresionantes. A medida que avanzas, el recorrido revela paradas estratégicas en puntos de interés cultural, donde la historia local cobra vida a través de monumentos, estructuras antiguas y relatos transmitidos de generación en generación. Estos lugares emblemáticos no solo sirven como testigos silenciosos de los eventos que han dado forma a Jericó, sino que también te permiten sumergirte en la rica herencia cultural que define a esta comunidad.",
       "precio": "$350.000",
       "observaciones":["Recordar seguir las normas locales", "Llevar un dispositivo de navegación", "Llevar gorra o sombrero"]
     },
@@ -82,7 +82,7 @@
       "idioma": ["Español", "Inglés", "Francés", "Alemán"],
       "duracion": "6 hrs",
       "idGuia": "G5",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad. Las coloridas calles se convierten en lienzos vivos donde cada mural es una ventana a la creatividad y la expresión artística. Cada trazo y cada color cuenta una historia, desde las raíces culturales hasta los desafíos contemporáneos. Al caminar por estas calles, te sumergirás en la esencia misma del arte urbano, capturando la diversidad de voces y perspectivas que han encontrado su lugar en las paredes de la ciudad.",
       "precio": "$295.000",
       "observaciones":["Llevar consigo documentos de identificación", "Llevar una botella de agua", "Llevar una mochila pequeña"]
     },
@@ -96,7 +96,7 @@
       "idioma": ["Español", "Alemán"],
       "duracion": "8 hrs",
       "idGuia": "G6",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Adéntrate en un apasionante viaje a través de las cautivadoras calles del oriente antioqueño, donde cada rincón está adornado con un arte urbano impresionante que cuenta relatos únicos. Este tour te invita a explorar las raíces culturales que han florecido con esplendor en medio de los desafíos históricos del oriente antioqueño, ofreciéndote una inmersión profunda en el arte y la cultura que han forjado la identidad vibrante de esta región. A medida que exploras este itinerario, ascenderás por las colinas del oriente antioqueño, dejándote maravillar por las vistas panorámicas que se despliegan ante ti. Los escaladores eléctricos te brindarán la oportunidad única de apreciar la conexión entre la geografía única de la región y la vitalidad de la vida urbana desde alturas impresionantes. Cada ascenso es una ventana a la intersección entre la naturaleza y la creatividad humana.",
       "precio": "$360.000",
       "observaciones":["Llevar consigo documentos de identificación", "Llevar una botella de agua", "Llevar una mochila pequeña"]
     },
@@ -110,7 +110,7 @@
       "idioma": ["Español", "Francés"],
       "duracion": "6 hrs",
       "idGuia": "G7",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Embárcate en un apasionante paseo por los exuberantes paisajes de Jardín, Antioquia, donde cada rincón está impregnado de la serenidad natural que ofrece este encantador pueblo. Nuestro recorrido te sumergirá en las pintorescas calles adornadas con flores y detalles arquitectónicos únicos, revelando la conexión especial entre la comunidad y su entorno. Descubre la riqueza cultural y botánica que ha florecido en este escenario, superando desafíos históricos con un vínculo armonioso entre el hombre y la naturaleza. Atravesarás senderos y caminos que revelan jardines exquisitamente cuidados, donde cada rincón es una obra maestra de la flora local. Los guías expertos te acompañarán, compartiendo historias cautivadoras sobre la historia y la ecología de este idílico lugar. Disfruta de la frescura del aire de montaña mientras exploras los jardines que se despliegan en las suaves colinas, ofreciéndote vistas panorámicas impresionantes que capturan la esencia misma de la belleza natural de Jardín, Antioquia. Este viaje te invita a conectarte con la esencia vital de la región, explorando la sinfonía de colores y fragancias que componen este paraíso botánico.",
       "precio": "$380.000",
       "observaciones":["Llevar consigo documentos de identificación", "Llevar una botella de agua", "Llevar una mochila pequeña"]
     },
@@ -124,7 +124,7 @@
       "idioma": ["Español"],
       "duracion": "8 hrs",
       "idGuia": "G1",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Adéntrate en el mágico pueblo de Guatapé y déjate llevar por un tour guiado que te sumergirá en la riqueza de su historia y la belleza de su entorno natural. Explorarás las calles empedradas llenas de coloridas fachadas adornadas con zócalos que cuentan historias tradicionales y culturales únicas. Cada paso te llevará a descubrir la fusión entre el arte urbano y la arquitectura tradicional, creando un ambiente encantador que refleja la identidad vibrante de Guatapé. Acompañados por guías locales apasionados, te aventurarás más allá del pueblo para explorar la majestuosidad del embalse y la famosa Piedra del Peñol. Ascenderás por sus escalones para obtener vistas panorámicas espectaculares que abarcan la inmensidad del paisaje, con sus islas dispersas y aguas resplandecientes. Descubrirás la historia geológica de esta icónica formación rocosa y cómo se ha convertido en un símbolo emblemático de la región.",
       "precio": "$370.000",
       "observaciones":["Recordar seguir las normas locales", "Llevar un dispositivo de navegación", "Llevar gorra o sombrero"]
     },
@@ -138,7 +138,7 @@
       "idioma": ["Español", "Inglés", "Alemán"],
       "duracion": "6 hrs",
       "idGuia": "G9",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Adéntrate en la Comuna 13 de Medellín, un vibrante epicentro de transformación y resiliencia que ha emergido como un testimonio de la capacidad humana para superar desafíos. Nuestro tour guiado te llevará por las intrincadas calles llenas de coloridos grafitis y murales que narran historias de lucha, esperanza y progreso. Cada obra de arte urbano es un reflejo de la transformación social que ha tenido lugar en esta comunidad, convirtiéndola en un ejemplo inspirador de renovación y empoderamiento. Guiados por residentes locales apasionados, descubrirás la fascinante historia detrás de la Comuna 13, desde sus días de dificultades hasta su actual renacimiento. Explorarás los famosos escaladores eléctricos que te llevarán por las empinadas colinas, brindándote una vista panorámica única de la ciudad y sus alrededores.",
       "precio": "$240.000",
       "observaciones": ["Llevar ropa comoda","No ingerir licor","Aplicar protector solar antes del recorrido"]
     },
@@ -152,7 +152,7 @@
       "idioma": ["Español", "Inglés"],
       "duracion": "6 hrs",
       "idGuia": "G10",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Embárcate en un emocionante viaje a través de Medellín con nuestro tour en bicicleta, una experiencia única que te permite explorar la ciudad de una manera activa y sostenible. Pedaleando por las pintorescas calles de la ciudad, descubrirás la energía palpable de Medellín y su increíble mezcla de modernidad y tradición. El recorrido en bicicleta te llevará por lugares emblemáticos y pintorescos parques, donde podrás sumergirte en la belleza natural y la arquitectura vibrante de la ciudad. Atravesarás vecindarios históricos y contemporáneos, con paradas estratégicas para aprender sobre la rica historia cultural de Medellín, desde sus raíces hasta su actual renacimiento urbano. Guiados por instructores locales conocedores, experimentarás la amabilidad y la hospitalidad de la gente de Medellín mientras exploras la ciudad sobre dos ruedas. El recorrido incluirá puntos destacados como la Plaza Botero, el Parque Explora y el innovador sistema de transporte público, Metrocable.",
       "precio": "$210.000",
       "observaciones":["Llevar una botella de agua", "Se recomienda usar calzado cómodo", "Aplicar protector solar antes del recorrido"]
     },
@@ -166,7 +166,7 @@
       "idioma": ["Español", "Inglés", "Alemán", "Francés"],
       "duracion": "2 hrs",
       "idGuia": "G1",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Embárcate en una aventura única y emocionante que elevará tu perspectiva de Medellín a nuevas alturas. Nuestro recorrido guiado A las Alturas te invita a descubrir la ciudad desde el cielo, explorando emocionantes excursiones de parapente y experiencias que desafían la gravedad. Iniciaremos nuestro recorrido en tierra firme, explorando los lugares emblemáticos de Medellín que cuentan historias fascinantes de su pasado y presente. Luego, nos dirigiremos hacia las zonas elevadas que ofrecen impresionantes vistas panorámicas. Aventúrate en una experiencia de parapente, donde deslizarte por el aire te permitirá apreciar la topografía única de Medellín y sus alrededores. Guiados por pilotos expertos y apasionados, te sumergirás en la emoción de despegar desde altas elevaciones, sintiendo la libertad del vuelo mientras disfrutas de vistas impresionantes. Sobrevolarás valles, ríos y bosques, experimentando la majestuosidad de la naturaleza colombiana desde una perspectiva completamente nueva.",
       "precio": "$200.000",
       "observaciones": ["Llevar ropa comoda","No ingerir licor","Aplicar protector solar antes del recorrido"]
     },
@@ -180,7 +180,7 @@
       "idioma": ["Español", "Inglés"],
       "duracion": "4 hrs",
       "idGuia": "G8",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Embárcate en un emocionante tour por las terrazas más trendy de Medellín, donde la escena de bares alcanza nuevas alturas. Descubre la vida nocturna única de la ciudad mientras exploras terrazas elegantes y modernas que ofrecen vistas panorámicas espectaculares. Este recorrido guiado te sumergirá en la vibrante cultura de los bares en terrazas, donde la combinación de cócteles innovadores, música animada y vistas impresionantes crean una experiencia inolvidable. Comenzaremos en los animados barrios del centro de la ciudad, explorando las calles llenas de energía antes de ascender hacia las alturas donde la vida nocturna cobra vida de una manera única. Nuestros guías expertos te conducirán a través de una selección de las terrazas más exclusivas, donde podrás disfrutar de cócteles artesanales y aperitivos deliciosos en un ambiente sofisticado.",
       "precio": "$190.000",
       "observaciones":["Proteger dispositivos electrónicos", "El tour incluye información multilingüe", "Recordar seguir las normas locales"]
     },
@@ -194,7 +194,7 @@
       "idioma": ["Español", "Inglés"],
       "duracion": "4 hrs",
       "idGuia": "G1",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Explora Medellín desde las alturas con nuestro cautivador tour de miradores, una experiencia que te llevará a los puntos más panorámicos de la ciudad, revelando vistas espectaculares y perspectivas únicas. Este recorrido guiado te sumergirá en la majestuosidad de los miradores, desde donde podrás admirar la topografía ondulante de Medellín y su fascinante fusión de naturaleza y urbanismo. Comenzaremos en el corazón de la ciudad, explorando sus vibrantes barrios antes de ascender hacia las colinas que ofrecen impresionantes vistas de la metrópoli. Nuestros guías locales expertos compartirán historias fascinantes sobre la evolución de Medellín mientras te llevan a través de miradores estratégicos que brindan una perspectiva única de la ciudad. Durante el recorrido, visitarás miradores que ofrecen vistas panorámicas de los valles, ríos y montañas que rodean Medellín. Desde estos puntos elevados, podrás capturar imágenes inolvidables y experimentar la grandeza de la ciudad mientras se extiende ante ti.",
       "precio": "$180.000",
       "observaciones":["Llevar una botella de agua", "Se recomienda usar calzado cómodo", "Se anima a llevar una cámara"]
     },
@@ -208,7 +208,7 @@
       "idioma": ["Español", "Inglés"],
       "duracion": "4 hrs",
       "idGuia": "G1",
-      "descripcion": "Nuestro recorrido te llevará a través de las coloridas calles decoradas con impresionante Arte Urbano, donde cada mural cuenta una Historia única. Conocerás de cerca el Arte y la Cultura que han florecido en medio de desafíos históricos. Los escaladores eléctricos te llevarán por las empinadas colinas, brindándote vistas panorámicas impresionantes de la ciudad.",
+      "descripcion": "Sumérgete en un viaje culinario auténtico con nuestro emocionante recorrido de comida callejera en Medellín. Descubre los sabores vibrantes y variados que esta ciudad colombiana tiene para ofrecer mientras exploras los rincones menos conocidos y más deliciosos de la escena gastronómica local. Comenzaremos nuestro recorrido en el corazón de los bulliciosos mercados y plazas, donde el aroma de las delicias locales te guiará. Nuestros guías gastronómicos locales te conducirán por estrechas callejuelas llenas de puestos coloridos y vendedores ambulantes, compartiendo historias sobre la rica tradición culinaria de Medellín. Degustarás una variedad de platillos auténticos, desde arepas rellenas hasta empanadas crujientes y frutas exóticas frescas. Cada bocado te sumergirá en la diversidad de sabores que define la cocina local, mientras interactúas con los apasionados vendedores que han perfeccionado sus recetas a lo largo de generaciones.",
       "precio": "$150.000",
       "observaciones":["Se sugiere llevar un recipiente reutilizable", "Llevar una mochila pequeña","Aplicar protector solar antes del recorrido"]
     }
@@ -282,7 +282,7 @@
     {
       "foto": "andres-herrera.jpg",
       "id": "G6",
-      "Nombre": "Andrés Herrera,",
+      "Nombre": "Andrés Herrera",
       "Edad": 30,
       "genero": "masculino",
       "procedencia": "colombiano",

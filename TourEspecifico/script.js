@@ -342,12 +342,13 @@ function pageTour(tours) {
 
     const portada = document.querySelector('.portada');
     const descrip = document.querySelector('.descripcion');
-    const observacion = document.querySelector('.texto-table')
+    const observacion = document.querySelector('.texto-table');
+    const precioTour = document.querySelector('.precio')
     const botonesContact = document.querySelector('.botonesContact');
 
 
     tours.forEach(tour => {
-        const { descripcion, imagen, nombre, duracion, tourId, galeria, observaciones } = tour
+        const { descripcion, imagen, nombre, duracion, tourId, galeria, observaciones, precio} = tour
 
         if (tourId === idT) {
 
@@ -391,6 +392,13 @@ function pageTour(tours) {
             </ul>
             `
         }
+        if(tourId === idT){
+            precioTour.innerHTML = `
+            <p><strong>Precio</strong></p>
+            <h2><strong>${precio}</strong></h2>
+            `
+        }
+
 
     });
 }
@@ -466,13 +474,14 @@ function mostrarProductos(tour) {
             divProducto.innerHTML = `
                 <div>
                 <a href="">
-                    <div class="card" style="background-image: url(/IMAGENES/TOURS/${producto.imagen}) ;" idTour =${producto.tourId}>
+                    <div class="card" style="background-image: url(/IMAGENES/TOURS/${producto.imagen}) ;"  idGuia=${producto.idGuia}  idTour =${producto.tourId}>
                         <div class="degraded">
                             <p>${producto.nombre}</p>
                         </div>
                     </div>
                 </a>
-                <h3>Desde ${producto.precio}</h3>
+                <br>
+                <h5>Desde <strong>${producto.precio}</strong></h5>
             </div>
             `;
             container.appendChild(divProducto);
@@ -505,15 +514,20 @@ cardContainer.addEventListener('click', getTourData);
 
 function getTourData(e) {
     const idTour = e.target.getAttribute('idTour');
-    console.log(idTour);
+    const idGuia =  e.target.getAttribute('idGuia');
+    console.log(idGuia);
     let newId = idTour;
+    let newIdG = idGuia
 
-    let tourId = JSON.parse(localStorage.getItem('tourId'))
-    
+    let tourId = JSON.parse(localStorage.getItem('tourId'));
+    let guiaId = JSON.parse(localStorage.getItem('idGuia'));
+
+    guiaId = newIdG
     tourId = newId
     console.log(tourId);
 
-    localStorage.setItem('tourId', JSON.stringify(tourId));  
+    localStorage.setItem('tourId', JSON.stringify(tourId));
+    localStorage.setItem('idGuia', JSON.stringify(guiaId));
 
     window.location.reload();
 }

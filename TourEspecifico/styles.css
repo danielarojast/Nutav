@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Sintony', 'sans-serif';
-    
+    font-family: 'Sintony', 'sans-serif';    
 
 }
 
@@ -717,24 +716,24 @@ footer{
 
 .boton-atras-carrusel{
     position: absolute;
-    left: 13rem;
-    bottom: 15rem;
+    left: 3rem;
+    bottom: 12rem;
     background: none;
     border: none;
 }
 
 .boton-atras-carrusel img{
-    width: 100px;
+    width: 130px;
 }
 .boton-adelante-arrusel img{
-    width: 100px;
+    width: 130px;
 }
 
 
 .boton-adelante-arrusel{
     position: absolute;
-    right: 13rem;
-    bottom: 15rem;
+    right: 3rem;
+    bottom: 12rem;
     background: none;
     border: none;
 }
