@@ -302,7 +302,6 @@ nav .buscador {
 #fotoPerfil{
     width: 180px;
     height:180px;
-    background-image:url(/IMAGENES/PERSONAS/fotoPerfil.jpg) ;
     background-size: cover;
     background-position: center;
 }
@@ -383,8 +382,8 @@ nav .buscador {
     flex-direction:column;
     align-items: center;
     padding: 37px 0 0 0;
-    height: 700px;
-    overflow: auto; 
+   /* height: 700px;
+    overflow: auto; */
     
 }
 #toursOfrecidos{
@@ -467,7 +466,7 @@ margin: 60px;
     width: 150px;
     height:150px;
     background-color: rgb(46, 222, 148);
-    background-image:url(/IMAGENES/PERSONAS/mujer.jpg) ;
+    background-image:url(/IMAGENES/PERSONAS/fotoPerfil1.png) ;
     background-size: cover;
     background-position: center;
 }

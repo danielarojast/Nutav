@@ -17,7 +17,6 @@ poner un efecto en las cards
             const response= await fetch(urlData);
             const data= await response.json()
             console.log(data)
-            showGuias(data.guias);
             showTours(data.Tours);
             showReview(data.reviews);
             pageGuias(data.guias)
@@ -26,31 +25,58 @@ poner un efecto en las cards
             
         }
     };
-
-//Descripcion del Guia
-
-    function showGuias(dataGuias){
-
-        const nombreH2= document.querySelector('.nombreGuia');
-        const descripcionP= document.querySelector('.descripcionGuia');
-        const nombrePerfil= document.querySelector('.nombreGuiaPerfil');
-        const tablaPerfil=document.querySelector('#tablaPerfil');
-
-        //guias.forEach....
-        const{foto, id, Nombre, Edad, genero, procedencia, idioma, anosExperiencia, descripcion}= dataGuias[0];
-
-        nombreH2.textContent= `${Nombre}`;
-        descripcionP.textContent= `${descripcion}`;
-        nombrePerfil.textContent= `${Nombre}`;
-        tablaPerfil.children[0].children[0].children[1].textContent=`${Edad} años`;
-        tablaPerfil.children[0].children[1].children[1].textContent=`${genero}`;
-        tablaPerfil.children[0].children[2].children[1].textContent=`${anosExperiencia} años`;
-        tablaPerfil.children[0].children[3].children[1].textContent=`50`;
-        tablaPerfil.children[0].children[4].children[1].textContent=`4.8`;
-        tablaPerfil.children[0].children[5].children[1].textContent=`${idioma}`;
-        //
-    };  
 //
+
+/* Traer informacion del Local storage */
+document.addEventListener('DOMContentLoaded', ()=>{
+
+    getDataLocalStorage() 
+})
+
+function getDataLocalStorage() {
+    const idGuia = JSON.parse(localStorage.getItem('idGuia'))
+    return idGuia
+}
+
+let idG = getDataLocalStorage()
+console.log(idG);
+
+// Descripcion del guia
+
+function pageGuias(guias) {
+
+    /*ubicarnos en box para el inner */
+    const nombreH2= document.querySelector('.nombreGuia');
+    const descripcionP= document.querySelector('.descripcionGuia');
+    const nombrePerfil= document.querySelector('.nombreGuiaPerfil');
+    const tablaPerfil=document.querySelector('#tablaPerfil');
+    const fotoPerfil= document.querySelector('#fotoPerfil');
+
+    guias.forEach(guia => {
+
+        const {id} = guia;
+        console.log(id)
+
+        if (id == idG) {
+
+            const {foto, Nombre, Edad, genero, idioma, anosExperiencia, descripcion}= guia;
+
+            fotoPerfil.style=`background-image: url(/IMAGENES/PERSONAS/${foto})`
+            nombreH2.textContent= `${Nombre}`;
+            descripcionP.textContent= `${descripcion}`;
+            nombrePerfil.textContent= `${Nombre}`;
+            tablaPerfil.children[0].children[0].children[1].textContent=`${Edad} años`;
+            tablaPerfil.children[0].children[1].children[1].textContent=`${genero}`;
+            tablaPerfil.children[0].children[2].children[1].textContent=`${anosExperiencia} años`;
+            tablaPerfil.children[0].children[3].children[1].textContent=`50`;
+            tablaPerfil.children[0].children[4].children[1].textContent=`4.8`;
+            tablaPerfil.children[0].children[5].children[1].textContent=`${idioma}`;
+                
+        }
+        
+    });
+    
+}
    
 // Cards Tours ofrecidos 
 
@@ -60,22 +86,25 @@ poner un efecto en las cards
 
         dataTours.forEach((tour)=>{
             //destructurar
-            const {imagen,nombre,idTour,idGuia,descripcion}= tour
+            const {imagen,nombre,idGuia}= tour
 
-            const tourHTML= document.createElement('p');
-            tourHTML.innerHTML= `
-            <div class="card" id="cadaCard">
-                <a href="#">
-                <div class="contenedo_card_img">
-                    <img src="/IMAGENES/TOURS/${imagen}" class="card-img-top img_card" id="img_card" alt="...">
-                </div>
-                <div class="card-body" id="h5_card">
-                    <h5 class="card-title"><a><b>${nombre}</b></a></h5>
-                </div>
-                </a>
-            </div> 
-            `
-            contenedorTours.appendChild(tourHTML);
+            if(idGuia == idG){
+                const tourHTML= document.createElement('p');
+                tourHTML.innerHTML= `
+                <div class="card" id="cadaCard">
+                    <a href="#">
+                    <div class="contenedo_card_img">
+                        <img src="/IMAGENES/TOURS/${imagen}" class="card-img-top img_card" id="img_card" alt="...">
+                    </div>
+                    <div class="card-body" id="h5_card">
+                        <h5 class="card-title"><a><b>${nombre}</b></a></h5>
+                    </div>
+                    </a>
+                </div> 
+                `
+                contenedorTours.appendChild(tourHTML);
+            }
+            
         });
 
         //Boton ver mas 
@@ -123,35 +152,37 @@ poner un efecto en las cards
 // Cards Reseñas 
     const contenedorReview= document.querySelector('#review')
 
+
     function showReview(reviews){
         console.log(reviews)
 
         //destructurar
         reviews.forEach((review)=>{
-            const {calificacion, fecha, reseña}= review
+            const {idGuia,calificacion, fecha, reseña}= review
 
-            const reviewHtml= document.createElement('p');
-            reviewHtml.innerHTML= `
-            <div class="card mb-3 row g-0" style="max-width: 100%;" id="cadaCardReview">
-                <div class="row g-0">
-                    <div class="col-md-4 contImg img-fluid  " >
-                        <div class=" fotoPerfil imgClienteRev"> </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Sofia Toro</b></h5>
-                            <p class="card-text">${reseña}</p>
-                            <div id="detalleReview">
-                                <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>
-                                <p class="card-text"><small class="text-body-secondary">${calificacion}</small></p>
+            if(idGuia == idG){
+                const reviewHtml= document.createElement('p');
+                reviewHtml.innerHTML= `
+                <div class="card mb-3 row g-0" style="max-width: 100%;" id="cadaCardReview">
+                    <div class="row g-0">
+                        <div class="col-md-4 contImg img-fluid  " >
+                            <div class=" fotoPerfil imgClienteRev" > </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Sofia Toro</b></h5>
+                                <p class="card-text">${reseña}</p>
+                                <div id="detalleReview">
+                                    <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>
+                                    <p class="card-text"><small class="text-body-secondary">${calificacion}</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            `
-            contenedorReview.appendChild(reviewHtml);
-            
+                `
+                contenedorReview.appendChild(reviewHtml);
+            };
         });
 
 
@@ -195,70 +226,39 @@ poner un efecto en las cards
 
             reviews.forEach((reviewMod)=>{
                 const {idReview, idC, idGuia, calificacion, fecha, reseña}= reviewMod;
-        
-                const reviewModHtml= document.createElement('p');
-                //function showReview(){
+                
+                if(idGuia == idG){
+                    const reviewModHtml= document.createElement('p');
+                    //function showReview(){
 
-                    reviewModHtml.innerHTML= `
-                    <div class="card mb-3 modal-dialog modal-xl " style="max-width: 100%;" id="cadaCardModalRev">
-                        <div class="row g-0 ">
-                            <div class="col-md-4 contImg">
-                                <div class=" fotoPerfil imgClienteRev"> </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                <h5 class="card-title"><b>Sofia Toro</b></h5>
-                                <p class="card-text">${reseña}</p>
-                                <div id="detalleReview">
-                                    <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>
-                                    <p class="card-text"><small class="text-body-secondary">${calificacion}</small></p>
+                        reviewModHtml.innerHTML= `
+                        <div class="card mb-3 modal-dialog modal-xl " style="max-width: 100%;" id="cadaCardModalRev">
+                            <div class="row g-0 ">
+                                <div class="col-md-4 contImg">
+                                    <div class=" fotoPerfil imgClienteRev"> </div>
                                 </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title"><b>Sofia Toro</b></h5>
+                                    <p class="card-text">${reseña}</p>
+                                    <div id="detalleReview">
+                                        <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>
+                                        <p class="card-text"><small class="text-body-secondary">${calificacion}</small></p>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    `;
-                    modalBody.appendChild(reviewModHtml);
+                        `;
+                        modalBody.appendChild(reviewModHtml);
+                    }  
             });
         //
     };
 //
 
 
-/* Traer informacion del Local storage */
-document.addEventListener('DOMContentLoaded', ()=>{
 
-    getDataLocalStorage()
-    
-    
-})
-
-function getDataLocalStorage() {
-    const idGuia = JSON.parse(localStorage.getItem('idGuia'))
-    return idGuia
-}
-
-let idG = getDataLocalStorage()
-console.log(idG);
-
-
-function pageGuias(guias) {
-
-    /*ubicarnos en box para el inner */
-
-    guias.forEach(guia => {
-
-        const {id} = guia;
-
-        if (id == idG) {
-
-            /* hacer proceso de innerHtml */
-            
-        }
-        
-    });
-    
-}
 
     
 
