@@ -93,6 +93,9 @@ nav .buscador {
 .menu .unete {
     background-color: #d9d9d9;
     color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .menu .inscribete {
@@ -391,9 +394,9 @@ nav .buscador {
     gap: 15px;
     row-gap: 100px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:baseline;
     width: 100%;
-    padding-bottom: 35px; 
+    padding: 0 0 35px 40px; 
 }
 #cadaCard{
     border: none;
@@ -491,9 +494,10 @@ margin: 60px;
 /*---Footer---*/
 
 footer{
-    background-color: rgba(41, 77, 118,0.5) ;
+    background-color:  #294D76 ;
     padding: 50px;
     max-width: 100%;
+    color: black;
 }
 .contenedorFooter{
     width: 90%;

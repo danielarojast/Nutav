@@ -20,7 +20,6 @@ poner un efecto en las cards
             showTours(data.Tours);
             showReview(data.reviews);
             pageGuias(data.guias)
-            //showCustomers(data.customers);
         } catch (error) {
             
         }
@@ -59,13 +58,13 @@ function pageGuias(guias) {
 
         if (id == idG) {
 
-            const {foto, Nombre, Edad, genero, idioma, anosExperiencia, descripcion}= guia;
+            const {foto, Nombre, edad, genero, idioma, anosExperiencia, descripcion}= guia;
 
             fotoPerfil.style=`background-image: url(/IMAGENES/PERSONAS/${foto})`
             nombreH2.textContent= `${Nombre}`;
             descripcionP.textContent= `${descripcion}`;
             nombrePerfil.textContent= `${Nombre}`;
-            tablaPerfil.children[0].children[0].children[1].textContent=`${Edad} años`;
+            tablaPerfil.children[0].children[0].children[1].textContent=`${edad} años`;
             tablaPerfil.children[0].children[1].children[1].textContent=`${genero}`;
             tablaPerfil.children[0].children[2].children[1].textContent=`${anosExperiencia} años`;
             tablaPerfil.children[0].children[3].children[1].textContent=`50`;
@@ -86,15 +85,15 @@ function pageGuias(guias) {
 
         dataTours.forEach((tour)=>{
             //destructurar
-            const {imagen,nombre,idGuia}= tour
+            const {imagen,nombre,idGuia, tourId}= tour
 
             if(idGuia == idG){
                 const tourHTML= document.createElement('p');
                 tourHTML.innerHTML= `
                 <div class="card" id="cadaCard">
-                    <a href="#">
+                    <a href="/TourEspecifico/index.html">
                     <div class="contenedo_card_img">
-                        <img src="/IMAGENES/TOURS/${imagen}" class="card-img-top img_card" id="img_card" alt="...">
+                        <img src="/IMAGENES/TOURS/${imagen}" class="card-img-top img_card" id="img_card" alt="..." idTour = "${tourId}">
                     </div>
                     <div class="card-body" id="h5_card">
                         <h5 class="card-title"><a><b>${nombre}</b></a></h5>
@@ -147,6 +146,34 @@ function pageGuias(guias) {
              
         });
     };
+
+    /*-------------------------------------Mostrar tours del carrusel------------------------------------------- */
+
+
+const toursOfrecidos = document.querySelector('#toursOfrecidos');
+toursOfrecidos.addEventListener('click', getTourData);
+
+
+function getTourData(e) {
+    const idTour = e.target.getAttribute('idTour');
+    
+    let newId = idTour;
+    
+
+    let tourId = JSON.parse(localStorage.getItem('tourId'));
+    
+    tourId = newId
+    console.log(tourId);
+
+    localStorage.setItem('tourId', JSON.stringify(tourId));
+
+}
+
+
+
+
+
+
 //
 
 // Cards Reseñas 
@@ -158,7 +185,7 @@ function pageGuias(guias) {
 
         //destructurar
         reviews.forEach((review)=>{
-            const {idGuia,calificacion, fecha, reseña}= review
+            const {idGuia,calificacion, fecha, reseña, idC}= review
 
             if(idGuia == idG){
                 const reviewHtml= document.createElement('p');
@@ -182,8 +209,18 @@ function pageGuias(guias) {
                 </div>
                 `
                 contenedorReview.appendChild(reviewHtml);
+               
             };
+
+            localStorage.setItem('idC', JSON.stringify(idC));
+
         });
+
+        
+
+    
+
+
 
 
         //Boton ver mas
@@ -255,6 +292,7 @@ function pageGuias(guias) {
             });
         //
     };
+
 //
 
 
