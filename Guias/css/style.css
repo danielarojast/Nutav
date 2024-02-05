@@ -259,16 +259,14 @@ main{
     margin: auto;
 }
 
-#bannerPrincipal{
-    background-color: aquamarine;
-}
+
 #filtros{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 0rem 1rem;
+    padding: 3rem 1rem 0 1rem;
 }
 
 .option-btn{
@@ -278,6 +276,9 @@ main{
     background-color: #72727225;
     font-size: medium;
     color: #727272;
+}
+.card:hover{
+    transform: scale(1.05);
 }
 
 #guiasPrincipales{
@@ -303,11 +304,70 @@ main{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding-top: 1rem;
+    padding-top: 1rem;   
+}
+
+.btnMoreGuias{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
     
 }
+.btnMoreGuias button{
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    background-color: #d9d9d9;
+    transition: 0.4s;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Bannner final*/
+
 #bannerFinal{
-    background-color: darksalmon;
+       
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 200px 0;
+}
+#beneficios{
+    display: flex;
+    gap: 30px;
+    padding: 50px 8% ;
+}
+.contTexto{
+    display: flex;
+    flex-direction: column;
+}
+.contTexto h2{
+    font-size: 25px;
+}
+#contVideoBanner{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+/* #contVideoBanner video{
+border-radius: 20px;
+} */
+#contBtnFinal{
+width: 100%;
+display: flex;
+justify-content: end;
+padding: 0 5% 0 0 ;
+gap: 10px;
+}
+.uneteBtn{
+border: none;
+border-radius: 10px;
+padding: 1%;
+}
+#btnUneteFinal{
+background-color: #FCF329 ;
 }
 
 /* Guía elegido*/
@@ -342,9 +402,10 @@ main{
 /*---FOOTER---*/
 
 footer{
-    background-color: rgba(105, 112, 121, 0.5) ;
+    background-color: #294D76  ;
     padding: 50px;
     max-width: 100%;
+    color: #000;
 }
 .contenedorFooter{
     width: 90%;

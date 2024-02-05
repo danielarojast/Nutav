@@ -180,9 +180,7 @@ function showGuias(dat){
         
         if(itemsAllPage>= itemsAllGuias.length){
             btnMoreGuias.style.display="none"
-        }else{
-            btnMoreGuias.style.display="block"
-        }
+        };
 
         btnMoreGuias.addEventListener('click', ()=>{
             itemsAllPage += 10;

@@ -21,7 +21,6 @@
         <label for="check" class="mostrar-menu">
             &#8801
         </label>
-        <input class="buscador" type="search" placeholder="buscar...">
         <!--<Iniciar modal LogIn>-->
 
         <!-- Modal -->
@@ -61,7 +60,7 @@
         <!--<Finalizar modal LogIn>-->
         <div class="menu">
             <button class="idioma"><img src="/IMAGENES/ICONOSYLOGOS/ingles.png" alt=""></button>
-            <button class="unete boton">Se un Nutav</button>
+            <button class="unete boton" data-bs-toggle="modal" data-bs-target="#modalLogIn">Se un Nutav</button>
             <button id="login" data-bs-toggle="modal" data-bs-target="#modalLogIn" class="inscribete boton">Log
                 In</button>
             <label for="check" class="esconder-menu">
@@ -71,9 +70,6 @@
     </nav>
 
     <main>
-        <div id="bannerPrincipal">
-            <p>Contenedor Banner pincipal</p>
-        </div>
 
         <div class="search" id="search">
             <div id="filtros">
@@ -152,12 +148,39 @@
             <div id="allGuias">
 
             </div>
-            <div id="btnMoreGuias">
+            <div id="btnMoreGuias" class="btnMoreGuias">
                 <button type="button">Ver mas</button>
             </div>
         </div>
+
+    <!-- BANNER FINAL (beneficios de ser un guia) -->
         <div id="bannerFinal">
-            <p>Contenedor Banner final</p>
+           
+            <div id="contVideoBanner">
+                <video  autoplay loop width="90%"  controls>
+                    <source src="/IMAGENES/ICONOSYLOGOS/seUnNutav.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="beneficios">
+                <div class="contTexto">
+                    <h2><strong>Excelente rentabilidad</strong></h2>
+                    <p>Como guia tu trabajo es muy valioso y tienes el derecho de ponerle el precio que consideres a cada servicio que ofrezcas, sin intermediarios segun tu disponibilidad.</p>
+                </div>
+                <div class="contTexto">
+                    <h2><strong>Segurudad y analisis de reservaciones</strong></h2>
+                    <p>Nuestro exhaustivo sistema de verificación comprueba información como el nombre, la dirección, la identificación oficial y otros datos para confirmar la identidad de las personas que reservan los tours. </p>
+                </div>
+                <div class="contTexto">
+                    <h2><strong>Acompañamieto y soporte especializado</strong></h2>
+                    <p>Si en algún momento necesitas soporte, tienes dudas o te sientes en una situación insegura, nuestra plataforma te ofrece acceso a agentes especializados en seguridad las 24 horas.</p>
+                </div>
+            </div>
+            <div id="contBtnFinal">
+                <button class="uneteBtn" data-bs-toggle="modal" data-bs-target="#modalLogIn">Comunicate con un asesor</button>
+                <button class="uneteBtn" id="btnUneteFinal" data-bs-toggle="modal" data-bs-target="#modalLogIn">Se un Nutav</button>
+            </div>
+           
+
         </div>
     </main>
 

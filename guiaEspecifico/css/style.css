@@ -398,6 +398,7 @@ nav .buscador {
     width: 100%;
     padding: 0 0 35px 40px; 
 }
+
 #cadaCard{
     border: none;
     height: 444px;
@@ -405,10 +406,22 @@ nav .buscador {
 }
 .contenedo_card_img{
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 26rem;
+    border-radius: 1rem;
+    
+}
+#cadaCard:hover{
+    transform: scale(1.05);
 }
 #img_card{
     height: 444px;
 }
+#img_card:hover{
+    transform: scale(1.2);
+}
+
 #h5_card{
     height: 15%;
 }

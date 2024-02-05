@@ -92,14 +92,14 @@ function pageGuias(guias) {
                 tourHTML.innerHTML= `
                 <div class="card" id="cadaCard">
                     <a href="/TourEspecifico/index.html">
-                    <div class="contenedo_card_img">
-                        <img src="/IMAGENES/TOURS/${imagen}" class="card-img-top img_card" id="img_card" alt="..." idTour = "${tourId}">
-                    </div>
-                    <div class="card-body" id="h5_card">
-                        <h5 class="card-title"><a><b>${nombre}</b></a></h5>
-                    </div>
+                        <div class="contenedo_card_img" style="background-image: url(/IMAGENES/TOURS/${imagen});" idTour = "${tourId}">
+                                    
+                        </div>
+                        <div class="card-body" id="h5_card">
+                            <h5 class="card-title"><a><b>${nombre}</b></a></h5>
+                        </div>
                     </a>
-                </div> 
+                </div>
                 `
                 contenedorTours.appendChild(tourHTML);
             }
