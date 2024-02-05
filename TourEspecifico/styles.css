@@ -697,6 +697,12 @@ footer{
     
 }
 
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 .degraded{
     position: absolute;
     background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(180, 180, 180) 100%);
