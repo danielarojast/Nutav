@@ -263,8 +263,23 @@ main{
     background-color: aquamarine;
 }
 #filtros{
-    background-color: darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0rem 1rem;
 }
+
+.option-btn{
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: #72727225;
+    font-size: medium;
+    color: #727272;
+}
+
 #guiasPrincipales{
     display: flex;
     flex-wrap: wrap;
@@ -381,4 +396,8 @@ color: #000;
     height:20rem;
     background-size: cover;
     background-position: center;
+}
+
+.hidden{
+    display: none;
 }

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sintony:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sintony:wght@400;700&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
 
     <nav>
@@ -53,7 +57,7 @@
             </div>
         </div>
 
-    
+
         <!--<Finalizar modal LogIn>-->
         <div class="menu">
             <button class="idioma"><img src="/IMAGENES/ICONOSYLOGOS/ingles.png" alt=""></button>
@@ -65,55 +69,91 @@
             </label>
         </div>
     </nav>
-    
+
     <main>
         <div id="bannerPrincipal">
             <p>Contenedor Banner pincipal</p>
         </div>
-        <div id="filtros">
-            <p>Contendor filtros</p>
-        </div>
-        <div class="contenedor">
-            <div  id="guiasPrincipales">
-                
-                
 
-            </div>
-        </div>
-        <div id="guiaElegido">
-            <div class="audio-visual-destacado">
+        <div class="search" id="search">
+            <div id="filtros">
                 <div>
-                    <img class="imagen-guia-destacado" src="/IMAGENES/PERSONAS/meli-tour.jpg" alt="" srcset="" height="533px">
+                    <select class="option-btn" id="age">
+                        <option value="edad">Edad</option>
+
+                    </select>
                 </div>
-                <div >
-                    <video class = "video-guia-destacado" autoplay src="/IMAGENES/PERSONAS/video-meli-minorista.mp4" width="300px" ></video>
+
+                <div>
+                    <select class="option-btn" id="language">
+                        <option value="idioma">Idioma</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <select class="option-btn" id="genero">
+                        <option value="genero">Genero</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <select class="option-btn" id="experience">
+                        <option value="experiencia">Años experiencia</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div id="guiasPrincipales">
+
+
+
+            </div>
+        </div>
+        <div id="guiaElegido" class="guiaElegido">
+            <div class="audio-visual-destacado" id="audio-visual-destacado">
+                <div>
+                    <img class="imagen-guia-destacado" src="/IMAGENES/PERSONAS/meli-tour.jpg" alt="" srcset=""
+                        height="533px">
+                </div>
+                <div>
+                    <video class="video-guia-destacado" autoplay src="/IMAGENES/PERSONAS/video-meli-minorista.mp4"
+                        width="300px"></video>
                 </div>
 
             </div>
-           
-            
-            
-            <div class="texto-guia-elegido">
+
+            <div class="texto-guia-elegido " id="texto-guia-elegido">
                 <h1 id="meli"><strong>Conoce a Meli</strong></h1>
-                <p>Melisa tiene un talento especial para descubrir joyas gastronómicas escondidas entre los pasillos de la Plaza Minorista. 
-                    Su recorrido se centra en el fascinante mundo de las frutas y verduras, destacando la diversidad de sabores y colores 
-                    que hacen de este mercado un paraíso culinario. Con Melisa como tu guía, no solo aprenderás sobre las tradiciones locales, 
-                    sino que también experimentarás la frescura y autenticidad de los productos de la región. 
-                    <br> <br><br>Desde las exóticas frutas tropicales hasta las verduras de temporada, Melisa te guiará a través de puestos llenos
-                     de aromas embriagadores y colores vibrantes. Descubrirás secretos culinarios, conocerás a los amigables comerciantes 
-                     locales y probarás sabores que despertarán tus sentidos. </p>
+                <p>Melisa tiene un talento especial para descubrir joyas gastronómicas escondidas entre los pasillos de
+                    la Plaza Minorista.
+                    Su recorrido se centra en el fascinante mundo de las frutas y verduras, destacando la diversidad de
+                    sabores y colores
+                    que hacen de este mercado un paraíso culinario. Con Melisa como tu guía, no solo aprenderás sobre
+                    las tradiciones locales,
+                    sino que también experimentarás la frescura y autenticidad de los productos de la región.
+                    <br> <br><br>Desde las exóticas frutas tropicales hasta las verduras de temporada, Melisa te guiará
+                    a través de puestos llenos
+                    de aromas embriagadores y colores vibrantes. Descubrirás secretos culinarios, conocerás a los
+                    amigables comerciantes
+                    locales y probarás sabores que despertarán tus sentidos.
+                </p>
 
             </div>
-            
-            
+
+
         </div>
         <div class="contenedor">
-            
-            <div  id="allGuias">
+
+            <div id="allGuias">
 
             </div>
             <div id="btnMoreGuias">
-                <button type="button" >Ver mas</button>
+                <button type="button">Ver mas</button>
             </div>
         </div>
         <div id="bannerFinal">
@@ -124,7 +164,7 @@
     <footer>
         <div class="contenedorFooter">
             <div class="leftFooter">
-                <img src="/IMAGENES/ICONOSYLOGOS/Imagotipo(1).png" alt=""  width="200px">
+                <img src="/IMAGENES/ICONOSYLOGOS/Imagotipo(1).png" alt="" width="200px">
             </div>
             <div class="rightFooter">
                 <div class="contenidoFooter">
@@ -144,7 +184,7 @@
                         <a href="#">Tratamiento de datos</a>
                         <a href="#">Pasarela de pagos</a>
                     </div>
-                
+
                 </div>
                 <div class="redesFooter">
                     <a href="#"><img src="/IMAGENES/ICONOSYLOGOS/whatsapp.png" alt="" width="40px"></a>
@@ -163,7 +203,10 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="js/scrip.js"></script>
 </body>
+
 </html>
