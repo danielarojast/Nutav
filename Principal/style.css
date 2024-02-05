@@ -15,9 +15,13 @@ header{
     position: relative;
     width: 100%;
     height: 960px;
-    background-image: url(/IMAGENES/TOURS/medellin-walking-tour.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.video-header{
+   height: 100%;
+   width: 100%;
 }
 
 .search-header{
@@ -85,6 +89,8 @@ header{
     padding: 0.5rem;
     gap: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    background-color: white;
     
 }
 
@@ -249,6 +255,9 @@ header{
 .menu .unete {
     background-color: #d9d9d9;
     color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .menu .inscribete {
@@ -629,17 +638,11 @@ footer{
     background-color: #294D76;
     padding: 2rem;
     margin-top: 10rem;
+    color: #000;
    
 }
 
 
-
-
-footer{
-    background-color:  #294D76;
-    padding: 50px;
-    max-width: 100%;
-}
 .contenedorFooter{
     width: 90%;
     margin: auto;
