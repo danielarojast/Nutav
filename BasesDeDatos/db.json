@@ -242,7 +242,7 @@
     },
     {
       "tourId": "17",
-      "imagen": "pablo-escobar.jpg",
+      "imagen": "pablo-tour.jpg",
       "galeria": ["tour14-img01.jpg","tour14-img02.jpg","tour14-img03.jpg","tour14-img04.jpg","tour14-img05.jpg"],
       "nombre": "Recorrido por el verdadero Pablo Escobar",
       "categorias": [ "Urbano", "Cultura", "Historia"],
@@ -326,7 +326,7 @@
     },
     {
       "tourId": "23",
-      "imagen": "parapente.jpg",
+      "imagen": "parapente-med.jpg",
       "galeria": ["tour14-img01.jpg","tour14-img02.jpg","tour14-img03.jpg","tour14-img04.jpg","tour14-img05.jpg"],
       "nombre": "Excursión en Parapente",
       "categorias": [ "Naturaleza", "Aventura", "Rural"],
@@ -340,7 +340,7 @@
     },
     {
       "tourId": "24",
-      "imagen": "napoles.jpg",
+      "imagen": "hacienda-napoles.jpg",
       "galeria": ["tour14-img01.jpg","tour14-img02.jpg","tour14-img03.jpg","tour14-img04.jpg","tour14-img05.jpg"],
       "nombre": "Excursión Hacienda Nápoles",
       "categorias": [ "Naturaleza", "Aventura", "Rural"],
@@ -396,7 +396,7 @@
     },
     {
       "tourId": "28",
-      "imagen": "poblado.jpg",
+      "imagen": "provenza.jpg",
       "galeria": ["tour14-img01.jpg","tour14-img02.jpg","tour14-img03.jpg","tour14-img04.jpg","tour14-img05.jpg"],
       "nombre": "Recorrido a pie por el Poblado de Medellín",
       "categorias": ["Cultura","Arquitectura", "Urbano"],
