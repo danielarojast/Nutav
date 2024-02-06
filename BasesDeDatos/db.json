@@ -211,6 +211,20 @@
       "descripcion": "Sumérgete en un viaje culinario auténtico con nuestro emocionante recorrido de comida callejera en Medellín. Descubre los sabores vibrantes y variados que esta ciudad colombiana tiene para ofrecer mientras exploras los rincones menos conocidos y más deliciosos de la escena gastronómica local. Comenzaremos nuestro recorrido en el corazón de los bulliciosos mercados y plazas, donde el aroma de las delicias locales te guiará. Nuestros guías gastronómicos locales te conducirán por estrechas callejuelas llenas de puestos coloridos y vendedores ambulantes, compartiendo historias sobre la rica tradición culinaria de Medellín. Degustarás una variedad de platillos auténticos, desde arepas rellenas hasta empanadas crujientes y frutas exóticas frescas. Cada bocado te sumergirá en la diversidad de sabores que define la cocina local, mientras interactúas con los apasionados vendedores que han perfeccionado sus recetas a lo largo de generaciones.",
       "precio": "$150.000",
       "observaciones":["Se sugiere llevar un recipiente reutilizable", "Llevar una mochila pequeña","Aplicar protector solar antes del recorrido"]
+    },
+    {
+      "tourId": "15",
+      "imagen": "tipico-montañero.jpg",
+      "galeria": ["tour14-img01.jpg","tour14-img02.jpg","tour14-img03.jpg","tour14-img04.jpg","tour14-img05.jpg"],
+      "nombre": "Típico Montañero",
+      "categorias": ["Gastronomía"],
+      "lugar": "Guatapé",
+      "idioma": ["Español", "Inglés"],
+      "duracion": "2 hrs",
+      "idGuia": "G13",
+      "descripcion": "Embárcate en un delicioso viaje culinario en el corazón de Antioquia, concentrado en un solo lugar: Medellín. Comenzaremos en un mercado local, donde los colores y aromas nos sumergirán en la esencia de la cocina antioqueña. Desde la emblemática Bandeja Paisa hasta las crujientes Empanadas Paisas y la fresca Trucha de Guatapé, cada bocado será un homenaje a la autenticidad y diversidad de esta región colombiana. Culminaremos nuestro festín con sabores dulces como el reconfortante Aguapanela con Queso y las irresistibles Arepas con Queso. En este único lugar, Medellín se convertirá en la puerta de entrada a una experiencia gastronómica que captura la esencia de Antioquia en cada rincón y sabor. ¡Prepárate para deleitar tus sentidos!",
+      "precio": "$250.000",
+      "observaciones":["Tener la mejor actitud", "Llevar el estomago vacío"]
     }
   ],
   "guias": [
