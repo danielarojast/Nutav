@@ -185,7 +185,7 @@ function getTourData(e) {
 
         //destructurar
         reviews.forEach((review)=>{
-            const {idGuia,calificacion, fecha, reseña, idC}= review
+            const {idGuia,calificacion, fecha, reseña, idC, nombreC}= review
 
             if(idGuia == idG){
                 const reviewHtml= document.createElement('p');
@@ -197,7 +197,7 @@ function getTourData(e) {
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title"><b>Sofia Toro</b></h5>
+                                <h5 class="card-title"><b>${nombreC}</b></h5>
                                 <p class="card-text">${reseña}</p>
                                 <div id="detalleReview">
                                     <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>
@@ -262,7 +262,7 @@ function getTourData(e) {
             const modalBody= document.querySelector('#modalBodyRev');
 
             reviews.forEach((reviewMod)=>{
-                const {idReview, idC, idGuia, calificacion, fecha, reseña}= reviewMod;
+                const {idReview, idC, idGuia, calificacion, fecha, reseña, nombreC}= reviewMod;
                 
                 if(idGuia == idG){
                     const reviewModHtml= document.createElement('p');
@@ -276,7 +276,7 @@ function getTourData(e) {
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                    <h5 class="card-title"><b>Sofia Toro</b></h5>
+                                    <h5 class="card-title"><b>${nombreC}</b></h5>
                                     <p class="card-text">${reseña}</p>
                                     <div id="detalleReview">
                                         <p class="card-text"><small class="text-body-secondary">${fecha}</small></p>

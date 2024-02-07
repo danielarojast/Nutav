@@ -1471,6 +1471,7 @@
     {
       "idReview": "R1",
       "idC": "C1",
+      "nombreC": "Sofia Machado",
       "idGuia": "G1",
       "calificacion": 4.8,
       "fecha": "15/02/2023",
@@ -1479,6 +1480,7 @@
     {
       "idReview": "R2",
       "idC": "C2",
+      "nombreC": "Sara Cardenas",
       "idGuia": "G2",
       "calificacion": 4.6,
       "fecha": "23/04/2023",
@@ -1487,6 +1489,7 @@
     {
       "idReview": "R3",
       "idC": "C3",
+      "nombreC": "Carlos Torres",
       "idGuia": "G3",
       "calificacion": 4,
       "fecha": "05/06/2023",
@@ -1495,6 +1498,7 @@
     {
       "idReview": "R4",
       "idC": "C4",
+      "nombreC": "Sofia Toro",
       "idGuia": "G4",
       "calificacion": 4.9,
       "fecha": "12/08/2023",
@@ -1503,6 +1507,7 @@
     {
       "idReview": "R5",
       "idC": "C5",
+      "nombreC": "Pamela Mazo",
       "idGuia": "G5",
       "calificacion": 5,
       "fecha": "21/10/2023",
@@ -1511,6 +1516,7 @@
     {
       "idReview": "R6",
       "idC": "C6",
+      "nombreC": "stefany Gomez",
       "idGuia": "G6",
       "calificacion": 5,
       "fecha": "02/12/2023",
@@ -1519,6 +1525,7 @@
     {
       "idReview": "R7",
       "idC": "C7",
+      "nombreC": "Valentina Tapias",
       "idGuia": "G7",
       "calificacion": 4.8,
       "fecha": "15/01/2024",
@@ -1527,6 +1534,7 @@
     {
       "idReview": "R8",
       "idC": "C8",
+      "nombreC": "Laura Hinestroza",
       "idGuia": "G8",
       "calificacion": 5,
       "fecha": "28/02/2024",
@@ -1535,6 +1543,7 @@
     {
       "idReview": "R9",
       "idC": "C9",
+      "nombreC": "Luz Taborda",
       "idGuia": "G9",
       "calificacion": 5,
       "fecha": "14/04/2023",
@@ -1543,6 +1552,7 @@
     {
       "idReview": "R10",
       "idC": "C10",
+      "nombreC": "Carlos Rojas",
       "idGuia": "G10",
       "calificacion": 4.9,
       "fecha": "26/05/2023",
@@ -1551,6 +1561,7 @@
     {
       "idReview": "R11",
       "idC": "C11",
+      "nombreC": "Jhon Builes",
       "idGuia": "G1",
       "calificacion": 4.7,
       "fecha": "08/07/2023",
@@ -1559,6 +1570,7 @@
     {
       "idReview": "R12",
       "idC": "C12",
+      "nombreC": "Maira Builes",
       "idGuia": "G2",
       "calificacion": 4.5,
       "fecha": "17/09/2023",
@@ -1567,6 +1579,7 @@
     {
       "idReview": "R13",
       "idC": "C13",
+      "nombreC": "Danny Goes",
       "idGuia": "G3",
       "calificacion": 4.2,
       "fecha": "02/11/2023",
@@ -1575,6 +1588,7 @@
     {
       "idReview": "R14",
       "idC": "C14",
+      "nombreC": "Santiago Dantiva",
       "idGuia": "G4",
       "calificacion": 4.9,
       "fecha": "15/01/2023",
@@ -1583,6 +1597,7 @@
     {
       "idReview": "R15",
       "idC": "C15",
+      "nombreC": "Isaac Mazo",
       "idGuia": "G5",
       "calificacion": 5,
       "fecha": "28/02/2023",
@@ -1591,6 +1606,7 @@
     {
       "idReview": "R16",
       "idC": "C16",
+      "nombreC": "Emanuel Gomez",
       "idGuia": "G6",
       "calificacion": 5,
       "fecha": "14/04/2023",
@@ -1599,6 +1615,7 @@
     {
       "idReview": "R17",
       "idC": "C17",
+      "nombreC": "Carlos Mejia",
       "idGuia": "G7",
       "calificacion": 4.8,
       "fecha": "26/05/2023",
@@ -1607,6 +1624,7 @@
     {
       "idReview": "R18",
       "idC": "C18",
+      "nombreC": "Jhon Builes",
       "idGuia": "G8",
       "calificacion": 5,
       "fecha": "08/07/2023",
@@ -1615,6 +1633,7 @@
     {
       "idReview": "R19",
       "idC": "C19",
+      "nombreC": "Eduard Agudelo",
       "idGuia": "G9",
       "calificacion": 5,
       "fecha": "17/09/2023",
@@ -1623,6 +1642,7 @@
     {
       "idReview": "R20",
       "idC": "C20",
+      "nombreC": "Ana Maria Agudelo",
       "idGuia": "G10",
       "calificacion": 4.9,
       "fecha": "02/11/2023",
@@ -1631,6 +1651,7 @@
     {
       "idReview": "R21",
       "idC": "C21",
+      "nombreC": "Eduardo Casas",
       "idGuia": "G1",
       "calificacion": 4.7,
       "fecha": "15/01/2023",
@@ -1639,6 +1660,7 @@
     {
       "idReview": "R22",
       "idC": "C22",
+      "nombreC": "Mario Gomez",
       "idGuia": "G2",
       "calificacion": 4.5,
       "fecha": "28/02/2023",
@@ -1647,6 +1669,7 @@
     {
       "idReview": "R23",
       "idC": "C23",
+      "nombreC": "Sebastian Mejia",
       "idGuia": "G3",
       "calificacion": 4.2,
       "fecha": "14/04/2023",
@@ -1655,6 +1678,7 @@
     {
       "idReview": "R24",
       "idC": "C24",
+      "nombreC": "Alejandra Flores",
       "idGuia": "G4",
       "calificacion": 4.9,
       "fecha": "26/05/2023",
@@ -1663,6 +1687,7 @@
     {
       "idReview": "R25",
       "idC": "C25",
+      "nombreC": "Isabela Franco",
       "idGuia": "G5",
       "calificacion": 5,
       "fecha": "08/07/2023",
@@ -1671,6 +1696,7 @@
     {
       "idReview": "R26",
       "idC": "C26",
+      "nombreC": "Amanda Builes",
       "idGuia": "G6",
       "calificacion": 5,
       "fecha": "17/09/2023",
@@ -1679,6 +1705,7 @@
     {
       "idReview": "R27",
       "idC": "C27",
+      "nombreC": "Pablo Agudelo",
       "idGuia": "G7",
       "calificacion": 4.8,
       "fecha": "02/11/2023",
@@ -1687,6 +1714,7 @@
     {
       "idReview": "R28",
       "idC": "C28",
+      "nombreC": "Stiven Taborda",
       "idGuia": "G8",
       "calificacion": 5,
       "fecha": "15/01/2023",
@@ -1695,6 +1723,7 @@
     {
       "idReview": "R29",
       "idC": "C29",
+      "nombreC": "Angelica Ardila",
       "idGuia": "G9",
       "calificacion": 5,
       "fecha": "28/02/2023",
@@ -1703,6 +1732,7 @@
     {
       "idReview": "R30",
       "idC": "C30",
+      "nombreC": "Elizabeth Soto",
       "idGuia": "G10",
       "calificacion": 4.9,
       "fecha": "14/04/2023",
@@ -1711,6 +1741,7 @@
     {
       "idReview": "R31",
       "idC": "C1",
+      "nombreC": "Sofia Rua",
       "idGuia": "G3",
       "calificacion": 4.7,
       "fecha": "01/01/2023",
@@ -1719,6 +1750,7 @@
     {
       "idReview": "R32",
       "idC": "C2",
+      "nombreC": "Elizabeth Cardenas",
       "idGuia": "G6",
       "calificacion": 4.5,
       "fecha": "10/02/2023",
@@ -1727,6 +1759,7 @@
     {
       "idReview": "R33",
       "idC": "C3",
+      "nombreC": "Emilio Sanchez",
       "idGuia": "G9",
       "calificacion": 4.2,
       "fecha": "22/03/2023",
@@ -1735,6 +1768,7 @@
     {
       "idReview": "R34",
       "idC": "C4",
+      "nombreC": "Eduardo Montaner",
       "idGuia": "G4",
       "calificacion": 4.9,
       "fecha": "02/05/2023",
@@ -1743,6 +1777,7 @@
     {
       "idReview": "R35",
       "idC": "C5",
+      "nombreC": "Eva Smith",
       "idGuia": "G1",
       "calificacion": 5,
       "fecha": "15/06/2023",
@@ -1751,6 +1786,7 @@
     {
       "idReview": "R36",
       "idC": "C6",
+      "nombreC": "Carlos Ramirez",
       "idGuia": "G8",
       "calificacion": 5,
       "fecha": "28/07/2023",
@@ -1759,6 +1795,7 @@
     {
       "idReview": "R37",
       "idC": "C7",
+      "nombreC": "Pamela Muños",
       "idGuia": "G2",
       "calificacion": 4.8,
       "fecha": "10/09/2023",
@@ -1767,6 +1804,7 @@
     {
       "idReview": "R38",
       "idC": "C8",
+      "nombreC": "Camilo Saf",
       "idGuia": "G10",
       "calificacion": 5,
       "fecha": "22/10/2023",
@@ -1775,6 +1813,7 @@
     {
       "idReview": "R39",
       "idC": "C9",
+      "nombreC": "Elena Cardenas",
       "idGuia": "G7",
       "calificacion": 5,
       "fecha": "03/12/2023",
@@ -1783,6 +1822,7 @@
     {
       "idReview": "R40",
       "idC": "C10",
+      "nombreC": "Felipe Gil",
       "idGuia": "G5",
       "calificacion": 4.9,
       "fecha": "15/01/2024",
@@ -1791,6 +1831,7 @@
     {
       "idReview": "R41",
       "idC": "C11",
+      "nombreC": "Alejandro Dantiva",
       "idGuia": "G4",
       "calificacion": 4.7,
       "fecha": "08/03/2023",
@@ -1799,6 +1840,7 @@
     {
       "idReview": "R42",
       "idC": "C12",
+      "nombreC": "Catherine monsalve",
       "idGuia": "G2",
       "calificacion": 4.5,
       "fecha": "17/04/2023",
@@ -1807,6 +1849,7 @@
     {
       "idReview": "R43",
       "idC": "C13",
+      "nombreC": "Milena Monsaleve",
       "idGuia": "G9",
       "calificacion": 4.2,
       "fecha": "02/06/2023",
@@ -1815,6 +1858,7 @@
     {
       "idReview": "R44",
       "idC": "C14",
+      "nombreC": "Felipe Gomez",
       "idGuia": "G5",
       "calificacion": 4.9,
       "fecha": "15/07/2023",
@@ -1823,6 +1867,7 @@
     {
       "idReview": "R45",
       "idC": "C15",
+      "nombreC": "Sebastian Ramirez",
       "idGuia": "G3",
       "calificacion": 5,
       "fecha": "28/08/2023",
@@ -1831,6 +1876,7 @@
     {
       "idReview": "R46",
       "idC": "C16",
+      "nombreC": "Ana Maria Osorio",
       "idGuia": "G6",
       "calificacion": 5,
       "fecha": "14/10/2023",
@@ -1839,6 +1885,7 @@
     {
       "idReview": "R47",
       "idC": "C17",
+      "nombreC": "Elizabeth Cardenas",
       "idGuia": "G7",
       "calificacion": 4.8,
       "fecha": "26/11/2023",
@@ -1847,6 +1894,7 @@
     {
       "idReview": "R48",
       "idC": "C18",
+      "nombreC": "David Brand",
       "idGuia": "G8",
       "calificacion": 5,
       "fecha": "08/01/2023",
@@ -1855,6 +1903,7 @@
     {
       "idReview": "R49",
       "idC": "C19",
+      "nombreC": "Sara Brand",
       "idGuia": "G1",
       "calificacion": 5,
       "fecha": "21/02/2023",
@@ -1863,6 +1912,7 @@
     {
       "idReview": "R50",
       "idC": "C20",
+      "nombreC": "Caterine Chaverra",
       "idGuia": "G10",
       "calificacion": 4.9,
       "fecha": "05/04/2023",
@@ -1871,6 +1921,7 @@
     {
       "idReview": "R51",
       "idC": "C21",
+      "nombreC": "Daniela Goez",
       "idGuia": "G3",
       "calificacion": 4.7,
       "fecha": "18/05/2023",
@@ -1879,6 +1930,7 @@
     {
       "idReview": "R52",
       "idC": "C22",
+      "nombreC": "Daniela Gil",
       "idGuia": "G6",
       "calificacion": 4.5,
       "fecha": "30/06/2023",
@@ -1887,6 +1939,7 @@
     {
       "idReview": "R53",
       "idC": "C23",
+      "nombreC": "Daniel Salazar",
       "idGuia": "G9",
       "calificacion": 4.2,
       "fecha": "12/08/2023",
@@ -1895,6 +1948,7 @@
     {
       "idReview": "R54",
       "idC": "C24",
+      "nombreC": "Manuela Velez",
       "idGuia": "G4",
       "calificacion": 4.9,
       "fecha": "24/09/2023",
@@ -1903,6 +1957,7 @@
     {
       "idReview": "R55",
       "idC": "C25",
+      "nombreC": "Julian usuga",
       "idGuia": "G5",
       "calificacion": 5,
       "fecha": "06/11/2023",
@@ -1911,6 +1966,7 @@
     {
       "idReview": "R56",
       "idC": "C26",
+      "nombreC": "Laura Manuela U",
       "idGuia": "G1",
       "calificacion": 5,
       "fecha": "19/12/2023",
@@ -1919,6 +1975,7 @@
     {
       "idReview": "R57",
       "idC": "C27",
+      "nombreC": "Franco Smith",
       "idGuia": "G8",
       "calificacion": 4.8,
       "fecha": "01/02/2024",
@@ -1927,6 +1984,7 @@
     {
       "idReview": "R58",
       "idC": "C28",
+      "nombreC": "Jasmin Salazar",
       "idGuia": "G2",
       "calificacion": 5,
       "fecha": "15/03/2023",
@@ -1935,6 +1993,7 @@
     {
       "idReview": "R59",
       "idC": "C29",
+      "nombreC": "Mateo Lescano ",
       "idGuia": "G9",
       "calificacion": 5,
       "fecha": "27/04/2023",
@@ -1943,6 +2002,7 @@
     {
       "idReview": "R60",
       "idC": "C30",
+      "nombreC": "Luz Aida Osorio",
       "idGuia": "G10",
       "calificacion": 4.9,
       "fecha": "09/06/2023",
